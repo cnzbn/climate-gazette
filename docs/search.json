@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
-  },
-  {
     "objectID": "E3CI_warm_ott.html",
     "href": "E3CI_warm_ott.html",
     "title": "This is the title",
@@ -26,5 +19,12 @@
     "title": "climate-gazette",
     "section": "",
     "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites. \nOpen the cimate analysis #1 E3CI Warm Oct"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
   }
 ]
