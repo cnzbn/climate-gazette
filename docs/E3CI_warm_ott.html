@@ -153,10 +153,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#this-is-the-title" id="toc-this-is-the-title" class="nav-link active" data-scroll-target="#this-is-the-title">This is the title</a>
-  <ul class="collapse">
-  <li><a href="#this-it-the-title-of-viz-2" id="toc-this-it-the-title-of-viz-2" class="nav-link" data-scroll-target="#this-it-the-title-of-viz-2">This it the title of viz 2</a></li>
-  </ul></li>
+  <li><a href="#test-title" id="toc-test-title" class="nav-link active" data-scroll-target="#test-title">Test title :)</a></li>
   </ul>
 </nav>
     </div>
@@ -167,9 +164,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <p><a href="https://colab.research.google.com/github/cnzbn/climate-gazette/blob/main/E3CI_warm_ott.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></p>
-<section id="this-is-the-title" class="level1">
-<h1>This is the title</h1>
-<div id="975af734" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:389}}" data-outputid="00a7848b-a204-44f9-ec74-9b0340de99ad">
+<section id="test-title" class="level1">
+<h1>Test title :)</h1>
+<div id="975af734" class="cell" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> geopandas <span class="im">as</span> gpd</span>
@@ -178,37 +175,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.colors <span class="im">as</span> mcol</span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.cm <span class="im">as</span> cm</span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pylab <span class="im">as</span> pl</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-error">
-<div class="ansi-escaped-output">
-<pre><span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">ModuleNotFoundError</span>                       Traceback (most recent call last)
-<span class="ansi-green-fg">/tmp/ipykernel_947/38487829.py</span> in <span class="ansi-cyan-fg">&lt;cell line: 0&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-fg ansi-bold">      2</span> <span class="ansi-green-fg">import</span> pandas <span class="ansi-green-fg">as</span> pd
-<span class="ansi-green-fg ansi-bold">      3</span> <span class="ansi-green-fg">import</span> geopandas <span class="ansi-green-fg">as</span> gpd
-<span class="ansi-green-fg">----&gt; 4</span><span class="ansi-red-fg"> </span><span class="ansi-green-fg">import</span> contextily <span class="ansi-green-fg">as</span> ctx
-<span class="ansi-green-fg ansi-bold">      5</span> <span class="ansi-green-fg">import</span> numpy <span class="ansi-green-fg">as</span> np
-<span class="ansi-green-fg ansi-bold">      6</span> <span class="ansi-green-fg">import</span> matplotlib<span class="ansi-blue-fg">.</span>colors <span class="ansi-green-fg">as</span> mcol
-
-<span class="ansi-red-fg">ModuleNotFoundError</span>: No module named 'contextily'
-
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span><span class="ansi-green-fg">
-NOTE: If your import is failing due to a missing package, you can
-manually install dependencies using either !pip or !apt.
-
-To view examples of installing some common dependencies, click the
-"Open Examples" button below.
-</span><span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-</pre>
-</div>
-</div>
 </div>
 <div id="73ce9ab7" class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>path_input <span class="op">=</span> <span class="st">"C:/Users/NoemiAmbrosi/OneDrive - Net Service S.p.A/IFAB doc condivisi/Comunicazione/E3CI/Pubblicazione divulgativa E3CI/2024-2025"</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>path_input_2 <span class="op">=</span> <span class="st">"C:/Users/NoemiAmbrosi/OneDrive - Net Service S.p.A/IFAB doc condivisi/Comunicazione/E3CI/Pubblicazione divulgativa E3CI/2024-2025"</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>path_output <span class="op">=</span> <span class="st">"C:/Users/NoemiAmbrosi/OneDrive - Net Service S.p.A/IFAB doc condivisi/Comunicazione/E3CI/Pubblicazione divulgativa E3CI/2024-2025/Immagini/Mappe"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<section id="this-it-the-title-of-viz-2" class="level2">
-<h2 class="anchored" data-anchor-id="this-it-the-title-of-viz-2">This it the title of viz 2</h2>
 <div id="ed962565" class="cell" data-outputid="c2acf936-cfdf-45a5-9457-53b8d6344f86">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_excel(</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="ss">f"</span><span class="sc">{</span>path_input<span class="sc">}</span><span class="ss">/componenti Regioni_25.xlsx"</span>,</span>
@@ -708,7 +680,7 @@ To view examples of installing some common dependencies, click the
 </div>
 </div>
 </div>
-<div id="bb2b3c92" class="cell" data-outputid="029cd59f-4b93-4146-a8be-8091644e75ad" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:213}}">
+<div id="bb2b3c92" class="cell" data-outputid="92e7668b-58c0-40b2-d4e9-94d1d579d42b">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>data_dir <span class="op">=</span> <span class="st">'data/ref-nuts-2021-01m/'</span></span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>path <span class="op">=</span> data_dir <span class="op">+</span> <span class="st">"NUTS_RG_01M_2021_3035_LEVL_2.json"</span></span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>gdf <span class="op">=</span> gpd.read_file(path)</span>
@@ -725,76 +697,68 @@ To view examples of installing some common dependencies, click the
 <span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a>color_thresholds <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>]</span>
 <span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a><span class="co"># colors = ['#E6E6E6', '#C7E5EF', '#54B1CF', '#008AB8']</span></span>
 <span id="cb13-16"><a href="#cb13-16" aria-hidden="true" tabindex="-1"></a>colors <span class="op">=</span> [<span class="st">'#E6E6E6'</span>, <span class="st">'#EFB598'</span>, <span class="st">'#E88754'</span>, <span class="st">'#D15400'</span>]</span>
-<span id="cb13-17"><a href="#cb13-17" aria-hidden="true" tabindex="-1"></a><span class="co"># QUAK QUAK QUAK</span></span>
+<span id="cb13-17"><a href="#cb13-17" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-18"><a href="#cb13-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-19"><a href="#cb13-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-20"><a href="#cb13-20" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a custom colormap based on the defined color thresholds</span></span>
-<span id="cb13-21"><a href="#cb13-21" aria-hidden="true" tabindex="-1"></a>cmap <span class="op">=</span> mcol.ListedColormap(colors)</span>
-<span id="cb13-22"><a href="#cb13-22" aria-hidden="true" tabindex="-1"></a><span class="co"># Replace np.inf with a finite upper bound</span></span>
-<span id="cb13-23"><a href="#cb13-23" aria-hidden="true" tabindex="-1"></a>max_data_value <span class="op">=</span> np.<span class="bu">max</span>(data_24_25_maxwarm)</span>
-<span id="cb13-24"><a href="#cb13-24" aria-hidden="true" tabindex="-1"></a>upper_bound <span class="op">=</span> <span class="bu">max</span>(<span class="dv">4</span>, max_data_value <span class="op">+</span> <span class="fl">0.5</span>)  <span class="co"># Ensure upper bound is at least 4 or data max + 0.5</span></span>
-<span id="cb13-25"><a href="#cb13-25" aria-hidden="true" tabindex="-1"></a>bounds <span class="op">=</span> [<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, upper_bound]</span>
-<span id="cb13-26"><a href="#cb13-26" aria-hidden="true" tabindex="-1"></a>norm <span class="op">=</span> mcol.BoundaryNorm(bounds, cmap.N)</span>
-<span id="cb13-27"><a href="#cb13-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-28"><a href="#cb13-28" aria-hidden="true" tabindex="-1"></a><span class="co"># Set up the plot</span></span>
-<span id="cb13-29"><a href="#cb13-29" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">40</span>, <span class="dv">30</span>))</span>
-<span id="cb13-30"><a href="#cb13-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-31"><a href="#cb13-31" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot the base map</span></span>
-<span id="cb13-32"><a href="#cb13-32" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> gdf_it.plot(ax<span class="op">=</span>ax, color<span class="op">=</span><span class="st">"lightgray"</span>)</span>
-<span id="cb13-33"><a href="#cb13-33" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-34"><a href="#cb13-34" aria-hidden="true" tabindex="-1"></a><span class="co"># Define the regions you want to highlight</span></span>
-<span id="cb13-35"><a href="#cb13-35" aria-hidden="true" tabindex="-1"></a>regions <span class="op">=</span> [<span class="st">"Abruzzo"</span>, <span class="st">"Basilicata"</span>, <span class="st">"Calabria"</span>, <span class="st">"Campania"</span>, <span class="st">"Emilia-Romagna"</span>, <span class="st">"Friuli-Venezia Giulia"</span>,</span>
-<span id="cb13-36"><a href="#cb13-36" aria-hidden="true" tabindex="-1"></a>           <span class="st">"Lazio"</span>, <span class="st">"Liguria"</span>, <span class="st">"Lombardia"</span>, <span class="st">"Marche"</span>, <span class="st">"Molise"</span>, <span class="st">"Piemonte"</span>, <span class="st">"Puglia"</span>, <span class="st">"Sardegna"</span>,</span>
-<span id="cb13-37"><a href="#cb13-37" aria-hidden="true" tabindex="-1"></a>           <span class="st">"Sicilia"</span>, <span class="st">"Toscana"</span>, <span class="st">"Provincia Autonoma di Trento"</span>, <span class="st">"Provincia Autonoma di Bolzano/Bozen"</span>,</span>
-<span id="cb13-38"><a href="#cb13-38" aria-hidden="true" tabindex="-1"></a>           <span class="st">"Umbria"</span>, <span class="st">"Valle d’Aosta/Vallée d’Aoste"</span>, <span class="st">"Veneto"</span>]</span>
-<span id="cb13-39"><a href="#cb13-39" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-40"><a href="#cb13-40" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot each region with the appropriate color based on the value</span></span>
-<span id="cb13-41"><a href="#cb13-41" aria-hidden="true" tabindex="-1"></a>kk <span class="op">=</span> <span class="dv">0</span></span>
-<span id="cb13-42"><a href="#cb13-42" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> regions:</span>
-<span id="cb13-43"><a href="#cb13-43" aria-hidden="true" tabindex="-1"></a>    gdf_reg <span class="op">=</span> gdf[gdf.NAME_LATN <span class="op">==</span> i]</span>
-<span id="cb13-44"><a href="#cb13-44" aria-hidden="true" tabindex="-1"></a>    gdf_lb_it_reg <span class="op">=</span> gdf_lb_it[gdf_lb_it.NAME_LATN <span class="op">==</span> i]</span>
-<span id="cb13-45"><a href="#cb13-45" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-46"><a href="#cb13-46" aria-hidden="true" tabindex="-1"></a>    <span class="co"># For each region, use the color corresponding to the value</span></span>
-<span id="cb13-47"><a href="#cb13-47" aria-hidden="true" tabindex="-1"></a>    region_value <span class="op">=</span> data_24_25_maxwarm[kk]  <span class="co"># Assuming this variable has the relevant data for each region</span></span>
-<span id="cb13-48"><a href="#cb13-48" aria-hidden="true" tabindex="-1"></a>    gdf_reg.plot(ax<span class="op">=</span>ax, color<span class="op">=</span>cmap(norm(region_value)))</span>
-<span id="cb13-49"><a href="#cb13-49" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-50"><a href="#cb13-50" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Optional: Plot light gray boundaries and labels (customized for each region)</span></span>
-<span id="cb13-51"><a href="#cb13-51" aria-hidden="true" tabindex="-1"></a>    markersize <span class="op">=</span> <span class="dv">1000</span></span>
-<span id="cb13-52"><a href="#cb13-52" aria-hidden="true" tabindex="-1"></a>    gdf_lb_it_reg.plot(ax<span class="op">=</span>ax, color<span class="op">=</span><span class="st">"lightgray"</span>, markersize<span class="op">=</span><span class="dv">2</span><span class="op">*</span>markersize, marker<span class="op">=</span><span class="st">'o'</span>, alpha<span class="op">=</span><span class="fl">.5</span>, zorder<span class="op">=</span><span class="dv">10</span>)</span>
-<span id="cb13-53"><a href="#cb13-53" aria-hidden="true" tabindex="-1"></a>    gdf_lb_it_reg.plot(ax<span class="op">=</span>ax, color<span class="op">=</span><span class="st">"black"</span>, markersize<span class="op">=</span>markersize, marker<span class="op">=</span><span class="vs">r'</span><span class="dv">$</span><span class="vs">{%i</span><span class="er">\</span><span class="vs">cdot%i}</span><span class="dv">$</span><span class="vs">'</span> <span class="op">%</span> (data_24_25_sumwarm[kk], data_24_25_cumsumwarm[kk]), zorder<span class="op">=</span><span class="dv">10</span>)</span>
-<span id="cb13-54"><a href="#cb13-54" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-55"><a href="#cb13-55" aria-hidden="true" tabindex="-1"></a>    kk <span class="op">+=</span> <span class="dv">1</span></span>
-<span id="cb13-56"><a href="#cb13-56" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-57"><a href="#cb13-57" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot the boundaries between the regions in black</span></span>
-<span id="cb13-58"><a href="#cb13-58" aria-hidden="true" tabindex="-1"></a>gdf_it.boundary.plot(ax<span class="op">=</span>ax, color<span class="op">=</span><span class="st">"black"</span>)</span>
-<span id="cb13-59"><a href="#cb13-59" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-60"><a href="#cb13-60" aria-hidden="true" tabindex="-1"></a><span class="co"># Add color bar and finalize the plot</span></span>
-<span id="cb13-61"><a href="#cb13-61" aria-hidden="true" tabindex="-1"></a>plt.axis(<span class="st">'off'</span>)</span>
-<span id="cb13-62"><a href="#cb13-62" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-63"><a href="#cb13-63" aria-hidden="true" tabindex="-1"></a><span class="co"># Add a color bar with custom tick labels</span></span>
-<span id="cb13-64"><a href="#cb13-64" aria-hidden="true" tabindex="-1"></a>cbar <span class="op">=</span> plt.colorbar(cm.ScalarMappable(norm<span class="op">=</span>norm, cmap<span class="op">=</span>cmap), ax<span class="op">=</span>ax, label<span class="op">=</span><span class="st">"2024-2025 Extreme Maximum Temperature Index"</span>, fraction<span class="op">=</span><span class="fl">0.01</span>)</span>
-<span id="cb13-65"><a href="#cb13-65" aria-hidden="true" tabindex="-1"></a><span class="co"># Set custom tick positions and labels to match the bounds</span></span>
-<span id="cb13-66"><a href="#cb13-66" aria-hidden="true" tabindex="-1"></a>cbar.set_ticks([<span class="fl">0.5</span>, <span class="fl">1.5</span>, <span class="fl">2.5</span>, <span class="dv">3</span> <span class="op">+</span> (upper_bound<span class="op">-</span><span class="dv">3</span>)<span class="op">/</span><span class="dv">2</span>])</span>
-<span id="cb13-67"><a href="#cb13-67" aria-hidden="true" tabindex="-1"></a>cbar.set_ticklabels([<span class="st">"&lt;1"</span>, <span class="st">"1-2"</span>, <span class="st">"2-3"</span>, <span class="ss">f"&gt;3"</span>])</span>
-<span id="cb13-68"><a href="#cb13-68" aria-hidden="true" tabindex="-1"></a>cbar.set_label(<span class="st">"2024-2025 Extreme Maximum Temperature Index"</span>, fontsize<span class="op">=</span><span class="dv">16</span>)</span>
-<span id="cb13-69"><a href="#cb13-69" aria-hidden="true" tabindex="-1"></a>cbar.ax.tick_params(labelsize<span class="op">=</span><span class="dv">14</span>)</span>
-<span id="cb13-70"><a href="#cb13-70" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-71"><a href="#cb13-71" aria-hidden="true" tabindex="-1"></a><span class="co"># Save the plot</span></span>
-<span id="cb13-72"><a href="#cb13-72" aria-hidden="true" tabindex="-1"></a>plt.savefig(<span class="ss">f"</span><span class="sc">{</span>path_output<span class="sc">}</span><span class="ss">/Caldo italia discreta"</span>)</span>
-<span id="cb13-73"><a href="#cb13-73" aria-hidden="true" tabindex="-1"></a>plt.savefig(<span class="ss">f"</span><span class="sc">{</span>path_output<span class="sc">}</span><span class="ss">/SVG/Caldo italia discreta.svg"</span>, <span class="bu">format</span><span class="op">=</span><span class="st">"svg"</span>)</span>
-<span id="cb13-74"><a href="#cb13-74" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-error">
-<div class="ansi-escaped-output">
-<pre><span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-fg">/tmp/ipykernel_947/3039576200.py</span> in <span class="ansi-cyan-fg">&lt;cell line: 0&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-fg ansi-bold">      1</span> data_dir <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">'data/ref-nuts-2021-01m/'</span>
-<span class="ansi-green-fg ansi-bold">      2</span> path <span class="ansi-blue-fg">=</span> data_dir <span class="ansi-blue-fg">+</span> <span class="ansi-blue-fg">"NUTS_RG_01M_2021_3035_LEVL_2.json"</span>
-<span class="ansi-green-fg">----&gt; 3</span><span class="ansi-red-fg"> </span>gdf <span class="ansi-blue-fg">=</span> gpd<span class="ansi-blue-fg">.</span>read_file<span class="ansi-blue-fg">(</span>path<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg ansi-bold">      4</span> path_lb <span class="ansi-blue-fg">=</span> data_dir <span class="ansi-blue-fg">+</span> <span class="ansi-blue-fg">"NUTS_LB_2021_3035_LEVL_2.json"</span>
-<span class="ansi-green-fg ansi-bold">      5</span> gdf_lb <span class="ansi-blue-fg">=</span> gpd<span class="ansi-blue-fg">.</span>read_file<span class="ansi-blue-fg">(</span>path_lb<span class="ansi-blue-fg">)</span>
-
-<span class="ansi-red-fg">NameError</span>: name 'gpd' is not defined</pre>
+<span id="cb13-19"><a href="#cb13-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a custom colormap based on the defined color thresholds</span></span>
+<span id="cb13-20"><a href="#cb13-20" aria-hidden="true" tabindex="-1"></a>cmap <span class="op">=</span> mcol.ListedColormap(colors)</span>
+<span id="cb13-21"><a href="#cb13-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Replace np.inf with a finite upper bound</span></span>
+<span id="cb13-22"><a href="#cb13-22" aria-hidden="true" tabindex="-1"></a>max_data_value <span class="op">=</span> np.<span class="bu">max</span>(data_24_25_maxwarm)</span>
+<span id="cb13-23"><a href="#cb13-23" aria-hidden="true" tabindex="-1"></a>upper_bound <span class="op">=</span> <span class="bu">max</span>(<span class="dv">4</span>, max_data_value <span class="op">+</span> <span class="fl">0.5</span>)  <span class="co"># Ensure upper bound is at least 4 or data max + 0.5</span></span>
+<span id="cb13-24"><a href="#cb13-24" aria-hidden="true" tabindex="-1"></a>bounds <span class="op">=</span> [<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, upper_bound]</span>
+<span id="cb13-25"><a href="#cb13-25" aria-hidden="true" tabindex="-1"></a>norm <span class="op">=</span> mcol.BoundaryNorm(bounds, cmap.N)</span>
+<span id="cb13-26"><a href="#cb13-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-27"><a href="#cb13-27" aria-hidden="true" tabindex="-1"></a><span class="co"># Set up the plot</span></span>
+<span id="cb13-28"><a href="#cb13-28" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">40</span>, <span class="dv">30</span>))</span>
+<span id="cb13-29"><a href="#cb13-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-30"><a href="#cb13-30" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot the base map</span></span>
+<span id="cb13-31"><a href="#cb13-31" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> gdf_it.plot(ax<span class="op">=</span>ax, color<span class="op">=</span><span class="st">"lightgray"</span>)</span>
+<span id="cb13-32"><a href="#cb13-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-33"><a href="#cb13-33" aria-hidden="true" tabindex="-1"></a><span class="co"># Define the regions you want to highlight</span></span>
+<span id="cb13-34"><a href="#cb13-34" aria-hidden="true" tabindex="-1"></a>regions <span class="op">=</span> [<span class="st">"Abruzzo"</span>, <span class="st">"Basilicata"</span>, <span class="st">"Calabria"</span>, <span class="st">"Campania"</span>, <span class="st">"Emilia-Romagna"</span>, <span class="st">"Friuli-Venezia Giulia"</span>,</span>
+<span id="cb13-35"><a href="#cb13-35" aria-hidden="true" tabindex="-1"></a>           <span class="st">"Lazio"</span>, <span class="st">"Liguria"</span>, <span class="st">"Lombardia"</span>, <span class="st">"Marche"</span>, <span class="st">"Molise"</span>, <span class="st">"Piemonte"</span>, <span class="st">"Puglia"</span>, <span class="st">"Sardegna"</span>,</span>
+<span id="cb13-36"><a href="#cb13-36" aria-hidden="true" tabindex="-1"></a>           <span class="st">"Sicilia"</span>, <span class="st">"Toscana"</span>, <span class="st">"Provincia Autonoma di Trento"</span>, <span class="st">"Provincia Autonoma di Bolzano/Bozen"</span>,</span>
+<span id="cb13-37"><a href="#cb13-37" aria-hidden="true" tabindex="-1"></a>           <span class="st">"Umbria"</span>, <span class="st">"Valle d’Aosta/Vallée d’Aoste"</span>, <span class="st">"Veneto"</span>]</span>
+<span id="cb13-38"><a href="#cb13-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-39"><a href="#cb13-39" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot each region with the appropriate color based on the value</span></span>
+<span id="cb13-40"><a href="#cb13-40" aria-hidden="true" tabindex="-1"></a>kk <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb13-41"><a href="#cb13-41" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> regions:</span>
+<span id="cb13-42"><a href="#cb13-42" aria-hidden="true" tabindex="-1"></a>    gdf_reg <span class="op">=</span> gdf[gdf.NAME_LATN <span class="op">==</span> i]</span>
+<span id="cb13-43"><a href="#cb13-43" aria-hidden="true" tabindex="-1"></a>    gdf_lb_it_reg <span class="op">=</span> gdf_lb_it[gdf_lb_it.NAME_LATN <span class="op">==</span> i]</span>
+<span id="cb13-44"><a href="#cb13-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-45"><a href="#cb13-45" aria-hidden="true" tabindex="-1"></a>    <span class="co"># For each region, use the color corresponding to the value</span></span>
+<span id="cb13-46"><a href="#cb13-46" aria-hidden="true" tabindex="-1"></a>    region_value <span class="op">=</span> data_24_25_maxwarm[kk]  <span class="co"># Assuming this variable has the relevant data for each region</span></span>
+<span id="cb13-47"><a href="#cb13-47" aria-hidden="true" tabindex="-1"></a>    gdf_reg.plot(ax<span class="op">=</span>ax, color<span class="op">=</span>cmap(norm(region_value)))</span>
+<span id="cb13-48"><a href="#cb13-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-49"><a href="#cb13-49" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Optional: Plot light gray boundaries and labels (customized for each region)</span></span>
+<span id="cb13-50"><a href="#cb13-50" aria-hidden="true" tabindex="-1"></a>    markersize <span class="op">=</span> <span class="dv">1000</span></span>
+<span id="cb13-51"><a href="#cb13-51" aria-hidden="true" tabindex="-1"></a>    gdf_lb_it_reg.plot(ax<span class="op">=</span>ax, color<span class="op">=</span><span class="st">"lightgray"</span>, markersize<span class="op">=</span><span class="dv">2</span><span class="op">*</span>markersize, marker<span class="op">=</span><span class="st">'o'</span>, alpha<span class="op">=</span><span class="fl">.5</span>, zorder<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb13-52"><a href="#cb13-52" aria-hidden="true" tabindex="-1"></a>    gdf_lb_it_reg.plot(ax<span class="op">=</span>ax, color<span class="op">=</span><span class="st">"black"</span>, markersize<span class="op">=</span>markersize, marker<span class="op">=</span><span class="vs">r'</span><span class="dv">$</span><span class="vs">{%i</span><span class="er">\</span><span class="vs">cdot%i}</span><span class="dv">$</span><span class="vs">'</span> <span class="op">%</span> (data_24_25_sumwarm[kk], data_24_25_cumsumwarm[kk]), zorder<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb13-53"><a href="#cb13-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-54"><a href="#cb13-54" aria-hidden="true" tabindex="-1"></a>    kk <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb13-55"><a href="#cb13-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-56"><a href="#cb13-56" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot the boundaries between the regions in black</span></span>
+<span id="cb13-57"><a href="#cb13-57" aria-hidden="true" tabindex="-1"></a>gdf_it.boundary.plot(ax<span class="op">=</span>ax, color<span class="op">=</span><span class="st">"black"</span>)</span>
+<span id="cb13-58"><a href="#cb13-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-59"><a href="#cb13-59" aria-hidden="true" tabindex="-1"></a><span class="co"># Add color bar and finalize the plot</span></span>
+<span id="cb13-60"><a href="#cb13-60" aria-hidden="true" tabindex="-1"></a>plt.axis(<span class="st">'off'</span>)</span>
+<span id="cb13-61"><a href="#cb13-61" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-62"><a href="#cb13-62" aria-hidden="true" tabindex="-1"></a><span class="co"># Add a color bar with custom tick labels</span></span>
+<span id="cb13-63"><a href="#cb13-63" aria-hidden="true" tabindex="-1"></a>cbar <span class="op">=</span> plt.colorbar(cm.ScalarMappable(norm<span class="op">=</span>norm, cmap<span class="op">=</span>cmap), ax<span class="op">=</span>ax, label<span class="op">=</span><span class="st">"2024-2025 Extreme Maximum Temperature Index"</span>, fraction<span class="op">=</span><span class="fl">0.01</span>)</span>
+<span id="cb13-64"><a href="#cb13-64" aria-hidden="true" tabindex="-1"></a><span class="co"># Set custom tick positions and labels to match the bounds</span></span>
+<span id="cb13-65"><a href="#cb13-65" aria-hidden="true" tabindex="-1"></a>cbar.set_ticks([<span class="fl">0.5</span>, <span class="fl">1.5</span>, <span class="fl">2.5</span>, <span class="dv">3</span> <span class="op">+</span> (upper_bound<span class="op">-</span><span class="dv">3</span>)<span class="op">/</span><span class="dv">2</span>])</span>
+<span id="cb13-66"><a href="#cb13-66" aria-hidden="true" tabindex="-1"></a>cbar.set_ticklabels([<span class="st">"&lt;1"</span>, <span class="st">"1-2"</span>, <span class="st">"2-3"</span>, <span class="ss">f"&gt;3"</span>])</span>
+<span id="cb13-67"><a href="#cb13-67" aria-hidden="true" tabindex="-1"></a>cbar.set_label(<span class="st">"2024-2025 Extreme Maximum Temperature Index"</span>, fontsize<span class="op">=</span><span class="dv">16</span>)</span>
+<span id="cb13-68"><a href="#cb13-68" aria-hidden="true" tabindex="-1"></a>cbar.ax.tick_params(labelsize<span class="op">=</span><span class="dv">14</span>)</span>
+<span id="cb13-69"><a href="#cb13-69" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-70"><a href="#cb13-70" aria-hidden="true" tabindex="-1"></a><span class="co"># Save the plot</span></span>
+<span id="cb13-71"><a href="#cb13-71" aria-hidden="true" tabindex="-1"></a>plt.savefig(<span class="ss">f"</span><span class="sc">{</span>path_output<span class="sc">}</span><span class="ss">/Caldo italia discreta"</span>)</span>
+<span id="cb13-72"><a href="#cb13-72" aria-hidden="true" tabindex="-1"></a>plt.savefig(<span class="ss">f"</span><span class="sc">{</span>path_output<span class="sc">}</span><span class="ss">/SVG/Caldo italia discreta.svg"</span>, <span class="bu">format</span><span class="op">=</span><span class="st">"svg"</span>)</span>
+<span id="cb13-73"><a href="#cb13-73" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="E3CI_warm_ott_files/figure-html/cell-11-output-1.png" class="img-fluid figure-img"></p>
+</figure>
 </div>
 </div>
 </div>
@@ -987,7 +951,6 @@ To view examples of installing some common dependencies, click the
 </div>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
