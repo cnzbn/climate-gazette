@@ -1,0 +1,25 @@
+project:
+  type: website
+  output-dir: docs        # GitHub Pages will serve from /docs
+
+website:
+  title: "Climate Gazette"
+  navbar:
+    left:
+  
+      - href: about.qmd
+        text: About
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+    toc: true
+
+
+
+
+
+

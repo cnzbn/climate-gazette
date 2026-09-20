@@ -1,0 +1,9 @@
+---
+title: "climate-gazette"
+---
+
+This is a Quarto website.
+
+To learn more about Quarto websites visit <https://quarto.org/docs/websites>. <br>
+
+Open the cimate analysis #1  <a href ="analysis/E3CI_warm_ott.html">E3CI Warm Oct</a>
