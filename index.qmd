@@ -43,6 +43,7 @@ Curated by Noemi Ambrosi, Simona Contaldi, Cinzia Bongino.
   <img class="story-card-image" src="images/e3ci-warm-oct.jpg" alt="E3CI Warm October map">
   <a class="story-card-title" href="E3CI_warm_ott.ipynb">Lorem ipsum weather event title</a>
 </div>
+
 <div class="story-card">
   <img class="story-card-image" src="images/e3ci-warm-oct.jpg" alt="E3CI Warm October map">
   <a class="story-card-title" href="E3CI_warm_ott.ipynb">Lorem ipsum weather event title</a>
