@@ -1,1 +1,403 @@
-/* css styles */
+es · CSS
+/* Climate Gazette — monochrome theme, Plus Jakarta Sans throughout.
+   No color accents; hierarchy is carried by weight, size, and spacing. */
+ 
+
+.plus-jakarta-sans {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+   
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+ 
+:root {
+  --color-bg: #F7F7F7;
+  --color-surface-alt: #FFFFFF;
+  --color-text: #40403F;
+  --color-muted: #6B6B6B;
+  --color-border: #E0E0E0;
+  --color-surface: #FFFFFF;
+ 
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+ 
+/* Center the logo in the navbar */
+.navbar {
+  position: relative;
+  height: 64px;
+}
+
+.navbar-brand {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+/* Control logo size */
+.navbar-brand img {
+  display: block;
+  max-height: 7vw;
+  width: auto;
+  padding-top:4px;
+  padding-bottom:4px;
+}
+
+/* Keep the navbar controls usable on smaller screens */
+@media (max-width: 800px) {
+  .navbar-brand {
+  position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+  }
+}
+/*end navbar*/
+
+
+/* CONTAINER */
+/* Full-width custom page */
+.page-layout-custom {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  gap:60px;
+}
+
+/* END CONTAINER */
+
+/* Custom font homepage*/
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-size: 17px;
+  line-height: 1.65;
+  font-weight: 500;
+}
+
+.intro-text {
+  padding-left:20%;
+  padding-right:20%;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .intro-text {
+  padding-left:0%;
+  padding-right:0%;
+  text-align: center;
+}
+}
+ 
+/*end*/
+
+/* Same family throughout — hierarchy comes from weight and size, not color */
+h1, h2, h3, h4 {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  color: var(--color-text);
+  letter-spacing: -0.015em;
+}
+ 
+h1 {
+  font-size: 2.75rem;
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+ 
+h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-top: 3rem;
+  margin-bottom: 1.25rem;
+}
+ 
+/* Subtitle line under h1, styled like the reference site's light secondary headline */
+.subtitle, .quarto-title-meta {
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: var(--color-muted);
+}
+ 
+/* Links — underlined, monochrome, distinguished by weight not color */
+a {
+  color: var(--color-text);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-color: grey;
+  font-weight: 500;
+}
+ 
+a:hover {
+  text-decoration-color: var(--color-text);
+}
+ 
+/* Navbar — flat, no shadow, thin rule instead of a boxed bar */
+.navbar {
+  background-color: var(--color-bg) !important;
+  border-bottom: 1px solid var(--color-border);
+  box-shadow: none !important;
+}
+ 
+.navbar-brand {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  color: var(--color-text) !important;
+}
+ 
+.navbar-nav .nav-link {
+  color: var(--color-muted) !important;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+ 
+.navbar-nav .nav-link:hover {
+  color: var(--color-text) !important;
+}
+ 
+/* Pill-shaped button — mirrors the reference site's rounded CTA style, monochrome */
+.btn, .button, a.btn-outline-primary, a.btn-primary {
+  display: inline-block;
+  background-color: var(--color-text);
+  color: var(--color-bg) !important;
+  border: 1px solid var(--color-text);
+  border-radius: 999px;
+  padding: 0.6rem 1.5rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none !important;
+}
+ 
+.btn:hover, .button:hover {
+  background-color: var(--color-bg);
+  color: var(--color-text) !important;
+}
+ 
+
+
+/* Card grid — mirrors the reference site's Focus/News card sections */
+.card, .quarto-grid-item {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 1.25rem;
+}
+ 
+.card-title {
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin-bottom: 0.4rem;
+}
+ 
+.card-date, .listing-date {
+  color: var(--color-muted);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+ 
+/* Content width — keeps line length readable */
+.content {
+  max-width: 1400px;
+}
+ 
+/* Code blocks — quiet grayscale, no harsh contrast */
+pre, code {
+  font-family: "SF Mono", "Menlo", monospace;
+  font-size: 0.85rem;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 2px;
+  color: var(--color-text);
+}
+ 
+/* Tables — flat, minimal, no zebra striping or heavy borders */
+table {
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  line-height: 1.1rem;
+}
+ 
+th {
+  border-bottom: 2px solid var(--color-text);
+  font-weight: 700;
+  text-align: left;
+  padding: 0.5rem 0.75rem;
+  
+}
+ 
+td {
+  border-bottom: 1px solid var(--color-border);
+  padding: 0.5rem 0.75rem;
+}
+ 
+/* Captions / secondary text */
+.figure-caption, .text-muted {
+  color: var(--color-muted);
+  font-size: 0.85rem;
+}
+ 
+/* Footer */
+.nav-footer {
+  border-top: 1px solid var(--color-border);
+  color: var(--color-muted);
+  font-size: 0.85rem;
+}
+
+/* ---------------------------------------------------------
+   Story cards — image + title in a white frame
+   (home page grid, from Figma)
+--------------------------------------------------------- */
+
+.stories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+  margin: 2rem 0;
+  width: 100%;
+  
+}
+
+.story-card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap:12px;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+  text-decoration: none !important;
+}
+
+.story-card:hover {
+  border-color: var(--color-text);
+  text-decoration: none;
+}
+
+
+
+.story-card-image {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+
+}
+
+.story-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.story-card-title {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.1;
+  color: var(--color-text);
+  text-decoration: none;
+  margin: 0;
+  /* clamp to 2 lines so titles of different lengths stay aligned */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}/* css styles */
+
+
+
+
+/* ---------------------------------------------------------
+   Homepage masthead — logo + divider + tagline
+   (page content, sits above the intro text; distinct from
+   the small persistent navbar logo)
+--------------------------------------------------------- */
+
+
+
+.site-masthead {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 0;
+  text-align: left;
+}
+ 
+.site-masthead-logo {
+  height: 30px;
+  width: auto;
+  display: block;
+}
+ 
+.site-masthead-divider {
+  width: 1px;
+  height: 30px;
+  background-color: var(--color-border);
+}
+ 
+.site-masthead-tagline {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 0.95rem;
+  line-height: 1.2;
+  color: var(--color-text);
+  margin: 0;
+}
+ 
+.site-intro {
+  max-width: 1400px;
+  margin: 0 auto 2rem;
+  text-align: center;
+  color: var(--color-text);
+}
+ 
+/* ---------------------------------------------------------
+   Page footer — credits + site links
+--------------------------------------------------------- */
+ 
+.line {
+  color: var(--color-text);
+
+}
+
+
+.site-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--color-muted);
+}
+ 
+.site-footer p {
+  margin: 0;
+}
+ 
+.site-footer a {
+  color: var(--color-muted);
+  text-decoration: underline;
+  text-decoration-color: var(--color-border);
+}
+ 
+.site-footer a:hover {
+  color: var(--color-text);
+  text-decoration-color: var(--color-text);
+}
+ 
+ 

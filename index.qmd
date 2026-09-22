@@ -1,9 +1,85 @@
----
-title: "climate-gazette"
----
 
-This is a Quarto website.
+<div class="page-layout-custom">
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>. <br>
+<p class="intro-text">
+Climate Gazette features stories of extreme weather events that occurred in Europe over the past 40 years. 
+Reports are based on data from the <a href="https://climateindex.eu" target="_blank">European Climate Index</a>, analysed with Jupyter and presented via charts and maps.
+</p>
 
-Open the cimate analysis #1  <a href ="E3CI_warm_ott.html">E3CI Warm Oct</a>
+::: {.stories-grid}
+
+<div class="story-card">
+  <a href="E3CI_warm_ott.ipynb">
+  <div class="story-card-image">
+  <img src="images/e3ci-warm-oct.jpg" alt="E3CI Warm October map">
+  </div>
+  </a>
+  <p class="story-card-title">Lorem ipsum weather event title</p>
+</div>
+
+<div class="story-card">
+  <a href="E3CI_warm_ott.ipynb">
+  <div class="story-card-image">
+  <img src="images/e3ci-warm-oct.jpg" alt="E3CI Warm October map">
+  </div>
+  </a>
+  <p class="story-card-title">Lorem ipsum weather event title</p>
+</div>
+
+<div class="story-card">
+  <a href="E3CI_warm_ott.ipynb">
+  <div class="story-card-image">
+  <img src="images/e3ci-warm-oct.jpg" alt="E3CI Warm October map">
+  </div>
+  </a>
+  <p class="story-card-title">Lorem ipsum weather event title</p>
+</div>
+
+<div class="story-card">
+  <a href="E3CI_warm_ott.ipynb">
+  <div class="story-card-image">
+  <img src="images/e3ci-warm-oct.jpg" alt="E3CI Warm October map">
+  </div>
+  </a>
+  <p class="story-card-title">Lorem ipsum weather event title</p>
+</div>
+
+<div class="story-card">
+  <a href="E3CI_warm_ott.ipynb">
+  <div class="story-card-image">
+  <img src="images/e3ci-warm-oct.jpg" alt="E3CI Warm October map">
+  </div>
+  </a>
+  <p class="story-card-title">Lorem ipsum weather event title</p>
+</div>
+
+<div class="story-card">
+  <a href="E3CI_warm_ott.ipynb">
+  <div class="story-card-image">
+  <img src="images/e3ci-warm-oct.jpg" alt="E3CI Warm October map">
+  </div>
+  </a>
+  <p class="story-card-title">Lorem ipsum weather event title</p>
+</div>
+
+:::
+
+</div>
+
+
+
+<hr class="line"> 
+<div class="site-footer">
+  <p>
+    E3CI European Extreme Events Climate Index is a project by <a href="https://ifabfoundation.org" target="_blank">IFAB</a>.<br>
+    Implemented by <a href="https://www.cmcc.it" target="_blank">CMCC</a>, <a href="https://leitha.eu" target="_blank">Leithà Gruppo Unipol</a>. Distributed by <a href="https://www.hypermeteo.com" target="_blank">Hypermeteo</a>, and <a href="https://www.radarmeteo.com/en" target="_blank">Radarmeteo</a>.
+  </p>
+</div>
+  <div class="site-footer">
+  <p>
+    <a href="https://datastation.climateindex.eu" target="_blank">datastation.climateindex.eu</a>  &nbsp; &nbsp; &nbsp;
+    <a href="https://climateindex.eu" target="_blank">climateindex.eu</a>
+    </p>
+  </div>
+</div>
+
