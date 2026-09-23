@@ -1,5 +1,19 @@
 [
   {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Climate Gazette",
+    "section": "",
+    "text": "Climate Gazette features stories of extreme weather events that occurred in Europe over the past 40 years. Reports are based on data from the European Climate Index, analysed with Jupyter and presented via charts and maps.\n\n\n\n \n\n\n\n\n\nIssue 1 - November 2026\n\n\nDeveloped during the [title] workshop held at the Visualising Climate Conference 2026, Bologna.  Curated by Noemi Ambrosi, Simona Contaldi, Cinzia Bongino.\n\n\n\n Lorem ipsum weather event title\n\n\n Lorem ipsum weather event title\n\n\n Lorem ipsum weather event title\n\n\n Lorem ipsum weather event title\n\n\n Lorem ipsum weather event title\n\n\n Lorem ipsum weather event title\n\n\n\n\n\n\nE3CI European Extreme Events Climate Index is a project by IFAB. Implemented by CMCC, Leithà Gruppo Unipol. Distributed by Hypermeteo, and Radarmeteo.\n\n\n\n\n\ndatastation.climateindex.eu       climateindex.eu"
+  },
+  {
     "objectID": "E3CI_warm_ott.html",
     "href": "E3CI_warm_ott.html",
     "title": "This is the project title.",
@@ -33,27 +47,6 @@
     "title": "This is the project title.",
     "section": "Fourth visualization title",
     "text": "Fourth visualization title\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Climate Gazette",
-    "section": "",
-    "text": "Climate Gazette features stories of extreme weather events that occurred in Europe over the past 40 years. Reports are based on data from the European Climate Index, analysed with Jupyter and presented via charts and maps.\n\n\n\n \n\n\n\n\n\nIssue 1 - November 2026\n\n\nDeveloped during the [title] workshop held at the Visualising Climate Conference 2026, Bologna.  Curated by Noemi Ambrosi, Simona Contaldi, Cinzia Bongino.\n\n\n\n Lorem ipsum weather event title\n\n\n Lorem ipsum weather event title\n\n\n Lorem ipsum weather event title\n\n\n Lorem ipsum weather event title\n\n\n Lorem ipsum weather event title\n\n\n Lorem ipsum weather event title\n\n\n\n\n\n\nE3CI European Extreme Events Climate Index is a project by IFAB. Implemented by CMCC, Leithà Gruppo Unipol. Distributed by Hypermeteo, and Radarmeteo.\n\n\n\n\n\ndatastation.climateindex.eu       climateindex.eu"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
-  },
-  {
-    "objectID": "index.html#page-layout-full",
-    "href": "index.html#page-layout-full",
-    "title": "Climate Gazette",
-    "section": "page-layout: full",
-    "text": "page-layout: full\n\nClimate Gazette features stories of extreme weather events that occurred in Europe over the past 40 years. Reports are based on data from the European Climate Index, analysed with Jupyter and presented via charts and maps.\n\n\n\n&lt;img src=\"images/e3ci-warm-oct.jpg\" alt=\"E3CI Warm October map\"&gt;\n\n\nE3CI Warm October2026 anomaly analysis\n\n\n\n\n&lt;img src=\"images/story-2.jpg\" alt=\"\"&gt;\n\n\nLorem ipsum weatherevent title\n\n\n\n\n&lt;img src=\"images/story-3.jpg\" alt=\"\"&gt;\n\n\nLorem ipsum weatherevent title\n\n\n\n\n\n\n\nE3CI European Extreme Events Climate Index is a project by IFAB. Implemented by CMCC, Leithà Gruppo Unipol. Distributed by Hypermeteo, and Radarmeteo.\n\n\n\n\ndatastation.climateindex.eu       climateindex.eu"
   },
   {
     "objectID": "E3CI_warm_ott.html#final-remarks",
