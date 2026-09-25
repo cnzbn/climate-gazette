@@ -29,7 +29,7 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script><script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -73,6 +73,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js" integrity="sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4qY6NSrItx" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
 
 <link rel="stylesheet" href="styles.css">
@@ -135,38 +138,375 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>Lorem ipsum this is the subtitle. dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-<div id="ed962565" class="cell" data-outputid="402c79d0-e27d-436d-da08-4cbb4751c7cd" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:216}}" data-execution_count="1">
-<div class="cell-output cell-output-error">
-<div class="ansi-escaped-output">
-<pre><span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-fg">/tmp/ipykernel_576/3585441541.py</span> in <span class="ansi-cyan-fg">&lt;cell line: 0&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> df = pd.read_excel(
-</span><span class="ansi-green-fg ansi-bold">      2</span>     <span class="ansi-blue-fg">f"{path_input}/componenti Regioni_25.xlsx"</span><span class="ansi-blue-fg">,</span>
-<span class="ansi-green-fg ansi-bold">      3</span>     header<span class="ansi-blue-fg">=</span><span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">0</span><span class="ansi-blue-fg">,</span> <span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">,</span>       <span class="ansi-red-fg"># two header rows</span>
-<span class="ansi-green-fg ansi-bold">      4</span>     decimal<span class="ansi-blue-fg">=</span><span class="ansi-blue-fg">","</span><span class="ansi-blue-fg">,</span>         <span class="ansi-red-fg"># comma decimals</span>
-<span class="ansi-green-fg ansi-bold">      5</span>     na_values<span class="ansi-blue-fg">=</span><span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">""</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">" "</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">,</span>      <span class="ansi-red-fg"># empty values</span>
+<div id="ed962565" class="cell" data-outputid="c2acf936-cfdf-45a5-9457-53b8d6344f86">
+<div class="cell-output cell-output-display" data-execution_count="3">
+<div>
 
-<span class="ansi-red-fg">NameError</span>: name 'pd' is not defined</pre>
+
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th colspan="7" data-quarto-table-cell-role="th" data-halign="left">Abruzzi</th>
+<th colspan="3" data-quarto-table-cell-role="th" data-halign="left">Basilicata</th>
+<th data-quarto-table-cell-role="th">...</th>
+<th colspan="3" data-quarto-table-cell-role="th" data-halign="left">Valle D'aosta</th>
+<th colspan="7" data-quarto-table-cell-role="th" data-halign="left">Veneto</th>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">drought</th>
+<th data-quarto-table-cell-role="th">extreme max T</th>
+<th data-quarto-table-cell-role="th">extreme min T</th>
+<th data-quarto-table-cell-role="th">extreme prec</th>
+<th data-quarto-table-cell-role="th">extreme wind</th>
+<th data-quarto-table-cell-role="th">fire</th>
+<th data-quarto-table-cell-role="th">hail</th>
+<th data-quarto-table-cell-role="th">drought</th>
+<th data-quarto-table-cell-role="th">extreme max T</th>
+<th data-quarto-table-cell-role="th">extreme min T</th>
+<th data-quarto-table-cell-role="th">...</th>
+<th data-quarto-table-cell-role="th">extreme wind</th>
+<th data-quarto-table-cell-role="th">fire</th>
+<th data-quarto-table-cell-role="th">hail</th>
+<th data-quarto-table-cell-role="th">drought</th>
+<th data-quarto-table-cell-role="th">extreme max T</th>
+<th data-quarto-table-cell-role="th">extreme min T</th>
+<th data-quarto-table-cell-role="th">extreme prec</th>
+<th data-quarto-table-cell-role="th">extreme wind</th>
+<th data-quarto-table-cell-role="th">fire</th>
+<th data-quarto-table-cell-role="th">hail</th>
+</tr>
+<tr class="header">
+<th data-quarto-table-cell-role="th">(time, )</th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">2024-09-01</th>
+<td>-1.006216</td>
+<td>1.327934</td>
+<td>-0.146446</td>
+<td>1.116421</td>
+<td>-0.369789</td>
+<td>-0.244429</td>
+<td>-0.296959</td>
+<td>-0.362576</td>
+<td>0.732203</td>
+<td>-0.640294</td>
+<td>...</td>
+<td>1.588465</td>
+<td>NaN</td>
+<td>0.003825</td>
+<td>-1.310380</td>
+<td>4.299325</td>
+<td>-0.064841</td>
+<td>2.888567</td>
+<td>1.484148</td>
+<td>-0.337262</td>
+<td>-0.485195</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">2024-10-01</th>
+<td>-1.418592</td>
+<td>-0.146645</td>
+<td>-0.648442</td>
+<td>0.373777</td>
+<td>-0.143749</td>
+<td>-0.508710</td>
+<td>-0.935140</td>
+<td>-0.613510</td>
+<td>-0.314604</td>
+<td>-0.736204</td>
+<td>...</td>
+<td>-0.508025</td>
+<td>NaN</td>
+<td>-1.084773</td>
+<td>-1.953356</td>
+<td>2.753643</td>
+<td>-0.529020</td>
+<td>0.403983</td>
+<td>0.531820</td>
+<td>-0.347264</td>
+<td>-1.026104</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">2024-11-01</th>
+<td>-0.691243</td>
+<td>-0.304745</td>
+<td>-0.471111</td>
+<td>-0.456031</td>
+<td>2.757799</td>
+<td>-0.952100</td>
+<td>-0.252621</td>
+<td>0.060319</td>
+<td>0.176273</td>
+<td>-0.386263</td>
+<td>...</td>
+<td>-0.495323</td>
+<td>NaN</td>
+<td>-0.238266</td>
+<td>-1.397348</td>
+<td>0.142372</td>
+<td>-0.458984</td>
+<td>-0.615508</td>
+<td>-0.450030</td>
+<td>-0.518820</td>
+<td>0.341439</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">2024-12-01</th>
+<td>0.031915</td>
+<td>0.134604</td>
+<td>-0.642467</td>
+<td>-0.361734</td>
+<td>-0.212161</td>
+<td>NaN</td>
+<td>-0.100750</td>
+<td>0.278188</td>
+<td>-0.323104</td>
+<td>-0.697865</td>
+<td>...</td>
+<td>-0.229436</td>
+<td>NaN</td>
+<td>-0.221889</td>
+<td>-0.370126</td>
+<td>2.056070</td>
+<td>-0.486167</td>
+<td>0.105571</td>
+<td>-0.102284</td>
+<td>-0.950648</td>
+<td>-1.025843</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">2025-01-01</th>
+<td>0.575769</td>
+<td>2.724066</td>
+<td>-0.524487</td>
+<td>-0.428505</td>
+<td>-0.292833</td>
+<td>NaN</td>
+<td>-0.556740</td>
+<td>-0.224866</td>
+<td>1.971133</td>
+<td>-0.511247</td>
+<td>...</td>
+<td>-0.519035</td>
+<td>NaN</td>
+<td>-0.222932</td>
+<td>0.633787</td>
+<td>2.772060</td>
+<td>-0.353385</td>
+<td>-0.061469</td>
+<td>0.200187</td>
+<td>NaN</td>
+<td>-0.666995</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">2025-02-01</th>
+<td>0.017748</td>
+<td>-0.404103</td>
+<td>-0.622985</td>
+<td>0.546245</td>
+<td>-0.342543</td>
+<td>NaN</td>
+<td>-1.658916</td>
+<td>-0.411509</td>
+<td>-0.583132</td>
+<td>-0.515052</td>
+<td>...</td>
+<td>-0.543128</td>
+<td>NaN</td>
+<td>-1.267771</td>
+<td>-0.480969</td>
+<td>-0.250931</td>
+<td>-0.410377</td>
+<td>0.193403</td>
+<td>-0.518984</td>
+<td>-0.987662</td>
+<td>-1.628372</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">2025-03-01</th>
+<td>-0.940069</td>
+<td>0.090602</td>
+<td>-0.383458</td>
+<td>1.643953</td>
+<td>-0.501470</td>
+<td>-0.717097</td>
+<td>-0.341704</td>
+<td>-0.771781</td>
+<td>1.359721</td>
+<td>-0.327528</td>
+<td>...</td>
+<td>-0.420822</td>
+<td>NaN</td>
+<td>-1.235047</td>
+<td>-1.334086</td>
+<td>0.523012</td>
+<td>-0.355979</td>
+<td>0.798798</td>
+<td>-0.495896</td>
+<td>-0.954137</td>
+<td>-0.804986</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">2025-04-01</th>
+<td>-1.234046</td>
+<td>5.317433</td>
+<td>-0.496208</td>
+<td>-0.350963</td>
+<td>0.134865</td>
+<td>-0.868652</td>
+<td>-1.582186</td>
+<td>0.489388</td>
+<td>0.331177</td>
+<td>-0.417149</td>
+<td>...</td>
+<td>-0.494372</td>
+<td>NaN</td>
+<td>-0.997913</td>
+<td>-1.434771</td>
+<td>0.995170</td>
+<td>-0.457602</td>
+<td>-0.055074</td>
+<td>-0.140687</td>
+<td>-0.863059</td>
+<td>-1.044119</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">2025-05-01</th>
+<td>-1.628832</td>
+<td>0.199394</td>
+<td>-0.176140</td>
+<td>-0.038765</td>
+<td>-0.492500</td>
+<td>-0.265635</td>
+<td>-0.623092</td>
+<td>-0.028147</td>
+<td>-0.209093</td>
+<td>-0.348840</td>
+<td>...</td>
+<td>-0.209400</td>
+<td>NaN</td>
+<td>-0.843082</td>
+<td>-1.852227</td>
+<td>1.141558</td>
+<td>-0.483514</td>
+<td>0.486343</td>
+<td>-0.103592</td>
+<td>-0.857287</td>
+<td>-0.826428</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">2025-06-01</th>
+<td>0.166063</td>
+<td>6.240941</td>
+<td>-0.730245</td>
+<td>-0.409193</td>
+<td>-0.236260</td>
+<td>-0.548221</td>
+<td>-0.208438</td>
+<td>0.873643</td>
+<td>4.048666</td>
+<td>-0.697514</td>
+<td>...</td>
+<td>-0.361584</td>
+<td>-0.674278</td>
+<td>-0.800225</td>
+<td>0.015057</td>
+<td>3.478082</td>
+<td>-0.741131</td>
+<td>-0.507171</td>
+<td>-0.151955</td>
+<td>-0.808005</td>
+<td>0.244274</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">2025-07-01</th>
+<td>-0.262212</td>
+<td>1.548821</td>
+<td>-0.096221</td>
+<td>1.499434</td>
+<td>0.482837</td>
+<td>-0.861219</td>
+<td>-0.008038</td>
+<td>0.743469</td>
+<td>2.522358</td>
+<td>-0.465396</td>
+<td>...</td>
+<td>2.274275</td>
+<td>-0.519783</td>
+<td>-0.303148</td>
+<td>-0.740881</td>
+<td>2.175087</td>
+<td>0.228550</td>
+<td>0.657620</td>
+<td>-0.422607</td>
+<td>-0.809181</td>
+<td>0.132619</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">2025-08-01</th>
+<td>0.222162</td>
+<td>0.847133</td>
+<td>-0.404407</td>
+<td>-0.212674</td>
+<td>-0.432684</td>
+<td>-0.946051</td>
+<td>-0.518855</td>
+<td>0.496066</td>
+<td>0.959845</td>
+<td>-0.593853</td>
+<td>...</td>
+<td>-0.598800</td>
+<td>-0.686598</td>
+<td>-0.309271</td>
+<td>-0.971378</td>
+<td>2.673206</td>
+<td>-0.680155</td>
+<td>0.561623</td>
+<td>-0.607454</td>
+<td>0.158509</td>
+<td>-0.473735</td>
+</tr>
+</tbody>
+</table>
+
+<p>12 rows × 140 columns</p>
 </div>
 </div>
 </div>
 <section id="first-visualization-title" class="level2">
 <h2 class="anchored" data-anchor-id="first-visualization-title">First visualization title</h2>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-<div id="d245f9cb" class="cell" data-outputid="05b2dcf0-9d18-4301-a303-00fbb83fb1a5" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:216}}" data-execution_count="2">
-<div class="cell-output cell-output-error">
-<div class="ansi-escaped-output">
-<pre><span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-fg">/tmp/ipykernel_576/2579705372.py</span> in <span class="ansi-cyan-fg">&lt;cell line: 0&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-fg ansi-bold">      1</span> data_dir <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">'data/ref-nuts-2021-01m/'</span>
-<span class="ansi-green-fg ansi-bold">      2</span> path <span class="ansi-blue-fg">=</span> data_dir <span class="ansi-blue-fg">+</span> <span class="ansi-blue-fg">"NUTS_RG_01M_2021_3035_LEVL_2.json"</span>
-<span class="ansi-green-fg">----&gt; 3</span><span class="ansi-red-fg"> </span>gdf <span class="ansi-blue-fg">=</span> gpd<span class="ansi-blue-fg">.</span>read_file<span class="ansi-blue-fg">(</span>path<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg ansi-bold">      4</span> path_lb <span class="ansi-blue-fg">=</span> data_dir <span class="ansi-blue-fg">+</span> <span class="ansi-blue-fg">"NUTS_LB_2021_3035_LEVL_2.json"</span>
-<span class="ansi-green-fg ansi-bold">      5</span> gdf_lb <span class="ansi-blue-fg">=</span> gpd<span class="ansi-blue-fg">.</span>read_file<span class="ansi-blue-fg">(</span>path_lb<span class="ansi-blue-fg">)</span>
-
-<span class="ansi-red-fg">NameError</span>: name 'gpd' is not defined</pre>
+<div id="d245f9cb" class="cell" data-outputid="c201b934-0915-40de-d53e-21cf81bda03c">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="E3CI_warm_ott_files/figure-html/cell-10-output-1.png" class="img-fluid figure-img"></p>
+</figure>
 </div>
 </div>
 </div>
