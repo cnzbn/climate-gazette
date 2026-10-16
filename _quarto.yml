@@ -2,8 +2,9 @@ project:
   type: website
   output-dir: docs        # GitHub Pages will serve from /docs
   resources:
-       - images/**
+       - images/
        - CNAME
+  pre-render: fix_hr.py
 
 website:
   title: "Climate Gazette"
@@ -16,8 +17,6 @@ website:
       
 
 
-
-
 format:
   html:
     page-layout: full
@@ -26,7 +25,13 @@ format:
       - brand
     css: styles.css
     toc: true
+    code-fold: false
     echo: false  
+    execute: 
+      echo: false
+    filters:
+      - hide-text-output.lua
+   
 
 
 

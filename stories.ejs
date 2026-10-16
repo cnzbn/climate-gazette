@@ -1,0 +1,8 @@
+
+<% for (const item of items) { %>
+<a class="story-card" href="<%- item.path %>">
+  <img class="story-card-image" src="<%- item.image %>" alt="<%= item.title %>">
+  <span class="story-card-title"><%= item.title %></span>
+</a>
+<% } %>
+

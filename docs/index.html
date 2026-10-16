@@ -36,6 +36,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -73,7 +75,65 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-stories .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-image','listing-path',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      
+      searchColumns: ["listing-project","listing-website","listing-format","listing-engines","listing-language","listing-title","listing-image","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-stories'] = new List('listing-stories', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -114,7 +174,7 @@ Climate Gazette features stories of extreme weather events that occurred in Euro
 </p>
 <p><br></p>
 <div style="padding:62.51% 0 0 0;position:relative;">
-<p><iframe src="https://player.vimeo.com/video/1229442849?autopause=0&amp;player_id=0&amp;autoplay=1&amp;muted=1&amp;loop=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Vimeo video"> </iframe></p>
+<iframe src="https://player.vimeo.com/video/1229442849?autopause=0&amp;player_id=0&amp;autoplay=1&amp;muted=1&amp;loop=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Vimeo video"> </iframe>
 </div>
 <script src="https://player.vimeo.com/api/player.js"></script>
 <p><br></p>
@@ -125,25 +185,13 @@ Issue 1 - November 2026
 <p class="body">
 Developed during the “E3CI Data Station: Visualising Extreme Weather for Decision-Makers and Communities” workshop held at the Visualising Climate Conference 2026, Bologna. Curated by <a href="https://www.linkedin.com/in/noemiambrosi/" target="_blank">Noemi Ambrosi</a>, <a href="https://www.linkedin.com/in/simona-contaldi-602b611b6/" target="_blank">Simona Contaldi</a>, and <a href="https://www.linkedin.com/in/cinzia-bongino-b8ab8a7a/" target="_blank">Cinzia Bongino</a>.
 </p>
-<div class="stories-grid">
-<div class="story-card">
-<p><img class="story-card-image" src="images/e3ci-warm-oct.jpg" alt="E3CI Warm October map"> <a class="story-card-title" href="./E3CI_warm_ott.html">Lorem ipsum weather event title</a></p>
-</div>
-<div class="story-card">
-<p><img class="story-card-image" src="images/e3ci-warm-oct.jpg" alt="E3CI Warm October map"> <a class="story-card-title" href="./E3CI_warm_ott.html">Lorem ipsum weather event title</a></p>
-</div>
-<div class="story-card">
-<p><img class="story-card-image" src="images/e3ci-warm-oct.jpg" alt="E3CI Warm October map"> <a class="story-card-title" href="./E3CI_warm_ott.html">Lorem ipsum weather event title</a></p>
-</div>
-<div class="story-card">
-<p><img class="story-card-image" src="images/e3ci-warm-oct.jpg" alt="E3CI Warm October map"> <a class="story-card-title" href="./E3CI_warm_ott.html">Lorem ipsum weather event title</a></p>
-</div>
-<div class="story-card">
-<p><img class="story-card-image" src="images/e3ci-warm-oct.jpg" alt="E3CI Warm October map"> <a class="story-card-title" href="./E3CI_warm_ott.html">Lorem ipsum weather event title</a></p>
-</div>
-<div class="story-card">
-<p><img class="story-card-image" src="images/e3ci-warm-oct.jpg" alt="E3CI Warm October map"> <a class="story-card-title" href="./E3CI_warm_ott.html">Lorem ipsum weather event title</a></p>
-</div>
+<div id="listing-stories" class="stories-grid quarto-listing quarto-listing-container-custom">
+<p><a class="story-card" href="./E3CI_warm_ott.html"> <img class="story-card-image" src="./images/covers/E3CI_warm_ott.jpg" alt="This is the project title."> <span class="story-card-title">This is the project title.</span> </a></p>
+<p><a class="story-card" href="./E3CI_workshop_modificato2_CINZIA.html"> <img class="story-card-image" src="./images/covers/E3CI_workshop_modificato2_CINZIA.jpg" alt="Extreme weather events in the Netherlands"> <span class="story-card-title">Extreme weather events in the Netherlands</span> </a></p>
+<p><a class="story-card" href="./E3CI_workshop_modificato2_SIMONA.html"> <img class="story-card-image" src="" alt="Visualising extreme weather with the E3CI"> <span class="story-card-title">Visualising extreme weather with the E3CI</span> </a></p>
+<p><a class="story-card" href="./E3CI_workshop_modificato2_NOEMI.html"> <img class="story-card-image" src="./images/covers/E3CI_workshop_modificato2_NOEMI.png" alt="Visualising extreme weather with the E3CI"> <span class="story-card-title">Visualising extreme weather with the E3CI</span> </a></p>
+<p><a class="story-card" href="./test_CINZIA_titoli.html"> <img class="story-card-image" src="./images/covers/test_CINZIA_titoli.jpg" alt="Drought"> <span class="story-card-title">Drought</span> </a></p>
+<div class="listing-no-matching d-none">No matching items</div>
 </div>
 </div>
 <hr class="line">
@@ -153,14 +201,15 @@ E3CI European Extreme Events Climate Index is a project by <a href="https://ifab
 </p>
 </div>
 <div class="site-footer">
-<p>
-<a href="https://datastation.climateindex.eu" target="_blank">datastation.climateindex.eu</a> &nbsp; &nbsp; &nbsp; <a href="https://climateindex.eu" target="_blank">climateindex.eu</a>
-</p>
+<pre><code>&lt;p&gt;
+&lt;a href="https://datastation.climateindex.eu" target="_blank"&gt;datastation.climateindex.eu&lt;/a&gt;  &amp;nbsp; &amp;nbsp; &amp;nbsp;
+&lt;a href="https://climateindex.eu" target="_blank"&gt;climateindex.eu&lt;/a&gt;
+&lt;/p&gt;</code></pre>
 </div>
+
+
+
 </main></div>
-
-
-
 
  <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

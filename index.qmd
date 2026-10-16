@@ -1,74 +1,63 @@
+---
+listing:
+  id: stories
+  template: stories.ejs
+  fields: [title, image, path]
+  sort: false
+  contents:
+    - E3CI_warm_ott.ipynb
+    - E3CI_workshop_modificato2_CINZIA.ipynb
+    - E3CI_workshop_modificato2_SIMONA.ipynb
+    - E3CI_workshop_modificato2_NOEMI.ipynb
+    - test_CINZIA_titoli.ipynb
+---
+
 
 <div class="page-layout-custom">
 
-<p class="intro-text">
-Climate Gazette features stories of extreme weather events that occurred in Europe over the past 40 years. 
-Reports are based on data from the <a href="https://climateindex.eu" target="_blank">European Extreme Events Climate Index</a>, analysed with Jupyter and presented via charts and maps.
-</p>
 
-<br>
+  <p class="intro-text">
+  Climate Gazette features stories of extreme weather events that occurred in Europe over the past 40 years. 
+  Reports are based on data from the <a href="https://climateindex.eu" target="_blank">European Extreme Events Climate Index</a>, analysed with Jupyter and presented via charts and maps.
+  </p>
 
-<div style="padding:62.51% 0 0 0;position:relative;">
- <iframe
-  src="https://player.vimeo.com/video/1229442849?autopause=0&player_id=0&autoplay=1&muted=1&loop=1"
-  frameborder="0"
-  allow="autoplay; fullscreen; picture-in-picture"
-  style="position:absolute;top:0;left:0;width:100%;height:100%;"
-  title="Vimeo video">
- </iframe>
-</div>
-<script src="https://player.vimeo.com/api/player.js"></script>
+  <br>
 
-<br>
+  <div style="padding:62.51% 0 0 0;position:relative;">
+  <iframe
+    src="https://player.vimeo.com/video/1229442849?autopause=0&player_id=0&autoplay=1&muted=1&loop=1"
+    frameborder="0"
+    allow="autoplay; fullscreen; picture-in-picture"
+    style="position:absolute;top:0;left:0;width:100%;height:100%;"
+    title="Vimeo video">
+  </iframe>
+  </div>
+  <script src="https://player.vimeo.com/api/player.js"></script>
 
-<hr style="color:black">
+  <br>
 
-<h3> 
-Issue 1 - November 2026 
-</h3>
+  <hr style="color:black">
 
-<p class="body">
-Developed during the "E3CI Data Station: Visualising Extreme Weather for Decision-Makers and Communities" workshop held at the Visualising Climate Conference 2026, Bologna. 
-Curated by <a href="https://www.linkedin.com/in/noemiambrosi/" target="_blank">Noemi Ambrosi</a>, <a href="https://www.linkedin.com/in/simona-contaldi-602b611b6/" target="_blank">Simona Contaldi</a>, and <a href="https://www.linkedin.com/in/cinzia-bongino-b8ab8a7a/" target="_blank">Cinzia Bongino</a>.
-</p>
+  <h3> 
+  Issue 1 - November 2026 
+  </h3>
 
-::: {.stories-grid}
+  <p class="body">
+  Developed during the "E3CI Data Station: Visualising Extreme Weather for Decision-Makers and Communities" workshop held at the Visualising Climate Conference 2026, Bologna. 
+  Curated by <a href="https://www.linkedin.com/in/noemiambrosi/" target="_blank">Noemi Ambrosi</a>, <a href="https://www.linkedin.com/in/simona-contaldi-602b611b6/" target="_blank">Simona Contaldi</a>, and <a href="https://www.linkedin.com/in/cinzia-bongino-b8ab8a7a/" target="_blank">Cinzia Bongino</a>.
+  </p>
 
-<div class="story-card">
-  <img class="story-card-image" src="images/e3ci-warm-oct.jpg" alt="E3CI Warm October map">
-  <a class="story-card-title" href="E3CI_warm_ott.ipynb">Lorem ipsum weather event title</a>
-</div>
 
-<div class="story-card">
-  <img class="story-card-image" src="images/e3ci-warm-oct.jpg" alt="E3CI Warm October map">
-  <a class="story-card-title" href="E3CI_warm_ott.ipynb">Lorem ipsum weather event title</a>
-</div>
 
-<div class="story-card">
-  <img class="story-card-image" src="images/e3ci-warm-oct.jpg" alt="E3CI Warm October map">
-  <a class="story-card-title" href="E3CI_warm_ott.ipynb">Lorem ipsum weather event title</a>
-</div>
 
-<div class="story-card">
-  <img class="story-card-image" src="images/e3ci-warm-oct.jpg" alt="E3CI Warm October map">
-  <a class="story-card-title" href="E3CI_warm_ott.ipynb">Lorem ipsum weather event title</a>
-</div>
 
-<div class="story-card">
-  <img class="story-card-image" src="images/e3ci-warm-oct.jpg" alt="E3CI Warm October map">
-  <a class="story-card-title" href="E3CI_warm_ott.ipynb">Lorem ipsum weather event title</a>
-</div>
 
-<div class="story-card">
-  <img class="story-card-image" src="images/e3ci-warm-oct.jpg" alt="E3CI Warm October map">
-  <a class="story-card-title" href="E3CI_warm_ott.ipynb">Lorem ipsum weather event title</a>
-</div>
 
+
+::: {#stories .stories-grid}
 :::
 
 </div>
-
-
 
 <hr class="line"> 
 <div class="site-footer">
@@ -78,10 +67,12 @@ Curated by <a href="https://www.linkedin.com/in/noemiambrosi/" target="_blank">N
 </div>
 
   <div class="site-footer">
-  <p>
+    <p>
     <a href="https://datastation.climateindex.eu" target="_blank">datastation.climateindex.eu</a>  &nbsp; &nbsp; &nbsp;
     <a href="https://climateindex.eu" target="_blank">climateindex.eu</a>
     </p>
   </div>
-</div>
+
+
+
 
