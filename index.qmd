@@ -63,15 +63,11 @@ listing:
 <div class="site-footer">
   <p>
     E3CI European Extreme Events Climate Index is a project by <a href="https://ifabfoundation.org" target="_blank">IFAB</a>, <a href="https://www.cmcc.it" target="_blank">CMCC</a>, and <a href="https://leitha.eu" target="_blank">Leithà Gruppo Unipol</a>. Distributed by <a href="https://www.hypermeteo.com" target="_blank">Hypermeteo</a>, and <a href="https://www.radarmeteo.com/en" target="_blank">Radarmeteo</a>.
-  </p>
-</div>
-
-  <div class="site-footer">
-    <p>
-    <a href="https://datastation.climateindex.eu" target="_blank">datastation.climateindex.eu</a>  &nbsp; &nbsp; &nbsp;
-    <a href="https://climateindex.eu" target="_blank">climateindex.eu</a>
+    <br>
+    <a href="https://datastation.climateindex.eu" target="_blank">datastation.climateindex.eu ↗</a>  &nbsp; &nbsp; &nbsp;
+    <a href="https://climateindex.eu" target="_blank">climateindex.eu ↗</a>
     </p>
-  </div>
+</div>
 
 
 
