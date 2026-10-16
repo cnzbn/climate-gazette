@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
     "objectID": "E3CI_workshop_modificato2_CINZIA.html",
     "href": "E3CI_workshop_modificato2_CINZIA.html",
     "title": "Extreme weather events in the Netherlands",
@@ -45,153 +52,6 @@
     "objectID": "E3CI_workshop_modificato2_CINZIA.html#for-the-final-discussion",
     "href": "E3CI_workshop_modificato2_CINZIA.html#for-the-final-discussion",
     "title": "Extreme weather events in the Netherlands",
-    "section": "💬 For the final discussion",
-    "text": "💬 For the final discussion\n\nWhich chart would you show to a mayor? To a newspaper reader? To a scientist? Why different ones?\nWhich design choice changed your perception the most: the type of chart, the threshold, the period, the title?\nWhat does the E3CI not tell us? (people and assets exposed, damages, very local or very short events…)\nDid your titles state a finding, or ask a question? Which works better on social media?\n\nNotebooks prepared by IFAB for the Visualising Climate 2026 workshop. Data: E3CI – European Extreme Events Climate Index, https://www.climateindex.eu (IFAB; implemented by CMCC and Leithà – Unipol Group; distributed by Hypermeteo and Radarmeteo), based on Copernicus ERA5. Neither the European Commission nor ECMWF is responsible for any use of the Copernicus information. Colours: the E3CI Data Station palette (design by Cinzia Bongino). Country shapes: Natural Earth (public domain). Font: Lato (SIL Open Font License)."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Climate Gazette",
-    "section": "",
-    "text": "Climate Gazette features stories of extreme weather events that occurred in Europe over the past 40 years. Reports are based on data from the European Extreme Events Climate Index, analysed with Jupyter and presented via charts and maps.\n\n\n\n \n\n\n\n\n\nIssue 1 - November 2026\n\n\nDeveloped during the “E3CI Data Station: Visualising Extreme Weather for Decision-Makers and Communities” workshop held at the Visualising Climate Conference 2026, Bologna. Curated by Noemi Ambrosi, Simona Contaldi, and Cinzia Bongino.\n\n\n  This is the project title. \n  Extreme weather events in the Netherlands \n  Visualising extreme weather with the E3CI \n  Visualising extreme weather with the E3CI \n  Drought \nNo matching items\n\n\n\n\n\nE3CI European Extreme Events Climate Index is a project by IFAB, CMCC, and Leithà Gruppo Unipol. Distributed by Hypermeteo, and Radarmeteo.\n\n\n\n&lt;p&gt;\n&lt;a href=\"https://datastation.climateindex.eu\" target=\"_blank\"&gt;datastation.climateindex.eu&lt;/a&gt;  &nbsp; &nbsp; &nbsp;\n&lt;a href=\"https://climateindex.eu\" target=\"_blank\"&gt;climateindex.eu&lt;/a&gt;\n&lt;/p&gt;"
-  },
-  {
-    "objectID": "E3CI_workshop_modificato2_NOEMI.html",
-    "href": "E3CI_workshop_modificato2_NOEMI.html",
-    "title": "Visualising extreme weather with the E3CI",
-    "section": "",
-    "text": "European Extreme Events Climate Index · hands-on workshop · Visualising Climate 2026, Bologna\nEurope is living through more frequent and more intense extreme events. In this notebook we explore together 46 years of monthly data (January 1981 – August 2026) for 51 countries and, for every chart, we ask one question: what message does it communicate?\nIn this notebook you don’t need to change anything: run the cells one after the other, look at the charts and join the discussion. In the second part of the workshop you will work on a copy of this notebook, connected to the Climate Gazette: you will choose the charts for your story, change the country, the component or the month, and add your own text.\nFirst the charts about all the European countries, then those about one country and its regions:\n\n\n\n\n\n\n\n\nPart\nQuestion\nTime\n\n\n\n\n0 · Setup\nRun 5 cells\n3 min\n\n\n1 · Europe\nIs Europe getting more extreme? When in the year?\n8 min\n\n\n2 · Compare countries\nWho is hit the hardest?\n7 min\n\n\n3 · One country\nWhat happened in Italy, and in its regions?\n12 min\n\n\n⭐ Extra\nMore charts to explore on your own, after the tour\n–"
-  },
-  {
-    "objectID": "E3CI_workshop_modificato2_NOEMI.html#setup-3-min",
-    "href": "E3CI_workshop_modificato2_NOEMI.html#setup-3-min",
-    "title": "Visualising extreme weather with the E3CI",
-    "section": "0 · Setup ⏱ 3 min",
-    "text": "0 · Setup ⏱ 3 min\nRun these five cells once (click “Show code” if you are curious). Colab asks for two data files: in the second cell upload aci_comps_2026August.csv (the 51 countries, 2.4 MB), in the fifth one aci_comps_gaul_2026August.csv (the ≈750 regions used in Part 3, 35 MB). You can also drag both files onto the 📁 Files panel before you start, unless your organisers have already put a link in DATA_URL. The third cell checks the data and sets aside a few periods that look like processing gaps: real data always need checking before we draw them!\n\n\n\n     \n     \n      Upload widget is only available when the cell has been executed in the\n      current browser session. Please rerun this cell to enable.\n      \n       \n\n\n\n\n\n     \n     \n      Upload widget is only available when the cell has been executed in the\n      current browser session. Please rerun this cell to enable."
-  },
-  {
-    "objectID": "E3CI_workshop_modificato2_NOEMI.html#europe-is-it-getting-more-extreme-8-min",
-    "href": "E3CI_workshop_modificato2_NOEMI.html#europe-is-it-getting-more-extreme-8-min",
-    "title": "Visualising extreme weather with the E3CI",
-    "section": "1 · Europe: is it getting more extreme? ⏱ 8 min",
-    "text": "1 · Europe: is it getting more extreme? ⏱ 8 min\nWe count the country-months above 1: one country in extreme heat for one month = 1. With 45 countries and 12 months, a year has 540 country-months for each component.\n\n1.1 Each hazard has its own story\nOne small chart per component (small multiples): every bar is the share of country-months above 1 in one year, the dashed line is the average of 1981–2010.\n\n\n\n\n\n\n\n\n\n💬 Since 2011, months of extreme heat have been more than 3 times as frequent as in 1981–2010, and fire-weather extremes almost 3 times, while cold extremes and hail have become rarer. Precipitation, wind and drought change less, and less regularly: trends in these hazards are harder to detect than in temperature.\nNow let’s look at the same hazards from another angle: when in the year do they strike?\n\n\n1.2 When in the year?\nA rose for each hazard and period, inspired by Florence Nightingale’s diagrams (1858). How to read it: * every petal is a calendar month: January at the top, then clockwise (April on the right, July at the bottom, October on the left); * the area of a petal, not its length, is proportional to the share of country-months that were extreme in that month, as in Nightingale’s roses; * inside each petal the classes go from the centre outwards: 1–2 (the lightest shade), 2–3, above 3 (the darkest); * top row: 1981–2010; bottom row: since 2011.\nRemember: an E3CI “heat extreme” in January is an unusually warm January, not a 40 °C day.\n\n\n\n\n\n\n\n\n\n💬 In 1981–2010 most roses are almost round: the E3CI measures every month against the same month of that period. Since 2011 the extreme-heat rose has grown in every direction: in every calendar month, from a quarter to almost half of the country-months were extreme, against about one in ten before. Fire weather grows above all in spring and summer (in April, from 5% to 20% of the country-months), while the cold rose shrinks, especially in summer and in late autumn."
-  },
-  {
-    "objectID": "E3CI_workshop_modificato2_NOEMI.html#compare-countries-who-is-hit-the-hardest-7-min",
-    "href": "E3CI_workshop_modificato2_NOEMI.html#compare-countries-who-is-hit-the-hardest-7-min",
-    "title": "Visualising extreme weather with the E3CI",
-    "section": "2 · Compare countries: who is hit the hardest? ⏱ 7 min",
-    "text": "2 · Compare countries: who is hit the hardest? ⏱ 7 min\nFrom here on, every chart looks at one component (or two) or at one place: in this guided tour we chose extreme heat, July and Italy, and the settings at the top of each cell can show any other.\n\n2.1 One month, all countries\nExtreme heat in July: every row is a country, every cell a year. On the right, how many extreme Julys each country had since 1981: the countries with the most are at the top.\nWhy July? It is the heart of summer, when heat extremes hit people the hardest. But the E3CI compares every July only with the Julys of 1981–2010, so any other month can be read in the same way: in the second part of the workshop you can choose it (MONTH = 0 shows the strongest month of each year).\n\n\n\n\n\n\n\n\n\n\n\n2.2 One map per year\nFirst we load the country shapes (Natural Earth, ~3 MB), then we draw one small map per year: small multiples let the eye compare 46 Julys at once.\n💬 What do you see? Compare the first rows with the last ones: in the 1980s an extreme July was a rare, local event; since 2012 almost every July has hit large parts of Europe, some years in the north (2014, 2018, 2025), others in the south and in the Balkans (2012, 2023, 2024)."
-  },
-  {
-    "objectID": "E3CI_workshop_modificato2_NOEMI.html#one-country-zoom-in-italy-12-min",
-    "href": "E3CI_workshop_modificato2_NOEMI.html#one-country-zoom-in-italy-12-min",
-    "title": "Visualising extreme weather with the E3CI",
-    "section": "3 · One country, zoom in: Italy ⏱ 12 min",
-    "text": "3 · One country, zoom in: Italy ⏱ 12 min\nAfter Europe as a whole, let’s zoom in on one country: the charts below show Italy and extreme heat from several angles, down to its regions. In the second part of the workshop you can choose your own country and component.\n\n3.1 The barcode of extremes\nInspired by Ed Hawkins’ warming stripes: one row per component, one cell per year.\n\n\n3.2 Month by month, as in the Data Station\nNow one component only: extreme heat. Every bar is one month, coloured by E3CI class; the dots mark the three most intense months on record, with their value.\n💬 The darkest bars, above 3, are almost all recent: 4 months in the 30 years 1981–2010, 30 since 2011. And the three most intense months on record are October 2023, April 2024 and July 2026 (remember: an extreme October is an unusually warm October, not a 40 °C day).\n\n\n3.3 Records: are they falling faster than chance would predict?\nThe same months, seen through their records. A record is a month with a higher E3CI than every month before it in the same country, since January 1981. In a climate that does not change, records become rarer and rarer: after 10 years the chance that a month beats all the previous ones is about 1 in 120; after 40 years, about 1 in 480. That’s why we start counting in 1991: in the first years almost every month is a record, because there is hardly any history to beat.\n📐 How many records should we expect? In a stable climate each of the first n months has the same chance of being the highest, so month n sets a record with probability 1/n. Adding up 1/n over the months since 1991 gives the number of records we would expect if nothing were changing. It is a reference, not an exact forecast: anomalies persist from one month to the next, so records can come in clusters.\n💬 Since 1991 Italy has set 6 records of extreme heat, where a stable climate would give about 1.5, and 3 of them in the last ten years alone (April 2018, October 2022, October 2023), when about 0.2 would be expected. Every step of the staircase raises the bar, and yet the bar keeps being beaten.\n\n\n3.4 Which months, which years?\nThe same data as a heatmap: rows are months, columns are years. Top: extreme months per year. Right: how often each calendar month was extreme, then (grey) and now (colour).\n\n\n3.5 A real event: the Emilia-Romagna floods, May 2023\nMany events hit only one region: here we use the regional data loaded in the setup. In May 2023 two waves of torrential rain flooded Romagna: was it the most intense month on record in Emilia-Romagna? How does it compare with the rest of Europe? The first cell lists other famous events: in the second part of the workshop you can choose one of them."
-  },
-  {
-    "objectID": "E3CI_workshop_modificato2_NOEMI.html#end-of-the-guided-tour",
-    "href": "E3CI_workshop_modificato2_NOEMI.html#end-of-the-guided-tour",
-    "title": "Visualising extreme weather with the E3CI",
-    "section": "✅ End of the guided tour",
-    "text": "✅ End of the guided tour\nIn the second part of the workshop you will work on a copy of this notebook, connected to the Climate Gazette: choose the charts that tell your story, change the country, the component or the month in the settings at the top of each cell, give each chart a title that states the finding (write it in TITLE, at the top of the cell), and add your text.\n🔎 Want to go further? Below there are three extra charts about Italy and its regions to explore on your own."
-  },
-  {
-    "objectID": "E3CI_workshop_modificato2_NOEMI.html#for-the-final-discussion",
-    "href": "E3CI_workshop_modificato2_NOEMI.html#for-the-final-discussion",
-    "title": "Visualising extreme weather with the E3CI",
-    "section": "💬 For the final discussion",
-    "text": "💬 For the final discussion\n\nWhich chart would you show to a mayor? To a newspaper reader? To a scientist? Why different ones?\nWhich design choice changed your perception the most: the type of chart, the threshold, the period, the title?\nWhat does the E3CI not tell us? (people and assets exposed, damages, very local or very short events…)\nDid your titles state a finding, or ask a question? Which works better on social media?\n\n\nNotebooks prepared by IFAB for the Visualising Climate 2026 workshop. Data: E3CI – European Extreme Events Climate Index, https://www.climateindex.eu (IFAB; implemented by CMCC and Leithà – Unipol Group; distributed by Hypermeteo and Radarmeteo), based on Copernicus ERA5. Neither the European Commission nor ECMWF is responsible for any use of the Copernicus information. Colours: the E3CI Data Station palette (design by Cinzia Bongino). Country shapes: Natural Earth (public domain). Font: Lato (SIL Open Font License)."
-  },
-  {
-    "objectID": "E3CI_warm_ott.html",
-    "href": "E3CI_warm_ott.html",
-    "title": "This is the project title.",
-    "section": "",
-    "text": "e3ci-warm-oct.jpg\nLorem ipsum this is the subtitle. dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\nAbruzzi\nBasilicata\n...\nValle D'aosta\nVeneto\n\n\n\ndrought\nextreme max T\nextreme min T\nextreme prec\nextreme wind\nfire\nhail\ndrought\nextreme max T\nextreme min T\n...\nextreme wind\nfire\nhail\ndrought\nextreme max T\nextreme min T\nextreme prec\nextreme wind\nfire\nhail\n\n\n(time, )\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2024-09-01\n-1.006216\n1.327934\n-0.146446\n1.116421\n-0.369789\n-0.244429\n-0.296959\n-0.362576\n0.732203\n-0.640294\n...\n1.588465\nNaN\n0.003825\n-1.310380\n4.299325\n-0.064841\n2.888567\n1.484148\n-0.337262\n-0.485195\n\n\n2024-10-01\n-1.418592\n-0.146645\n-0.648442\n0.373777\n-0.143749\n-0.508710\n-0.935140\n-0.613510\n-0.314604\n-0.736204\n...\n-0.508025\nNaN\n-1.084773\n-1.953356\n2.753643\n-0.529020\n0.403983\n0.531820\n-0.347264\n-1.026104\n\n\n2024-11-01\n-0.691243\n-0.304745\n-0.471111\n-0.456031\n2.757799\n-0.952100\n-0.252621\n0.060319\n0.176273\n-0.386263\n...\n-0.495323\nNaN\n-0.238266\n-1.397348\n0.142372\n-0.458984\n-0.615508\n-0.450030\n-0.518820\n0.341439\n\n\n2024-12-01\n0.031915\n0.134604\n-0.642467\n-0.361734\n-0.212161\nNaN\n-0.100750\n0.278188\n-0.323104\n-0.697865\n...\n-0.229436\nNaN\n-0.221889\n-0.370126\n2.056070\n-0.486167\n0.105571\n-0.102284\n-0.950648\n-1.025843\n\n\n2025-01-01\n0.575769\n2.724066\n-0.524487\n-0.428505\n-0.292833\nNaN\n-0.556740\n-0.224866\n1.971133\n-0.511247\n...\n-0.519035\nNaN\n-0.222932\n0.633787\n2.772060\n-0.353385\n-0.061469\n0.200187\nNaN\n-0.666995\n\n\n2025-02-01\n0.017748\n-0.404103\n-0.622985\n0.546245\n-0.342543\nNaN\n-1.658916\n-0.411509\n-0.583132\n-0.515052\n...\n-0.543128\nNaN\n-1.267771\n-0.480969\n-0.250931\n-0.410377\n0.193403\n-0.518984\n-0.987662\n-1.628372\n\n\n2025-03-01\n-0.940069\n0.090602\n-0.383458\n1.643953\n-0.501470\n-0.717097\n-0.341704\n-0.771781\n1.359721\n-0.327528\n...\n-0.420822\nNaN\n-1.235047\n-1.334086\n0.523012\n-0.355979\n0.798798\n-0.495896\n-0.954137\n-0.804986\n\n\n2025-04-01\n-1.234046\n5.317433\n-0.496208\n-0.350963\n0.134865\n-0.868652\n-1.582186\n0.489388\n0.331177\n-0.417149\n...\n-0.494372\nNaN\n-0.997913\n-1.434771\n0.995170\n-0.457602\n-0.055074\n-0.140687\n-0.863059\n-1.044119\n\n\n2025-05-01\n-1.628832\n0.199394\n-0.176140\n-0.038765\n-0.492500\n-0.265635\n-0.623092\n-0.028147\n-0.209093\n-0.348840\n...\n-0.209400\nNaN\n-0.843082\n-1.852227\n1.141558\n-0.483514\n0.486343\n-0.103592\n-0.857287\n-0.826428\n\n\n2025-06-01\n0.166063\n6.240941\n-0.730245\n-0.409193\n-0.236260\n-0.548221\n-0.208438\n0.873643\n4.048666\n-0.697514\n...\n-0.361584\n-0.674278\n-0.800225\n0.015057\n3.478082\n-0.741131\n-0.507171\n-0.151955\n-0.808005\n0.244274\n\n\n2025-07-01\n-0.262212\n1.548821\n-0.096221\n1.499434\n0.482837\n-0.861219\n-0.008038\n0.743469\n2.522358\n-0.465396\n...\n2.274275\n-0.519783\n-0.303148\n-0.740881\n2.175087\n0.228550\n0.657620\n-0.422607\n-0.809181\n0.132619\n\n\n2025-08-01\n0.222162\n0.847133\n-0.404407\n-0.212674\n-0.432684\n-0.946051\n-0.518855\n0.496066\n0.959845\n-0.593853\n...\n-0.598800\n-0.686598\n-0.309271\n-0.971378\n2.673206\n-0.680155\n0.561623\n-0.607454\n0.158509\n-0.473735\n\n\n\n\n12 rows × 140 columns"
-  },
-  {
-    "objectID": "E3CI_warm_ott.html#first-visualization-title",
-    "href": "E3CI_warm_ott.html#first-visualization-title",
-    "title": "This is the project title.",
-    "section": "First visualization title",
-    "text": "First visualization title\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-  },
-  {
-    "objectID": "E3CI_warm_ott.html#second-visualization-title",
-    "href": "E3CI_warm_ott.html#second-visualization-title",
-    "title": "This is the project title.",
-    "section": "Second visualization title",
-    "text": "Second visualization title\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-  },
-  {
-    "objectID": "E3CI_warm_ott.html#third-visualization-title",
-    "href": "E3CI_warm_ott.html#third-visualization-title",
-    "title": "This is the project title.",
-    "section": "Third visualization title",
-    "text": "Third visualization title\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-  },
-  {
-    "objectID": "E3CI_warm_ott.html#fourth-visualization-title",
-    "href": "E3CI_warm_ott.html#fourth-visualization-title",
-    "title": "This is the project title.",
-    "section": "Fourth visualization title",
-    "text": "Fourth visualization title\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-  },
-  {
-    "objectID": "E3CI_warm_ott.html#final-remarks",
-    "href": "E3CI_warm_ott.html#final-remarks",
-    "title": "This is the project title.",
-    "section": "Final remarks",
-    "text": "Final remarks\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\nAuthors: Name Surname, Name Surname, Name Surname, Name Surname"
-  },
-  {
-    "objectID": "test_CINZIA_titoli.html",
-    "href": "test_CINZIA_titoli.html",
-    "title": "Drought",
-    "section": "",
-    "text": "drought.jpg\nMore charts for those who want to go further. They work like the ones above: run them from top to bottom."
-  },
-  {
-    "objectID": "test_CINZIA_titoli.html#setup-3-min",
-    "href": "test_CINZIA_titoli.html#setup-3-min",
-    "title": "Drought",
-    "section": "0 · Setup ⏱ 3 min",
-    "text": "0 · Setup ⏱ 3 min\nRun these five cells once (click “Show code” if you are curious). Colab asks for two data files: in the second cell upload aci_comps_2026August.csv (the 51 countries, 2.4 MB), in the fifth one aci_comps_gaul_2026August.csv (the ≈750 regions used in Part 3, 35 MB). You can also drag both files onto the 📁 Files panel before you start, unless your organisers have already put a link in DATA_URL. The third cell checks the data and sets aside a few periods that look like processing gaps: real data always need checking before we draw them!\n\n\n\n     \n     \n      Upload widget is only available when the cell has been executed in the\n      current browser session. Please rerun this cell to enable."
-  },
-  {
-    "objectID": "test_CINZIA_titoli.html#europe-is-it-getting-more-extreme-8-min",
-    "href": "test_CINZIA_titoli.html#europe-is-it-getting-more-extreme-8-min",
-    "title": "Drought",
-    "section": "1 · Europe: is it getting more extreme? ⏱ 8 min",
-    "text": "1 · Europe: is it getting more extreme? ⏱ 8 min\nWe count the country-months above 1: one country in extreme heat for one month = 1. With 45 countries and 12 months, a year has 540 country-months for each component.\n\n1.1 Each hazard has its own story\nOne small chart per component (small multiples): every bar is the share of country-months above 1 in one year, the dashed line is the average of 1981–2010.\n\n\n\n\n\n\n\n\n\n💬 Since 2011, months of extreme heat have been more than 3 times as frequent as in 1981–2010, and fire-weather extremes almost 3 times, while cold extremes and hail have become rarer. Precipitation, wind and drought change less, and less regularly: trends in these hazards are harder to detect than in temperature.\nNow let’s look at the same hazards from another angle: when in the year do they strike?\n\n\n1.2 When in the year?\nA rose for each hazard and period, inspired by Florence Nightingale’s diagrams (1858). How to read it: * every petal is a calendar month: January at the top, then clockwise (April on the right, July at the bottom, October on the left); * the area of a petal, not its length, is proportional to the share of country-months that were extreme in that month, as in Nightingale’s roses; * inside each petal the classes go from the centre outwards: 1–2 (the lightest shade), 2–3, above 3 (the darkest); * top row: 1981–2010; bottom row: since 2011.\nRemember: an E3CI “heat extreme” in January is an unusually warm January, not a 40 °C day.\n\n\n\n\n\n\n\n\n\n💬 In 1981–2010 most roses are almost round: the E3CI measures every month against the same month of that period. Since 2011 the extreme-heat rose has grown in every direction: in every calendar month, from a quarter to almost half of the country-months were extreme, against about one in ten before. Fire weather grows above all in spring and summer (in April, from 5% to 20% of the country-months), while the cold rose shrinks, especially in summer and in late autumn."
-  },
-  {
-    "objectID": "test_CINZIA_titoli.html#compare-countries-who-is-hit-the-hardest-7-min",
-    "href": "test_CINZIA_titoli.html#compare-countries-who-is-hit-the-hardest-7-min",
-    "title": "Drought",
-    "section": "2 · Compare countries: who is hit the hardest? ⏱ 7 min",
-    "text": "2 · Compare countries: who is hit the hardest? ⏱ 7 min\nFrom here on, every chart looks at one component (or two) or at one place: in this guided tour we chose extreme heat, July and Italy, and the settings at the top of each cell can show any other.\n\n2.1 One month, all countries\nExtreme heat in July: every row is a country, every cell a year. On the right, how many extreme Julys each country had since 1981: the countries with the most are at the top.\nWhy July? It is the heart of summer, when heat extremes hit people the hardest. But the E3CI compares every July only with the Julys of 1981–2010, so any other month can be read in the same way: in the second part of the workshop you can choose it (MONTH = 0 shows the strongest month of each year).\n\n\n\n\n\n\n\n\n\n\n\n2.2 One map per year\nFirst we load the country shapes (Natural Earth, ~3 MB), then we draw one small map per year: small multiples let the eye compare 46 Julys at once.\n\n\n\n\n\n\n\n\n\n💬 What do you see? Compare the first rows with the last ones: in the 1980s an extreme July was a rare, local event; since 2012 almost every July has hit large parts of Europe, some years in the north (2014, 2018, 2025), others in the south and in the Balkans (2012, 2023, 2024)."
-  },
-  {
-    "objectID": "test_CINZIA_titoli.html#one-country-zoom-in-italy-12-min",
-    "href": "test_CINZIA_titoli.html#one-country-zoom-in-italy-12-min",
-    "title": "Drought",
-    "section": "3 · One country, zoom in: Italy ⏱ 12 min",
-    "text": "3 · One country, zoom in: Italy ⏱ 12 min\nAfter Europe as a whole, let’s zoom in on one country: the charts below show Italy and extreme heat from several angles, down to its regions. In the second part of the workshop you can choose your own country and component.\n\n3.1 The barcode of extremes\nInspired by Ed Hawkins’ warming stripes: one row per component, one cell per year.\n\n\n\n\n\n\n\n\n\n\n\n3.2 Month by month, as in the Data Station\nNow one component only: extreme heat. Every bar is one month, coloured by E3CI class; the dots mark the three most intense months on record, with their value.\n\n\n\n\n\n\n\n\n\n💬 The darkest bars, above 3, are almost all recent: 4 months in the 30 years 1981–2010, 30 since 2011. And the three most intense months on record are October 2023, April 2024 and July 2026 (remember: an extreme October is an unusually warm October, not a 40 °C day).\n\n\n3.3 Records: are they falling faster than chance would predict?\nThe same months, seen through their records. A record is a month with a higher E3CI than every month before it in the same country, since January 1981. In a climate that does not change, records become rarer and rarer: after 10 years the chance that a month beats all the previous ones is about 1 in 120; after 40 years, about 1 in 480. That’s why we start counting in 1991: in the first years almost every month is a record, because there is hardly any history to beat.\n📐 How many records should we expect? In a stable climate each of the first n months has the same chance of being the highest, so month n sets a record with probability 1/n. Adding up 1/n over the months since 1991 gives the number of records we would expect if nothing were changing. It is a reference, not an exact forecast: anomalies persist from one month to the next, so records can come in clusters.\n\n\n\n\n\n\n\n\n\n💬 Since 1991 Italy has set 6 records of extreme heat, where a stable climate would give about 1.5, and 3 of them in the last ten years alone (April 2018, October 2022, October 2023), when about 0.2 would be expected. Every step of the staircase raises the bar, and yet the bar keeps being beaten.\n\n\n3.4 Which months, which years?\nThe same data as a heatmap: rows are months, columns are years. Top: extreme months per year. Right: how often each calendar month was extreme, then (grey) and now (colour).\n\n\n\n\n\n\n\n\n\n\n\n3.5 A real event: the Emilia-Romagna floods, May 2023\nMany events hit only one region: here we use the regional data loaded in the setup. In May 2023 two waves of torrential rain flooded Romagna: was it the most intense month on record in Emilia-Romagna? How does it compare with the rest of Europe? The first cell lists other famous events: in the second part of the workshop you can choose one of them."
-  },
-  {
-    "objectID": "test_CINZIA_titoli.html#end-of-the-guided-tour",
-    "href": "test_CINZIA_titoli.html#end-of-the-guided-tour",
-    "title": "Drought",
-    "section": "✅ End of the guided tour",
-    "text": "✅ End of the guided tour\nIn the second part of the workshop you will work on a copy of this notebook, connected to the Climate Gazette: choose the charts that tell your story, change the country, the component or the month in the settings at the top of each cell, give each chart a title that states the finding (write it in TITLE, at the top of the cell), and add your text.\n🔎 Want to go further? Below there are three extra charts about Italy and its regions to explore on your own."
-  },
-  {
-    "objectID": "test_CINZIA_titoli.html#for-the-final-discussion",
-    "href": "test_CINZIA_titoli.html#for-the-final-discussion",
-    "title": "Drought",
     "section": "💬 For the final discussion",
     "text": "💬 For the final discussion\n\nWhich chart would you show to a mayor? To a newspaper reader? To a scientist? Why different ones?\nWhich design choice changed your perception the most: the type of chart, the threshold, the period, the title?\nWhat does the E3CI not tell us? (people and assets exposed, damages, very local or very short events…)\nDid your titles state a finding, or ask a question? Which works better on social media?\n\nNotebooks prepared by IFAB for the Visualising Climate 2026 workshop. Data: E3CI – European Extreme Events Climate Index, https://www.climateindex.eu (IFAB; implemented by CMCC and Leithà – Unipol Group; distributed by Hypermeteo and Radarmeteo), based on Copernicus ERA5. Neither the European Commission nor ECMWF is responsible for any use of the Copernicus information. Colours: the E3CI Data Station palette (design by Cinzia Bongino). Country shapes: Natural Earth (public domain). Font: Lato (SIL Open Font License)."
   },
@@ -245,11 +105,95 @@
     "text": "💬 For the final discussion\n\nWhich chart would you show to a mayor? To a newspaper reader? To a scientist? Why different ones?\nWhich design choice changed your perception the most: the type of chart, the threshold, the period, the title?\nWhat does the E3CI not tell us? (people and assets exposed, damages, very local or very short events…)\nDid your titles state a finding, or ask a question? Which works better on social media?\n\n\nNotebooks prepared by IFAB for the Visualising Climate 2026 workshop. Data: E3CI – European Extreme Events Climate Index, https://www.climateindex.eu (IFAB; implemented by CMCC and Leithà – Unipol Group; distributed by Hypermeteo and Radarmeteo), based on Copernicus ERA5. Neither the European Commission nor ECMWF is responsible for any use of the Copernicus information. Colours: the E3CI Data Station palette (design by Cinzia Bongino). Country shapes: Natural Earth (public domain). Font: Lato (SIL Open Font License)."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "E3CI_workshop_modificato2_NOEMI.html",
+    "href": "E3CI_workshop_modificato2_NOEMI.html",
+    "title": "Visualising extreme weather with the E3CI",
     "section": "",
-    "text": "About this site"
+    "text": "European Extreme Events Climate Index · hands-on workshop · Visualising Climate 2026, Bologna\nEurope is living through more frequent and more intense extreme events. In this notebook we explore together 46 years of monthly data (January 1981 – August 2026) for 51 countries and, for every chart, we ask one question: what message does it communicate?\nIn this notebook you don’t need to change anything: run the cells one after the other, look at the charts and join the discussion. In the second part of the workshop you will work on a copy of this notebook, connected to the Climate Gazette: you will choose the charts for your story, change the country, the component or the month, and add your own text.\nFirst the charts about all the European countries, then those about one country and its regions:\n\n\n\n\n\n\n\n\nPart\nQuestion\nTime\n\n\n\n\n0 · Setup\nRun 5 cells\n3 min\n\n\n1 · Europe\nIs Europe getting more extreme? When in the year?\n8 min\n\n\n2 · Compare countries\nWho is hit the hardest?\n7 min\n\n\n3 · One country\nWhat happened in Italy, and in its regions?\n12 min\n\n\n⭐ Extra\nMore charts to explore on your own, after the tour\n–"
+  },
+  {
+    "objectID": "E3CI_workshop_modificato2_NOEMI.html#setup-3-min",
+    "href": "E3CI_workshop_modificato2_NOEMI.html#setup-3-min",
+    "title": "Visualising extreme weather with the E3CI",
+    "section": "0 · Setup ⏱ 3 min",
+    "text": "0 · Setup ⏱ 3 min\nRun these five cells once (click “Show code” if you are curious). Colab asks for two data files: in the second cell upload aci_comps_2026August.csv (the 51 countries, 2.4 MB), in the fifth one aci_comps_gaul_2026August.csv (the ≈750 regions used in Part 3, 35 MB). You can also drag both files onto the 📁 Files panel before you start, unless your organisers have already put a link in DATA_URL. The third cell checks the data and sets aside a few periods that look like processing gaps: real data always need checking before we draw them!\n\n\n\n     \n     \n      Upload widget is only available when the cell has been executed in the\n      current browser session. Please rerun this cell to enable.\n      \n       \n\n\n\n\n\n     \n     \n      Upload widget is only available when the cell has been executed in the\n      current browser session. Please rerun this cell to enable."
+  },
+  {
+    "objectID": "E3CI_workshop_modificato2_NOEMI.html#europe-is-it-getting-more-extreme-8-min",
+    "href": "E3CI_workshop_modificato2_NOEMI.html#europe-is-it-getting-more-extreme-8-min",
+    "title": "Visualising extreme weather with the E3CI",
+    "section": "1 · Europe: is it getting more extreme? ⏱ 8 min",
+    "text": "1 · Europe: is it getting more extreme? ⏱ 8 min\nWe count the country-months above 1: one country in extreme heat for one month = 1. With 45 countries and 12 months, a year has 540 country-months for each component.\n\n1.1 Each hazard has its own story\nOne small chart per component (small multiples): every bar is the share of country-months above 1 in one year, the dashed line is the average of 1981–2010.\n\n\n\n\n\n\n\n\n\n💬 Since 2011, months of extreme heat have been more than 3 times as frequent as in 1981–2010, and fire-weather extremes almost 3 times, while cold extremes and hail have become rarer. Precipitation, wind and drought change less, and less regularly: trends in these hazards are harder to detect than in temperature.\nNow let’s look at the same hazards from another angle: when in the year do they strike?\n\n\n1.2 When in the year?\nA rose for each hazard and period, inspired by Florence Nightingale’s diagrams (1858). How to read it: * every petal is a calendar month: January at the top, then clockwise (April on the right, July at the bottom, October on the left); * the area of a petal, not its length, is proportional to the share of country-months that were extreme in that month, as in Nightingale’s roses; * inside each petal the classes go from the centre outwards: 1–2 (the lightest shade), 2–3, above 3 (the darkest); * top row: 1981–2010; bottom row: since 2011.\nRemember: an E3CI “heat extreme” in January is an unusually warm January, not a 40 °C day.\n\n\n\n\n\n\n\n\n\n💬 In 1981–2010 most roses are almost round: the E3CI measures every month against the same month of that period. Since 2011 the extreme-heat rose has grown in every direction: in every calendar month, from a quarter to almost half of the country-months were extreme, against about one in ten before. Fire weather grows above all in spring and summer (in April, from 5% to 20% of the country-months), while the cold rose shrinks, especially in summer and in late autumn."
+  },
+  {
+    "objectID": "E3CI_workshop_modificato2_NOEMI.html#compare-countries-who-is-hit-the-hardest-7-min",
+    "href": "E3CI_workshop_modificato2_NOEMI.html#compare-countries-who-is-hit-the-hardest-7-min",
+    "title": "Visualising extreme weather with the E3CI",
+    "section": "2 · Compare countries: who is hit the hardest? ⏱ 7 min",
+    "text": "2 · Compare countries: who is hit the hardest? ⏱ 7 min\nFrom here on, every chart looks at one component (or two) or at one place: in this guided tour we chose extreme heat, July and Italy, and the settings at the top of each cell can show any other.\n\n2.1 One month, all countries\nExtreme heat in July: every row is a country, every cell a year. On the right, how many extreme Julys each country had since 1981: the countries with the most are at the top.\nWhy July? It is the heart of summer, when heat extremes hit people the hardest. But the E3CI compares every July only with the Julys of 1981–2010, so any other month can be read in the same way: in the second part of the workshop you can choose it (MONTH = 0 shows the strongest month of each year).\n\n\n\n\n\n\n\n\n\n\n\n2.2 One map per year\nFirst we load the country shapes (Natural Earth, ~3 MB), then we draw one small map per year: small multiples let the eye compare 46 Julys at once.\n💬 What do you see? Compare the first rows with the last ones: in the 1980s an extreme July was a rare, local event; since 2012 almost every July has hit large parts of Europe, some years in the north (2014, 2018, 2025), others in the south and in the Balkans (2012, 2023, 2024)."
+  },
+  {
+    "objectID": "E3CI_workshop_modificato2_NOEMI.html#one-country-zoom-in-italy-12-min",
+    "href": "E3CI_workshop_modificato2_NOEMI.html#one-country-zoom-in-italy-12-min",
+    "title": "Visualising extreme weather with the E3CI",
+    "section": "3 · One country, zoom in: Italy ⏱ 12 min",
+    "text": "3 · One country, zoom in: Italy ⏱ 12 min\nAfter Europe as a whole, let’s zoom in on one country: the charts below show Italy and extreme heat from several angles, down to its regions. In the second part of the workshop you can choose your own country and component.\n\n3.1 The barcode of extremes\nInspired by Ed Hawkins’ warming stripes: one row per component, one cell per year.\n\n\n3.2 Month by month, as in the Data Station\nNow one component only: extreme heat. Every bar is one month, coloured by E3CI class; the dots mark the three most intense months on record, with their value.\n💬 The darkest bars, above 3, are almost all recent: 4 months in the 30 years 1981–2010, 30 since 2011. And the three most intense months on record are October 2023, April 2024 and July 2026 (remember: an extreme October is an unusually warm October, not a 40 °C day).\n\n\n3.3 Records: are they falling faster than chance would predict?\nThe same months, seen through their records. A record is a month with a higher E3CI than every month before it in the same country, since January 1981. In a climate that does not change, records become rarer and rarer: after 10 years the chance that a month beats all the previous ones is about 1 in 120; after 40 years, about 1 in 480. That’s why we start counting in 1991: in the first years almost every month is a record, because there is hardly any history to beat.\n📐 How many records should we expect? In a stable climate each of the first n months has the same chance of being the highest, so month n sets a record with probability 1/n. Adding up 1/n over the months since 1991 gives the number of records we would expect if nothing were changing. It is a reference, not an exact forecast: anomalies persist from one month to the next, so records can come in clusters.\n💬 Since 1991 Italy has set 6 records of extreme heat, where a stable climate would give about 1.5, and 3 of them in the last ten years alone (April 2018, October 2022, October 2023), when about 0.2 would be expected. Every step of the staircase raises the bar, and yet the bar keeps being beaten.\n\n\n3.4 Which months, which years?\nThe same data as a heatmap: rows are months, columns are years. Top: extreme months per year. Right: how often each calendar month was extreme, then (grey) and now (colour).\n\n\n3.5 A real event: the Emilia-Romagna floods, May 2023\nMany events hit only one region: here we use the regional data loaded in the setup. In May 2023 two waves of torrential rain flooded Romagna: was it the most intense month on record in Emilia-Romagna? How does it compare with the rest of Europe? The first cell lists other famous events: in the second part of the workshop you can choose one of them."
+  },
+  {
+    "objectID": "E3CI_workshop_modificato2_NOEMI.html#end-of-the-guided-tour",
+    "href": "E3CI_workshop_modificato2_NOEMI.html#end-of-the-guided-tour",
+    "title": "Visualising extreme weather with the E3CI",
+    "section": "✅ End of the guided tour",
+    "text": "✅ End of the guided tour\nIn the second part of the workshop you will work on a copy of this notebook, connected to the Climate Gazette: choose the charts that tell your story, change the country, the component or the month in the settings at the top of each cell, give each chart a title that states the finding (write it in TITLE, at the top of the cell), and add your text.\n🔎 Want to go further? Below there are three extra charts about Italy and its regions to explore on your own."
+  },
+  {
+    "objectID": "E3CI_workshop_modificato2_NOEMI.html#for-the-final-discussion",
+    "href": "E3CI_workshop_modificato2_NOEMI.html#for-the-final-discussion",
+    "title": "Visualising extreme weather with the E3CI",
+    "section": "💬 For the final discussion",
+    "text": "💬 For the final discussion\n\nWhich chart would you show to a mayor? To a newspaper reader? To a scientist? Why different ones?\nWhich design choice changed your perception the most: the type of chart, the threshold, the period, the title?\nWhat does the E3CI not tell us? (people and assets exposed, damages, very local or very short events…)\nDid your titles state a finding, or ask a question? Which works better on social media?\n\n\nNotebooks prepared by IFAB for the Visualising Climate 2026 workshop. Data: E3CI – European Extreme Events Climate Index, https://www.climateindex.eu (IFAB; implemented by CMCC and Leithà – Unipol Group; distributed by Hypermeteo and Radarmeteo), based on Copernicus ERA5. Neither the European Commission nor ECMWF is responsible for any use of the Copernicus information. Colours: the E3CI Data Station palette (design by Cinzia Bongino). Country shapes: Natural Earth (public domain). Font: Lato (SIL Open Font License)."
+  },
+  {
+    "objectID": "test_CINZIA_titoli.html",
+    "href": "test_CINZIA_titoli.html",
+    "title": "Drought",
+    "section": "",
+    "text": "drought.jpg\nMore charts for those who want to go further. They work like the ones above: run them from top to bottom."
+  },
+  {
+    "objectID": "test_CINZIA_titoli.html#setup-3-min",
+    "href": "test_CINZIA_titoli.html#setup-3-min",
+    "title": "Drought",
+    "section": "0 · Setup ⏱ 3 min",
+    "text": "0 · Setup ⏱ 3 min\nRun these five cells once (click “Show code” if you are curious). Colab asks for two data files: in the second cell upload aci_comps_2026August.csv (the 51 countries, 2.4 MB), in the fifth one aci_comps_gaul_2026August.csv (the ≈750 regions used in Part 3, 35 MB). You can also drag both files onto the 📁 Files panel before you start, unless your organisers have already put a link in DATA_URL. The third cell checks the data and sets aside a few periods that look like processing gaps: real data always need checking before we draw them!\n\n\n\n     \n     \n      Upload widget is only available when the cell has been executed in the\n      current browser session. Please rerun this cell to enable."
+  },
+  {
+    "objectID": "test_CINZIA_titoli.html#europe-is-it-getting-more-extreme-8-min",
+    "href": "test_CINZIA_titoli.html#europe-is-it-getting-more-extreme-8-min",
+    "title": "Drought",
+    "section": "1 · Europe: is it getting more extreme? ⏱ 8 min",
+    "text": "1 · Europe: is it getting more extreme? ⏱ 8 min\nWe count the country-months above 1: one country in extreme heat for one month = 1. With 45 countries and 12 months, a year has 540 country-months for each component.\n\n1.1 Each hazard has its own story\nOne small chart per component (small multiples): every bar is the share of country-months above 1 in one year, the dashed line is the average of 1981–2010.\n\n\n\n\n\n\n\n\n\n💬 Since 2011, months of extreme heat have been more than 3 times as frequent as in 1981–2010, and fire-weather extremes almost 3 times, while cold extremes and hail have become rarer. Precipitation, wind and drought change less, and less regularly: trends in these hazards are harder to detect than in temperature.\nNow let’s look at the same hazards from another angle: when in the year do they strike?\n\n\n1.2 When in the year?\nA rose for each hazard and period, inspired by Florence Nightingale’s diagrams (1858). How to read it: * every petal is a calendar month: January at the top, then clockwise (April on the right, July at the bottom, October on the left); * the area of a petal, not its length, is proportional to the share of country-months that were extreme in that month, as in Nightingale’s roses; * inside each petal the classes go from the centre outwards: 1–2 (the lightest shade), 2–3, above 3 (the darkest); * top row: 1981–2010; bottom row: since 2011.\nRemember: an E3CI “heat extreme” in January is an unusually warm January, not a 40 °C day.\n\n\n\n\n\n\n\n\n\n💬 In 1981–2010 most roses are almost round: the E3CI measures every month against the same month of that period. Since 2011 the extreme-heat rose has grown in every direction: in every calendar month, from a quarter to almost half of the country-months were extreme, against about one in ten before. Fire weather grows above all in spring and summer (in April, from 5% to 20% of the country-months), while the cold rose shrinks, especially in summer and in late autumn."
+  },
+  {
+    "objectID": "test_CINZIA_titoli.html#compare-countries-who-is-hit-the-hardest-7-min",
+    "href": "test_CINZIA_titoli.html#compare-countries-who-is-hit-the-hardest-7-min",
+    "title": "Drought",
+    "section": "2 · Compare countries: who is hit the hardest? ⏱ 7 min",
+    "text": "2 · Compare countries: who is hit the hardest? ⏱ 7 min\nFrom here on, every chart looks at one component (or two) or at one place: in this guided tour we chose extreme heat, July and Italy, and the settings at the top of each cell can show any other.\n\n2.1 One month, all countries\nExtreme heat in July: every row is a country, every cell a year. On the right, how many extreme Julys each country had since 1981: the countries with the most are at the top.\nWhy July? It is the heart of summer, when heat extremes hit people the hardest. But the E3CI compares every July only with the Julys of 1981–2010, so any other month can be read in the same way: in the second part of the workshop you can choose it (MONTH = 0 shows the strongest month of each year).\n\n\n\n\n\n\n\n\n\n\n\n2.2 One map per year\nFirst we load the country shapes (Natural Earth, ~3 MB), then we draw one small map per year: small multiples let the eye compare 46 Julys at once.\n\n\n\n\n\n\n\n\n\n💬 What do you see? Compare the first rows with the last ones: in the 1980s an extreme July was a rare, local event; since 2012 almost every July has hit large parts of Europe, some years in the north (2014, 2018, 2025), others in the south and in the Balkans (2012, 2023, 2024)."
+  },
+  {
+    "objectID": "test_CINZIA_titoli.html#one-country-zoom-in-italy-12-min",
+    "href": "test_CINZIA_titoli.html#one-country-zoom-in-italy-12-min",
+    "title": "Drought",
+    "section": "3 · One country, zoom in: Italy ⏱ 12 min",
+    "text": "3 · One country, zoom in: Italy ⏱ 12 min\nAfter Europe as a whole, let’s zoom in on one country: the charts below show Italy and extreme heat from several angles, down to its regions. In the second part of the workshop you can choose your own country and component.\n\n3.1 The barcode of extremes\nInspired by Ed Hawkins’ warming stripes: one row per component, one cell per year.\n\n\n\n\n\n\n\n\n\n\n\n3.2 Month by month, as in the Data Station\nNow one component only: extreme heat. Every bar is one month, coloured by E3CI class; the dots mark the three most intense months on record, with their value.\n\n\n\n\n\n\n\n\n\n💬 The darkest bars, above 3, are almost all recent: 4 months in the 30 years 1981–2010, 30 since 2011. And the three most intense months on record are October 2023, April 2024 and July 2026 (remember: an extreme October is an unusually warm October, not a 40 °C day).\n\n\n3.3 Records: are they falling faster than chance would predict?\nThe same months, seen through their records. A record is a month with a higher E3CI than every month before it in the same country, since January 1981. In a climate that does not change, records become rarer and rarer: after 10 years the chance that a month beats all the previous ones is about 1 in 120; after 40 years, about 1 in 480. That’s why we start counting in 1991: in the first years almost every month is a record, because there is hardly any history to beat.\n📐 How many records should we expect? In a stable climate each of the first n months has the same chance of being the highest, so month n sets a record with probability 1/n. Adding up 1/n over the months since 1991 gives the number of records we would expect if nothing were changing. It is a reference, not an exact forecast: anomalies persist from one month to the next, so records can come in clusters.\n\n\n\n\n\n\n\n\n\n💬 Since 1991 Italy has set 6 records of extreme heat, where a stable climate would give about 1.5, and 3 of them in the last ten years alone (April 2018, October 2022, October 2023), when about 0.2 would be expected. Every step of the staircase raises the bar, and yet the bar keeps being beaten.\n\n\n3.4 Which months, which years?\nThe same data as a heatmap: rows are months, columns are years. Top: extreme months per year. Right: how often each calendar month was extreme, then (grey) and now (colour).\n\n\n\n\n\n\n\n\n\n\n\n3.5 A real event: the Emilia-Romagna floods, May 2023\nMany events hit only one region: here we use the regional data loaded in the setup. In May 2023 two waves of torrential rain flooded Romagna: was it the most intense month on record in Emilia-Romagna? How does it compare with the rest of Europe? The first cell lists other famous events: in the second part of the workshop you can choose one of them."
+  },
+  {
+    "objectID": "test_CINZIA_titoli.html#end-of-the-guided-tour",
+    "href": "test_CINZIA_titoli.html#end-of-the-guided-tour",
+    "title": "Drought",
+    "section": "✅ End of the guided tour",
+    "text": "✅ End of the guided tour\nIn the second part of the workshop you will work on a copy of this notebook, connected to the Climate Gazette: choose the charts that tell your story, change the country, the component or the month in the settings at the top of each cell, give each chart a title that states the finding (write it in TITLE, at the top of the cell), and add your text.\n🔎 Want to go further? Below there are three extra charts about Italy and its regions to explore on your own."
   },
   {
     "objectID": "test_CINZIA_titoli.html#extra-charts-explore-them-on-your-own",
@@ -257,5 +201,61 @@
     "title": "Drought",
     "section": "⭐ Extra charts: explore them on your own",
     "text": "⭐ Extra charts: explore them on your own\nMore charts for those who want to go further. They work like the ones above: run them from top to bottom.\n\nE.1 What changed?\nAll seven components for one country: the share of extreme months in 1981–2010 (grey) and 2011–2026 (colour). The title is written by the data: it names the component that increased the most.\n\n\n\n\n\n\n\n\n\n\n\nE.2 Heat vs cold, region by region\nIn Italy as a whole heat extremes grow and cold extremes fade (see the barcode in Part 3): is it the same in every region? Here we use the regional data loaded in the setup. Each dot is a month above 2 in one of the 20 Italian regions: orange = heat extremes, blue = cold extremes; the bigger dots are above 3. The title is generated by the code from the first and the last ten years.\n\n\n\n\n\n\n\n\n\n\n\nE.3 Rain in October, region by region\nOne month, every year, in the 20 Italian regions: rain in October. Why October? In October 2024 Bologna, the city of this conference, was flooded: find Emilia-Romagna in 2024. The settings at the top of the cell can show any other component, month or group of regions."
+  },
+  {
+    "objectID": "test_CINZIA_titoli.html#for-the-final-discussion",
+    "href": "test_CINZIA_titoli.html#for-the-final-discussion",
+    "title": "Drought",
+    "section": "💬 For the final discussion",
+    "text": "💬 For the final discussion\n\nWhich chart would you show to a mayor? To a newspaper reader? To a scientist? Why different ones?\nWhich design choice changed your perception the most: the type of chart, the threshold, the period, the title?\nWhat does the E3CI not tell us? (people and assets exposed, damages, very local or very short events…)\nDid your titles state a finding, or ask a question? Which works better on social media?\n\nNotebooks prepared by IFAB for the Visualising Climate 2026 workshop. Data: E3CI – European Extreme Events Climate Index, https://www.climateindex.eu (IFAB; implemented by CMCC and Leithà – Unipol Group; distributed by Hypermeteo and Radarmeteo), based on Copernicus ERA5. Neither the European Commission nor ECMWF is responsible for any use of the Copernicus information. Colours: the E3CI Data Station palette (design by Cinzia Bongino). Country shapes: Natural Earth (public domain). Font: Lato (SIL Open Font License)."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Climate Gazette",
+    "section": "",
+    "text": "Climate Gazette features stories of extreme weather events that occurred in Europe over the past 40 years. Reports are based on data from the European Extreme Events Climate Index, analysed with Jupyter and presented via charts and maps.\n\n\n\n \n\n\n\n\n\nIssue 1 - November 2026\n\n\nDeveloped during the “E3CI Data Station: Visualising Extreme Weather for Decision-Makers and Communities” workshop held at the Visualising Climate Conference 2026, Bologna. Curated by Noemi Ambrosi, Simona Contaldi, and Cinzia Bongino.\n\n\n  This is the project title. \n  Extreme weather events in the Netherlands \n  Visualising extreme weather with the E3CI \n  Visualising extreme weather with the E3CI \n  Drought \nNo matching items\n\n\n\n\n\nE3CI European Extreme Events Climate Index is a project by IFAB, CMCC, and Leithà Gruppo Unipol. Distributed by Hypermeteo, and Radarmeteo.\n\n\n\n&lt;p&gt;\n&lt;a href=\"https://datastation.climateindex.eu\" target=\"_blank\"&gt;datastation.climateindex.eu&lt;/a&gt;  &nbsp; &nbsp; &nbsp;\n&lt;a href=\"https://climateindex.eu\" target=\"_blank\"&gt;climateindex.eu&lt;/a&gt;\n&lt;/p&gt;"
+  },
+  {
+    "objectID": "E3CI_warm_ott.html",
+    "href": "E3CI_warm_ott.html",
+    "title": "This is the project title.",
+    "section": "",
+    "text": "e3ci-warm-oct.jpg\nLorem ipsum this is the subtitle. dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\nAbruzzi\nBasilicata\n...\nValle D'aosta\nVeneto\n\n\n\ndrought\nextreme max T\nextreme min T\nextreme prec\nextreme wind\nfire\nhail\ndrought\nextreme max T\nextreme min T\n...\nextreme wind\nfire\nhail\ndrought\nextreme max T\nextreme min T\nextreme prec\nextreme wind\nfire\nhail\n\n\n(time, )\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2024-09-01\n-1.006216\n1.327934\n-0.146446\n1.116421\n-0.369789\n-0.244429\n-0.296959\n-0.362576\n0.732203\n-0.640294\n...\n1.588465\nNaN\n0.003825\n-1.310380\n4.299325\n-0.064841\n2.888567\n1.484148\n-0.337262\n-0.485195\n\n\n2024-10-01\n-1.418592\n-0.146645\n-0.648442\n0.373777\n-0.143749\n-0.508710\n-0.935140\n-0.613510\n-0.314604\n-0.736204\n...\n-0.508025\nNaN\n-1.084773\n-1.953356\n2.753643\n-0.529020\n0.403983\n0.531820\n-0.347264\n-1.026104\n\n\n2024-11-01\n-0.691243\n-0.304745\n-0.471111\n-0.456031\n2.757799\n-0.952100\n-0.252621\n0.060319\n0.176273\n-0.386263\n...\n-0.495323\nNaN\n-0.238266\n-1.397348\n0.142372\n-0.458984\n-0.615508\n-0.450030\n-0.518820\n0.341439\n\n\n2024-12-01\n0.031915\n0.134604\n-0.642467\n-0.361734\n-0.212161\nNaN\n-0.100750\n0.278188\n-0.323104\n-0.697865\n...\n-0.229436\nNaN\n-0.221889\n-0.370126\n2.056070\n-0.486167\n0.105571\n-0.102284\n-0.950648\n-1.025843\n\n\n2025-01-01\n0.575769\n2.724066\n-0.524487\n-0.428505\n-0.292833\nNaN\n-0.556740\n-0.224866\n1.971133\n-0.511247\n...\n-0.519035\nNaN\n-0.222932\n0.633787\n2.772060\n-0.353385\n-0.061469\n0.200187\nNaN\n-0.666995\n\n\n2025-02-01\n0.017748\n-0.404103\n-0.622985\n0.546245\n-0.342543\nNaN\n-1.658916\n-0.411509\n-0.583132\n-0.515052\n...\n-0.543128\nNaN\n-1.267771\n-0.480969\n-0.250931\n-0.410377\n0.193403\n-0.518984\n-0.987662\n-1.628372\n\n\n2025-03-01\n-0.940069\n0.090602\n-0.383458\n1.643953\n-0.501470\n-0.717097\n-0.341704\n-0.771781\n1.359721\n-0.327528\n...\n-0.420822\nNaN\n-1.235047\n-1.334086\n0.523012\n-0.355979\n0.798798\n-0.495896\n-0.954137\n-0.804986\n\n\n2025-04-01\n-1.234046\n5.317433\n-0.496208\n-0.350963\n0.134865\n-0.868652\n-1.582186\n0.489388\n0.331177\n-0.417149\n...\n-0.494372\nNaN\n-0.997913\n-1.434771\n0.995170\n-0.457602\n-0.055074\n-0.140687\n-0.863059\n-1.044119\n\n\n2025-05-01\n-1.628832\n0.199394\n-0.176140\n-0.038765\n-0.492500\n-0.265635\n-0.623092\n-0.028147\n-0.209093\n-0.348840\n...\n-0.209400\nNaN\n-0.843082\n-1.852227\n1.141558\n-0.483514\n0.486343\n-0.103592\n-0.857287\n-0.826428\n\n\n2025-06-01\n0.166063\n6.240941\n-0.730245\n-0.409193\n-0.236260\n-0.548221\n-0.208438\n0.873643\n4.048666\n-0.697514\n...\n-0.361584\n-0.674278\n-0.800225\n0.015057\n3.478082\n-0.741131\n-0.507171\n-0.151955\n-0.808005\n0.244274\n\n\n2025-07-01\n-0.262212\n1.548821\n-0.096221\n1.499434\n0.482837\n-0.861219\n-0.008038\n0.743469\n2.522358\n-0.465396\n...\n2.274275\n-0.519783\n-0.303148\n-0.740881\n2.175087\n0.228550\n0.657620\n-0.422607\n-0.809181\n0.132619\n\n\n2025-08-01\n0.222162\n0.847133\n-0.404407\n-0.212674\n-0.432684\n-0.946051\n-0.518855\n0.496066\n0.959845\n-0.593853\n...\n-0.598800\n-0.686598\n-0.309271\n-0.971378\n2.673206\n-0.680155\n0.561623\n-0.607454\n0.158509\n-0.473735\n\n\n\n\n12 rows × 140 columns"
+  },
+  {
+    "objectID": "E3CI_warm_ott.html#first-visualization-title",
+    "href": "E3CI_warm_ott.html#first-visualization-title",
+    "title": "This is the project title.",
+    "section": "First visualization title",
+    "text": "First visualization title\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  {
+    "objectID": "E3CI_warm_ott.html#second-visualization-title",
+    "href": "E3CI_warm_ott.html#second-visualization-title",
+    "title": "This is the project title.",
+    "section": "Second visualization title",
+    "text": "Second visualization title\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  {
+    "objectID": "E3CI_warm_ott.html#third-visualization-title",
+    "href": "E3CI_warm_ott.html#third-visualization-title",
+    "title": "This is the project title.",
+    "section": "Third visualization title",
+    "text": "Third visualization title\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  {
+    "objectID": "E3CI_warm_ott.html#fourth-visualization-title",
+    "href": "E3CI_warm_ott.html#fourth-visualization-title",
+    "title": "This is the project title.",
+    "section": "Fourth visualization title",
+    "text": "Fourth visualization title\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  {
+    "objectID": "E3CI_warm_ott.html#final-remarks",
+    "href": "E3CI_warm_ott.html#final-remarks",
+    "title": "This is the project title.",
+    "section": "Final remarks",
+    "text": "Final remarks\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\nAuthors: Name Surname, Name Surname, Name Surname, Name Surname"
   }
 ]
