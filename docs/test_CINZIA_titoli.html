@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Drought – Climate Gazette</title>
+<title>Drought - test title – Climate Gazette</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -145,7 +145,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Drought</h1>
+<h1 class="title">Drought - test title</h1>
 </div>
 
 
@@ -241,7 +241,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="setup-3-min" class="level2">
 <h2 class="anchored" data-anchor-id="setup-3-min">0 · Setup ⏱ 3 min</h2>
 <p>Run these five cells once (click “Show code” if you are curious). Colab asks for <strong>two data files</strong>: in the second cell upload <strong>aci_comps_2026August.csv</strong> (the 51 countries, 2.4 MB), in the fifth one <strong>aci_comps_gaul_2026August.csv</strong> (the ≈750 regions used in Part 3, 35 MB). You can also drag both files onto the 📁 Files panel before you start, unless your organisers have already put a link in <code>DATA_URL</code>. The third cell checks the data and sets aside a few periods that look like processing gaps: real data always need checking before we draw them!</p>
-<div id="e5571493" class="cell" data-cellview="form" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:200}}" data-outputid="cf19a65a-659f-4362-ffec-9ee2a57b6d31" data-execution_count="2">
+<div id="e5571493" class="cell" data-cellview="form" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:200}}" data-outputid="cf19a65a-659f-4362-ffec-9ee2a57b6d31">
 <div class="cell-output cell-output-display">
 
      <input type="file" id="files-354996f8-9e59-423a-b566-a6542a194fbe" name="files[]" multiple="" disabled="" style="border:none">
@@ -434,7 +434,7 @@ scope.google.colab._files = {
 <section id="each-hazard-has-its-own-story" class="level3">
 <h3 class="anchored" data-anchor-id="each-hazard-has-its-own-story">1.1 Each hazard has its own story</h3>
 <p>One small chart per component (<em>small multiples</em>): every bar is the share of country-months above 1 in one year, the dashed line is the average of 1981–2010.</p>
-<div id="f461a978" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:639}}" data-outputid="a9df634b-1945-4c92-edfc-9f4886701101" data-execution_count="6">
+<div id="f461a978" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:639}}" data-outputid="a9df634b-1945-4c92-edfc-9f4886701101">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -450,7 +450,7 @@ scope.google.colab._files = {
 <h3 class="anchored" data-anchor-id="when-in-the-year">1.2 When in the year?</h3>
 <p>A <em>rose</em> for each hazard and period, inspired by Florence Nightingale’s diagrams (1858). <strong>How to read it:</strong> * every petal is a <strong>calendar month</strong>: January at the top, then clockwise (April on the right, July at the bottom, October on the left); * the <strong>area</strong> of a petal, not its length, is proportional to the share of country-months that were extreme in that month, as in Nightingale’s roses; * inside each petal the classes go <strong>from the centre outwards</strong>: 1–2 (the lightest shade), 2–3, above 3 (the darkest); * top row: 1981–2010; bottom row: since 2011.</p>
 <p>Remember: an E3CI “heat extreme” in January is an unusually <strong>warm January</strong>, not a 40 °C day.</p>
-<div id="ffef6b5f" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:532}}" data-outputid="c1590523-9b05-4150-842b-4a1cdc4770af" data-execution_count="7">
+<div id="ffef6b5f" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:532}}" data-outputid="c1590523-9b05-4150-842b-4a1cdc4770af">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -470,7 +470,7 @@ scope.google.colab._files = {
 <h3 class="anchored" data-anchor-id="one-month-all-countries">2.1 One month, all countries</h3>
 <p>Extreme heat in <strong>July</strong>: every row is a country, every cell a year. On the right, how many extreme Julys each country had since 1981: the countries with the most are at the top.</p>
 <p><em>Why July?</em> It is the heart of summer, when heat extremes hit people the hardest. But the E3CI compares every July only with the Julys of 1981–2010, so any other month can be read in the same way: in the second part of the workshop you can choose it (<code>MONTH = 0</code> shows the strongest month of each year).</p>
-<div id="0a884b31" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:1000}}" data-outputid="a1ecaf5e-6828-4997-c81e-ff4c7984ee89" data-execution_count="8">
+<div id="0a884b31" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:1000}}" data-outputid="a1ecaf5e-6828-4997-c81e-ff4c7984ee89">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -483,7 +483,7 @@ scope.google.colab._files = {
 <section id="one-map-per-year" class="level3">
 <h3 class="anchored" data-anchor-id="one-map-per-year">2.2 One map per year</h3>
 <p>First we load the country shapes (Natural Earth, ~3 MB), then we draw one small map per year: <em>small multiples</em> let the eye compare 46 Julys at once.</p>
-<div id="295661e5" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:898}}" data-outputid="c97a1085-e80a-4a8d-a8ea-cd0262d3d187" data-execution_count="10">
+<div id="295661e5" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:898}}" data-outputid="c97a1085-e80a-4a8d-a8ea-cd0262d3d187">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -502,7 +502,7 @@ scope.google.colab._files = {
 <section id="the-barcode-of-extremes" class="level3">
 <h3 class="anchored" data-anchor-id="the-barcode-of-extremes">3.1 The barcode of extremes</h3>
 <p>Inspired by Ed Hawkins’ <em>warming stripes</em>: one row per component, one cell per year.</p>
-<div id="52060a82" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:500}}" data-outputid="85c580a2-e1e6-45aa-fd10-31f6cbafcb85" data-execution_count="12">
+<div id="52060a82" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:500}}" data-outputid="85c580a2-e1e6-45aa-fd10-31f6cbafcb85">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -515,7 +515,7 @@ scope.google.colab._files = {
 <section id="month-by-month-as-in-the-data-station" class="level3">
 <h3 class="anchored" data-anchor-id="month-by-month-as-in-the-data-station">3.2 Month by month, as in the Data Station</h3>
 <p>Now one component only: extreme heat. Every bar is one month, coloured by E3CI class; the dots mark the three most intense months on record, with their value.</p>
-<div id="35cb684b" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:527}}" data-outputid="54d975d1-057a-4ff0-b01e-76d8c520136f" data-execution_count="13">
+<div id="35cb684b" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:527}}" data-outputid="54d975d1-057a-4ff0-b01e-76d8c520136f">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -530,7 +530,7 @@ scope.google.colab._files = {
 <h3 class="anchored" data-anchor-id="records-are-they-falling-faster-than-chance-would-predict">3.3 Records: are they falling faster than chance would predict?</h3>
 <p>The same months, seen through their <strong>records</strong>. A record is a month with a higher E3CI than every month before it in the same country, since January 1981. In a climate that does not change, <strong>records become rarer and rarer</strong>: after 10 years the chance that a month beats all the previous ones is about 1 in 120; after 40 years, about 1 in 480. That’s why we start counting in <strong>1991</strong>: in the first years almost every month is a record, because there is hardly any history to beat.</p>
 <p>📐 <strong>How many records should we expect?</strong> In a stable climate each of the first <em>n</em> months has the same chance of being the highest, so month <em>n</em> sets a record with probability <strong>1/n</strong>. Adding up 1/n over the months since 1991 gives the number of records we would expect if nothing were changing. It is a reference, not an exact forecast: anomalies persist from one month to the next, so records can come in clusters.</p>
-<div id="109d6a64" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:577}}" data-outputid="e434eafc-12b6-4d18-baf9-b62e0db1f8dc" data-execution_count="14">
+<div id="109d6a64" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:577}}" data-outputid="e434eafc-12b6-4d18-baf9-b62e0db1f8dc">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -544,7 +544,7 @@ scope.google.colab._files = {
 <section id="which-months-which-years" class="level3">
 <h3 class="anchored" data-anchor-id="which-months-which-years">3.4 Which months, which years?</h3>
 <p>The same data as a heatmap: rows are months, columns are years. Top: extreme months per year. Right: how often each calendar month was extreme, then (grey) and now (colour).</p>
-<div id="bfd10361" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:593}}" data-outputid="e3ae7104-23a2-4d39-c862-c46092d5c0e6" data-execution_count="15">
+<div id="bfd10361" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:593}}" data-outputid="e3ae7104-23a2-4d39-c862-c46092d5c0e6">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -557,7 +557,7 @@ scope.google.colab._files = {
 <section id="a-real-event-the-emilia-romagna-floods-may-2023" class="level3">
 <h3 class="anchored" data-anchor-id="a-real-event-the-emilia-romagna-floods-may-2023">3.5 A real event: the Emilia-Romagna floods, May 2023</h3>
 <p>Many events hit only one region: here we use the <strong>regional data</strong> loaded in the setup. In May 2023 two waves of torrential rain flooded Romagna: was it the most intense month on record in Emilia-Romagna? How does it compare with the rest of Europe? The first cell lists other famous events: in the second part of the workshop you can choose one of them.</p>
-<div id="7aac633b" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:769}}" data-outputid="ceab715f-5129-43a2-dbea-3441c97abb52" data-execution_count="17">
+<div id="7aac633b" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:769}}" data-outputid="ceab715f-5129-43a2-dbea-3441c97abb52">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -581,7 +581,7 @@ scope.google.colab._files = {
 <section id="e.1-what-changed" class="level3">
 <h3 class="anchored" data-anchor-id="e.1-what-changed">E.1 What changed?</h3>
 <p>All seven components for one country: the share of extreme months in 1981–2010 (grey) and 2011–2026 (colour). The title is written <strong>by the data</strong>: it names the component that increased the most.</p>
-<div id="2461afcb" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:668}}" data-outputid="28e44dc5-15ad-4a61-c49d-c68d812ed881" data-execution_count="18">
+<div id="2461afcb" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:668}}" data-outputid="28e44dc5-15ad-4a61-c49d-c68d812ed881">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -594,7 +594,7 @@ scope.google.colab._files = {
 <section id="e.2-heat-vs-cold-region-by-region" class="level3">
 <h3 class="anchored" data-anchor-id="e.2-heat-vs-cold-region-by-region">E.2 Heat vs cold, region by region</h3>
 <p>In Italy as a whole heat extremes grow and cold extremes fade (see the barcode in Part 3): is it the same in every region? Here we use the <strong>regional data</strong> loaded in the setup. Each dot is a month above 2 in one of the 20 Italian regions: orange = heat extremes, blue = cold extremes; the bigger dots are above 3. The title is generated by the code from the first and the last ten years.</p>
-<div id="debd7e86" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:899}}" data-outputid="243417df-742e-4bcd-9a50-892257164cac" data-execution_count="19">
+<div id="debd7e86" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:899}}" data-outputid="243417df-742e-4bcd-9a50-892257164cac">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -607,7 +607,7 @@ scope.google.colab._files = {
 <section id="e.3-rain-in-october-region-by-region" class="level3">
 <h3 class="anchored" data-anchor-id="e.3-rain-in-october-region-by-region">E.3 Rain in October, region by region</h3>
 <p>One month, every year, in the 20 Italian regions: rain in <strong>October</strong>. <em>Why October?</em> In October 2024 Bologna, the city of this conference, was flooded: find Emilia-Romagna in 2024. The settings at the top of the cell can show any other component, month or group of regions.</p>
-<div id="297b919a" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:627}}" data-outputid="98add877-1612-4812-ccd3-88dea52db1aa" data-execution_count="20">
+<div id="297b919a" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:627}}" data-outputid="98add877-1612-4812-ccd3-88dea52db1aa">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
