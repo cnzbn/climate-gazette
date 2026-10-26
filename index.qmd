@@ -5,11 +5,15 @@ listing:
   fields: [title, image, path]
   sort: false
   contents:
+    - E3CI_workshop_modificato3_param.ipynb
+    - E3CI_workshop_modificato3_param_regions.ipynb
     - E3CI_warm_ott.ipynb
     - E3CI_workshop_modificato2_CINZIA.ipynb
     - E3CI_workshop_modificato2_SIMONA.ipynb
     - E3CI_workshop_modificato2_NOEMI.ipynb
     - test_CINZIA_titoli.ipynb
+    
+    
 ---
 
 
