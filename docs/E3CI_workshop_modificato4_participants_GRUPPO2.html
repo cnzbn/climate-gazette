@@ -227,6 +227,15 @@ ul.task-list li input[type="checkbox"] {
 <section id="each-hazard-has-its-own-story" class="level3">
 <h3 class="anchored" data-anchor-id="each-hazard-has-its-own-story">1.1 Each hazard has its own story</h3>
 <p>One small chart per component (<em>small multiples</em>): every bar is the share of country-months above 1 in one year, the dashed line is the average of 1981–2010.</p>
+<div id="f461a978" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:648}}" data-outputid="4cfa6910-d374-43b9-ae74-001d0d25c0e7" data-execution_count="6">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="E3CI_workshop_modificato4_participants_GRUPPO2_files/figure-html/cell-7-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
 <p>💬 Compare each bar with the dashed line: which hazards have become more frequent since 1981–2010, which rarer, which show no clear trend?</p>
 <p>Now the same hazards from another angle: <strong>when in the year</strong> do they strike?</p>
 </section>
@@ -234,6 +243,15 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="when-in-the-year">1.2 When in the year?</h3>
 <p>A <em>rose</em> for each hazard and period, inspired by Florence Nightingale’s diagrams (1858). <strong>How to read it:</strong> * every petal is a <strong>calendar month</strong>: January at the top, then clockwise (April on the right, July at the bottom, October on the left); * the <strong>area</strong> of a petal, not its length, is proportional to the share of country-months that were extreme in that month, as in Nightingale’s roses; * inside each petal the classes go <strong>from the centre outwards</strong>: 1–2 (the lightest shade), 2–3, above 3 (the darkest); * top row: the first period, bottom row: the second one (chosen in <code>PERIODS</code>).</p>
 <p>Remember: every month is compared with the same month of 1981–2010, so an extreme in winter is unusual <em>for winter</em>.</p>
+<div id="ffef6b5f" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:540}}" data-outputid="05c34726-79d1-4681-9df4-98d8e99b6ffb" data-execution_count="7">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="E3CI_workshop_modificato4_participants_GRUPPO2_files/figure-html/cell-8-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
 <p>💬 Compare the two rows: a rose that grows in every direction means more extremes all year round; a petal that grows alone points to one season.</p>
 <hr>
 </section>
@@ -244,14 +262,41 @@ ul.task-list li input[type="checkbox"] {
 <section id="one-month-all-countries" class="level3">
 <h3 class="anchored" data-anchor-id="one-month-all-countries">2.1 One month, all countries</h3>
 <p>One component in one month: every row is a country (or a region), every cell a year. On the right, how many extreme years each one had since 1981, sorted as chosen in <code>SORT_BY</code>. Every month is compared only with the same month of 1981–2010, so any month can be read in the same way (<code>MONTH = 0</code> shows the strongest month of each year).</p>
+<div id="0a884b31" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:1000}}" data-outputid="6150a883-1650-4bc4-fa18-26bfbd1042bc" data-execution_count="8">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="E3CI_workshop_modificato4_participants_GRUPPO2_files/figure-html/cell-9-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
 </section>
 <section id="two-components-area-by-area" class="level3">
 <h3 class="anchored" data-anchor-id="two-components-area-by-area">2.2 Two components, area by area</h3>
 <p>Two components side by side, one colour each. Every dot is an extreme month (above <code>THRESHOLD</code>) in one country or region, the bigger dots are above 3; the rows are the <code>TOP_N</code> areas with the most extreme months. The title is written by the code, comparing the first and the last ten years.</p>
+<div id="debd7e86" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:912}}" data-outputid="26c36566-c3e7-4dbe-e4f7-ea8a0611dec0" data-execution_count="9">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="E3CI_workshop_modificato4_participants_GRUPPO2_files/figure-html/cell-10-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
 </section>
 <section id="one-map-per-year" class="level3">
 <h3 class="anchored" data-anchor-id="one-map-per-year">2.3 One map per year</h3>
 <p>First we load the country shapes (Natural Earth, ~3 MB), then we draw one small map per year: <em>small multiples</em> let the eye compare the same month over 46 years at once.</p>
+<div id="295661e5" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:912}}" data-outputid="a33e9abd-13e3-40bf-ebc5-2e935dd5cd6b" data-execution_count="11">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="E3CI_workshop_modificato4_participants_GRUPPO2_files/figure-html/cell-12-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
 <p>💬 <strong>What do you see?</strong> Compare the first rows with the last ones: are extreme months more frequent, wider, in different parts of Europe?</p>
 <hr>
 </section>
@@ -263,29 +308,83 @@ ul.task-list li input[type="checkbox"] {
 <section id="the-barcode-of-extremes" class="level3">
 <h3 class="anchored" data-anchor-id="the-barcode-of-extremes">3.1 The barcode of extremes</h3>
 <p>Inspired by Ed Hawkins’ <em>warming stripes</em>: one row per component, one cell per year.</p>
+<div id="52060a82" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:508}}" data-outputid="9f08adf6-becb-4856-ef0e-826b95cdbecf" data-execution_count="13">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="E3CI_workshop_modificato4_participants_GRUPPO2_files/figure-html/cell-14-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
 </section>
 <section id="month-by-month-as-in-the-data-station" class="level3">
 <h3 class="anchored" data-anchor-id="month-by-month-as-in-the-data-station">3.2 Month by month, as in the Data Station</h3>
 <p>One component only. Every bar is one month, coloured by E3CI class; the dots mark the <code>TOP_N</code> most intense months on record, with their value.</p>
+<div id="35cb684b" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:535}}" data-outputid="5bb17956-1fed-404c-ee60-b5dbf02ec1bc" data-execution_count="14">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="E3CI_workshop_modificato4_participants_GRUPPO2_files/figure-html/cell-15-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
 <p>💬 Where are the darkest bars, above 3: spread over the whole period, or concentrated in the last years?</p>
 </section>
 <section id="records-are-they-falling-faster-than-chance-would-predict" class="level3">
 <h3 class="anchored" data-anchor-id="records-are-they-falling-faster-than-chance-would-predict">3.3 Records: are they falling faster than chance would predict?</h3>
 <p>The same months, seen through their <strong>records</strong>. A record is a month with a higher E3CI than every month before it in the same country, since January 1981. In a climate that does not change, <strong>records become rarer and rarer</strong>: after 10 years the chance that a month beats all the previous ones is about 1 in 120; after 40 years, about 1 in 480. That’s why records are counted only from <code>START_YEAR</code> (1991 by default): in the first years almost every month is a record, because there is hardly any history to beat.</p>
 <p>📐 <strong>How many records should we expect?</strong> In a stable climate each of the first <em>n</em> months has the same chance of being the highest, so month <em>n</em> sets a record with probability <strong>1/n</strong>. Adding up 1/n over the months since <code>START_YEAR</code> gives the number of records we would expect if nothing were changing. It is a reference, not an exact forecast: anomalies persist from one month to the next, so records can come in clusters.</p>
+<div id="109d6a64" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:585}}" data-outputid="1dcf7db2-4d30-4afa-87c9-1dcd37cc14e6" data-execution_count="15">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="E3CI_workshop_modificato4_participants_GRUPPO2_files/figure-html/cell-16-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
 <p>💬 Compare the records observed with those expected in a stable climate (in the title): many more records than chance, especially in the last years, are a sign of a changing climate.</p>
 </section>
 <section id="which-months-which-years" class="level3">
 <h3 class="anchored" data-anchor-id="which-months-which-years">3.4 Which months, which years?</h3>
 <p>The same data as a heatmap: rows are months, columns are years. Top: extreme months per year. Right: how often each calendar month was extreme, then (grey) and now (colour).</p>
+<div id="bfd10361" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:602}}" data-outputid="0537f42e-3459-47a5-af9f-825f6ffe326b" data-execution_count="16">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="E3CI_workshop_modificato4_participants_GRUPPO2_files/figure-html/cell-17-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
 </section>
 <section id="a-real-event" class="level3">
 <h3 class="anchored" data-anchor-id="a-real-event">3.5 A real event</h3>
 <p>Many events hit only one region: here we use the <strong>regional data</strong>. Choose an event in <code>CASE</code>: was it the most intense month on record in its region? How does it compare with the rest of Europe?</p>
+<div id="7aac633b" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:781}}" data-outputid="8cf43cc9-d42d-41b8-963a-29135d4d7b1e" data-execution_count="18">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="E3CI_workshop_modificato4_participants_GRUPPO2_files/figure-html/cell-19-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
 </section>
 <section id="one-month-region-by-region" class="level3">
 <h3 class="anchored" data-anchor-id="one-month-region-by-region">3.6 One month, region by region</h3>
 <p>Like chart 2.1, one level down: one component in one month, every year, in the regions of the country chosen at the top of Part 3.</p>
+<div id="297b919a" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:637}}" data-outputid="b98b6ada-50af-48bb-be7c-606d80659a31" data-execution_count="19">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="E3CI_workshop_modificato4_participants_GRUPPO2_files/figure-html/cell-20-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
 <hr>
 </section>
 </section>
