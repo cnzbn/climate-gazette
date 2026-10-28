@@ -29,7 +29,7 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script><script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -73,6 +73,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js" integrity="sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4qY6NSrItx" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
@@ -159,6 +162,378 @@ ul.task-list li input[type="checkbox"] {
 <section id="setup-3-min" class="level2">
 <h2 class="anchored" data-anchor-id="setup-3-min">0 · Setup ⏱ 3 min</h2>
 <p>Run these five cells once (click “Show code” if you are curious). Colab asks for <strong>two data files</strong>: in the second cell upload <strong>e3ci_climate_index_COUNTRIES.csv</strong> (the 51 countries, 2.4 MB), in the fifth one <strong>e3ci_climate_index_REGIONS.csv</strong> (the ≈750 regions used in Part 3, 35 MB). You can also drag both files onto the 📁 Files panel before you start, unless your organisers have already put a link in <code>DATA_URL</code>. The third cell checks the data and sets aside a few periods that look like processing gaps: real data always need checking before we draw them!</p>
+<div id="e5571493" class="cell" data-cellview="form" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:272}}" data-outputid="de437b01-54b6-42ff-989d-a9aab2362f80" data-execution_count="4">
+<div class="cell-output cell-output-display">
+
+     <input type="file" id="files-61a832bc-ea70-4de6-9c4e-9a56c2ea1dfd" name="files[]" multiple="" disabled="" style="border:none">
+     <output id="result-61a832bc-ea70-4de6-9c4e-9a56c2ea1dfd">
+      Upload widget is only available when the cell has been executed in the
+      current browser session. Please rerun this cell to enable.
+      </output>
+      <script>// Copyright 2017 Google LLC
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//      http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+/**
+ * @fileoverview Helpers for google.colab Python module.
+ */
+(function(scope) {
+function span(text, styleAttributes = {}) {
+  const element = document.createElement('span');
+  element.textContent = text;
+  for (const key of Object.keys(styleAttributes)) {
+    element.style[key] = styleAttributes[key];
+  }
+  return element;
+}
+
+// Max number of bytes which will be uploaded at a time.
+const MAX_PAYLOAD_SIZE = 100 * 1024;
+
+function _uploadFiles(inputId, outputId) {
+  const steps = uploadFilesStep(inputId, outputId);
+  const outputElement = document.getElementById(outputId);
+  // Cache steps on the outputElement to make it available for the next call
+  // to uploadFilesContinue from Python.
+  outputElement.steps = steps;
+
+  return _uploadFilesContinue(outputId);
+}
+
+// This is roughly an async generator (not supported in the browser yet),
+// where there are multiple asynchronous steps and the Python side is going
+// to poll for completion of each step.
+// This uses a Promise to block the python side on completion of each step,
+// then passes the result of the previous step as the input to the next step.
+function _uploadFilesContinue(outputId) {
+  const outputElement = document.getElementById(outputId);
+  const steps = outputElement.steps;
+
+  const next = steps.next(outputElement.lastPromiseValue);
+  return Promise.resolve(next.value.promise).then((value) => {
+    // Cache the last promise value to make it available to the next
+    // step of the generator.
+    outputElement.lastPromiseValue = value;
+    return next.value.response;
+  });
+}
+
+/**
+ * Generator function which is called between each async step of the upload
+ * process.
+ * @param {string} inputId Element ID of the input file picker element.
+ * @param {string} outputId Element ID of the output display.
+ * @return {!Iterable<!Object>} Iterable of next steps.
+ */
+function* uploadFilesStep(inputId, outputId) {
+  const inputElement = document.getElementById(inputId);
+  inputElement.disabled = false;
+
+  const outputElement = document.getElementById(outputId);
+  outputElement.innerHTML = '';
+
+  const pickedPromise = new Promise((resolve) => {
+    inputElement.addEventListener('change', (e) => {
+      resolve(e.target.files);
+    });
+  });
+
+  const cancel = document.createElement('button');
+  inputElement.parentElement.appendChild(cancel);
+  cancel.textContent = 'Cancel upload';
+  const cancelPromise = new Promise((resolve) => {
+    cancel.onclick = () => {
+      resolve(null);
+    };
+  });
+
+  // Wait for the user to pick the files.
+  const files = yield {
+    promise: Promise.race([pickedPromise, cancelPromise]),
+    response: {
+      action: 'starting',
+    }
+  };
+
+  cancel.remove();
+
+  // Disable the input element since further picks are not allowed.
+  inputElement.disabled = true;
+
+  if (!files) {
+    return {
+      response: {
+        action: 'complete',
+      }
+    };
+  }
+
+  for (const file of files) {
+    const li = document.createElement('li');
+    li.append(span(file.name, {fontWeight: 'bold'}));
+    li.append(span(
+        `(${file.type || 'n/a'}) - ${file.size} bytes, ` +
+        `last modified: ${
+            file.lastModifiedDate ? file.lastModifiedDate.toLocaleDateString() :
+                                    'n/a'} - `));
+    const percent = span('0% done');
+    li.appendChild(percent);
+
+    outputElement.appendChild(li);
+
+    const fileDataPromise = new Promise((resolve) => {
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        resolve(e.target.result);
+      };
+      reader.readAsArrayBuffer(file);
+    });
+    // Wait for the data to be ready.
+    let fileData = yield {
+      promise: fileDataPromise,
+      response: {
+        action: 'continue',
+      }
+    };
+
+    // Use a chunked sending to avoid message size limits. See b/62115660.
+    let position = 0;
+    do {
+      const length = Math.min(fileData.byteLength - position, MAX_PAYLOAD_SIZE);
+      const chunk = new Uint8Array(fileData, position, length);
+      position += length;
+
+      const base64 = btoa(String.fromCharCode.apply(null, chunk));
+      yield {
+        response: {
+          action: 'append',
+          file: file.name,
+          data: base64,
+        },
+      };
+
+      let percentDone = fileData.byteLength === 0 ?
+          100 :
+          Math.round((position / fileData.byteLength) * 100);
+      percent.textContent = `${percentDone}% done`;
+
+    } while (position < fileData.byteLength);
+  }
+
+  // All done.
+  yield {
+    response: {
+      action: 'complete',
+    }
+  };
+}
+
+scope.google = scope.google || {};
+scope.google.colab = scope.google.colab || {};
+scope.google.colab._files = {
+  _uploadFiles,
+  _uploadFilesContinue,
+};
+})(self);
+</script> 
+</div>
+</div>
+<div id="0a4e6d61" class="cell" data-cellview="form" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:165}}" data-outputid="6dc75ed6-b686-4772-ffe3-72da89e3bb94" data-execution_count="7">
+<div class="cell-output cell-output-display">
+
+     <input type="file" id="files-3427fedc-855e-4f93-8c52-a929a418ce49" name="files[]" multiple="" disabled="" style="border:none">
+     <output id="result-3427fedc-855e-4f93-8c52-a929a418ce49">
+      Upload widget is only available when the cell has been executed in the
+      current browser session. Please rerun this cell to enable.
+      </output>
+      <script>// Copyright 2017 Google LLC
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//      http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+/**
+ * @fileoverview Helpers for google.colab Python module.
+ */
+(function(scope) {
+function span(text, styleAttributes = {}) {
+  const element = document.createElement('span');
+  element.textContent = text;
+  for (const key of Object.keys(styleAttributes)) {
+    element.style[key] = styleAttributes[key];
+  }
+  return element;
+}
+
+// Max number of bytes which will be uploaded at a time.
+const MAX_PAYLOAD_SIZE = 100 * 1024;
+
+function _uploadFiles(inputId, outputId) {
+  const steps = uploadFilesStep(inputId, outputId);
+  const outputElement = document.getElementById(outputId);
+  // Cache steps on the outputElement to make it available for the next call
+  // to uploadFilesContinue from Python.
+  outputElement.steps = steps;
+
+  return _uploadFilesContinue(outputId);
+}
+
+// This is roughly an async generator (not supported in the browser yet),
+// where there are multiple asynchronous steps and the Python side is going
+// to poll for completion of each step.
+// This uses a Promise to block the python side on completion of each step,
+// then passes the result of the previous step as the input to the next step.
+function _uploadFilesContinue(outputId) {
+  const outputElement = document.getElementById(outputId);
+  const steps = outputElement.steps;
+
+  const next = steps.next(outputElement.lastPromiseValue);
+  return Promise.resolve(next.value.promise).then((value) => {
+    // Cache the last promise value to make it available to the next
+    // step of the generator.
+    outputElement.lastPromiseValue = value;
+    return next.value.response;
+  });
+}
+
+/**
+ * Generator function which is called between each async step of the upload
+ * process.
+ * @param {string} inputId Element ID of the input file picker element.
+ * @param {string} outputId Element ID of the output display.
+ * @return {!Iterable<!Object>} Iterable of next steps.
+ */
+function* uploadFilesStep(inputId, outputId) {
+  const inputElement = document.getElementById(inputId);
+  inputElement.disabled = false;
+
+  const outputElement = document.getElementById(outputId);
+  outputElement.innerHTML = '';
+
+  const pickedPromise = new Promise((resolve) => {
+    inputElement.addEventListener('change', (e) => {
+      resolve(e.target.files);
+    });
+  });
+
+  const cancel = document.createElement('button');
+  inputElement.parentElement.appendChild(cancel);
+  cancel.textContent = 'Cancel upload';
+  const cancelPromise = new Promise((resolve) => {
+    cancel.onclick = () => {
+      resolve(null);
+    };
+  });
+
+  // Wait for the user to pick the files.
+  const files = yield {
+    promise: Promise.race([pickedPromise, cancelPromise]),
+    response: {
+      action: 'starting',
+    }
+  };
+
+  cancel.remove();
+
+  // Disable the input element since further picks are not allowed.
+  inputElement.disabled = true;
+
+  if (!files) {
+    return {
+      response: {
+        action: 'complete',
+      }
+    };
+  }
+
+  for (const file of files) {
+    const li = document.createElement('li');
+    li.append(span(file.name, {fontWeight: 'bold'}));
+    li.append(span(
+        `(${file.type || 'n/a'}) - ${file.size} bytes, ` +
+        `last modified: ${
+            file.lastModifiedDate ? file.lastModifiedDate.toLocaleDateString() :
+                                    'n/a'} - `));
+    const percent = span('0% done');
+    li.appendChild(percent);
+
+    outputElement.appendChild(li);
+
+    const fileDataPromise = new Promise((resolve) => {
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        resolve(e.target.result);
+      };
+      reader.readAsArrayBuffer(file);
+    });
+    // Wait for the data to be ready.
+    let fileData = yield {
+      promise: fileDataPromise,
+      response: {
+        action: 'continue',
+      }
+    };
+
+    // Use a chunked sending to avoid message size limits. See b/62115660.
+    let position = 0;
+    do {
+      const length = Math.min(fileData.byteLength - position, MAX_PAYLOAD_SIZE);
+      const chunk = new Uint8Array(fileData, position, length);
+      position += length;
+
+      const base64 = btoa(String.fromCharCode.apply(null, chunk));
+      yield {
+        response: {
+          action: 'append',
+          file: file.name,
+          data: base64,
+        },
+      };
+
+      let percentDone = fileData.byteLength === 0 ?
+          100 :
+          Math.round((position / fileData.byteLength) * 100);
+      percent.textContent = `${percentDone}% done`;
+
+    } while (position < fileData.byteLength);
+  }
+
+  // All done.
+  yield {
+    response: {
+      action: 'complete',
+    }
+  };
+}
+
+scope.google = scope.google || {};
+scope.google.colab = scope.google.colab || {};
+scope.google.colab._files = {
+  _uploadFiles,
+  _uploadFilesContinue,
+};
+})(self);
+</script> 
+</div>
+</div>
 <hr>
 </section>
 <section id="europe-is-it-getting-more-extreme-8-min" class="level2">
@@ -167,7 +542,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="each-hazard-has-its-own-story" class="level3">
 <h3 class="anchored" data-anchor-id="each-hazard-has-its-own-story">1.1 Each hazard has its own story</h3>
 <p>One small chart per component (<em>small multiples</em>): every bar is the share of country-months above 1 in one year, the dashed line is the average of 1981–2010.</p>
-<div id="f461a978" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:648}}" data-outputid="34d33402-ed0c-4411-a131-84c6a49be696" data-execution_count="26">
+<div id="f461a978" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:648}}" data-outputid="bddf159a-b4b0-4165-cdeb-4ef91dcc7ada" data-execution_count="8">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -183,7 +558,7 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="when-in-the-year">1.2 When in the year?</h3>
 <p>A <em>rose</em> for each hazard and period, inspired by Florence Nightingale’s diagrams (1858). <strong>How to read it:</strong> * every petal is a <strong>calendar month</strong>: January at the top, then clockwise (April on the right, July at the bottom, October on the left); * the <strong>area</strong> of a petal, not its length, is proportional to the share of country-months that were extreme in that month, as in Nightingale’s roses; * inside each petal the classes go <strong>from the centre outwards</strong>: 1–2 (the lightest shade), 2–3, above 3 (the darkest); * top row: 1981–2010; bottom row: since 2011.</p>
 <p>Remember: an E3CI “heat extreme” in January is an unusually <strong>warm January</strong>, not a 40 °C day.</p>
-<div id="ffef6b5f" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:540}}" data-outputid="2f440cfe-c324-41b7-a11b-721684ec4bdc" data-execution_count="27">
+<div id="ffef6b5f" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:540}}" data-outputid="1cacbdc1-ccb2-4ace-8b3d-f20da43aa97b" data-execution_count="9">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -203,7 +578,7 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="one-month-all-countries">2.1 One month, all countries</h3>
 <p>Extreme heat in <strong>July</strong>: every row is a country, every cell a year. On the right, how many extreme Julys each country had since 1981: the countries with the most are at the top.</p>
 <p><em>Why July?</em> It is the heart of summer, when heat extremes hit people the hardest. But the E3CI compares every July only with the Julys of 1981–2010, so any other month can be read in the same way: in the second part of the workshop you can choose it (<code>MONTH = 0</code> shows the strongest month of each year).</p>
-<div id="0a884b31" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:1000}}" data-outputid="92be9022-0c58-4ac8-c501-6f8647c5c27e" data-execution_count="28">
+<div id="0a884b31" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:1000}}" data-outputid="d64c34ac-4d34-4394-afb3-8a11cc454431" data-execution_count="10">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -216,10 +591,28 @@ ul.task-list li input[type="checkbox"] {
 <section id="heat-vs-cold-country-by-country" class="level3">
 <h3 class="anchored" data-anchor-id="heat-vs-cold-country-by-country">2.2 Heat vs cold, country by country</h3>
 <p>Two components side by side: <strong>extreme heat</strong> (orange) and <strong>extreme cold</strong> (blue). Each dot is a month above 2 in one country, the bigger dots are above 3; the rows are the 20 countries with the most extreme months. The title is written by the code, comparing the first and the last ten years.</p>
+<div id="debd7e86" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:750}}" data-outputid="c528949f-d069-4ff9-f99d-5cdf40ab94db" data-execution_count="11">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="E3CI_workshop_modificato3_param_regions_files/figure-html/cell-10-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
 </section>
 <section id="one-map-per-year" class="level3">
 <h3 class="anchored" data-anchor-id="one-map-per-year">2.3 One map per year</h3>
 <p>First we load the country shapes (Natural Earth, ~3 MB), then we draw one small map per year: <em>small multiples</em> let the eye compare 46 Julys at once.</p>
+<div id="295661e5" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:912}}" data-outputid="9f83a859-86a2-41d1-a4aa-75f405944b54" data-execution_count="13">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="E3CI_workshop_modificato3_param_regions_files/figure-html/cell-12-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
 <p>💬 <strong>What do you see?</strong> Compare the first rows with the last ones: in the 1980s an extreme July was a rare, local event; since 2012 almost every July has hit large parts of Europe, some years in the north (2014, 2018, 2025), others in the south and in the Balkans (2012, 2023, 2024).</p>
 <hr>
 </section>
@@ -232,29 +625,92 @@ Albania, Andorra, Austria, Belarus, Belgium, Bosnia and Herzegovina, Bulgaria, C
 <section id="the-barcode-of-extremes" class="level3">
 <h3 class="anchored" data-anchor-id="the-barcode-of-extremes">3.1 The barcode of extremes</h3>
 <p>Inspired by Ed Hawkins’ <em>warming stripes</em>: one row per component, one cell per year.</p>
+<div id="52060a82" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:508}}" data-outputid="0a02637e-facd-4c4f-f60c-15f2a7e77a7d" data-execution_count="15">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="E3CI_workshop_modificato3_param_regions_files/figure-html/cell-14-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="m2ol7mZGjW3D" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:750}}" data-outputid="656233ff-b972-4f6d-d082-b2e714277d27" data-execution_count="16">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="E3CI_workshop_modificato3_param_regions_files/figure-html/cell-15-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
 </section>
 <section id="month-by-month-as-in-the-data-station" class="level3">
 <h3 class="anchored" data-anchor-id="month-by-month-as-in-the-data-station">3.2 Month by month, as in the Data Station</h3>
 <p>Now one component only: extreme heat. Every bar is one month, coloured by E3CI class; the dots mark the three most intense months on record, with their value.</p>
+<div id="35cb684b" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:535}}" data-outputid="f02e72fa-454e-43ca-d0be-e9de92378fd0" data-execution_count="17">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="E3CI_workshop_modificato3_param_regions_files/figure-html/cell-16-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
 <p>💬 The darkest bars, above 3, are almost all recent: 4 months in the 30 years 1981–2010, 31 since 2011. And the three most intense months on record are October 2023, April 2024 and July 2026 (remember: an extreme October is an unusually warm October, not a 40 °C day).</p>
 </section>
 <section id="records-are-they-falling-faster-than-chance-would-predict" class="level3">
 <h3 class="anchored" data-anchor-id="records-are-they-falling-faster-than-chance-would-predict">3.3 Records: are they falling faster than chance would predict?</h3>
 <p>The same months, seen through their <strong>records</strong>. A record is a month with a higher E3CI than every month before it in the same country, since January 1981. In a climate that does not change, <strong>records become rarer and rarer</strong>: after 10 years the chance that a month beats all the previous ones is about 1 in 120; after 40 years, about 1 in 480. That’s why we start counting in <strong>1991</strong>: in the first years almost every month is a record, because there is hardly any history to beat.</p>
 <p>📐 <strong>How many records should we expect?</strong> In a stable climate each of the first <em>n</em> months has the same chance of being the highest, so month <em>n</em> sets a record with probability <strong>1/n</strong>. Adding up 1/n over the months since 1991 gives the number of records we would expect if nothing were changing. It is a reference, not an exact forecast: anomalies persist from one month to the next, so records can come in clusters.</p>
+<div id="109d6a64" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:585}}" data-outputid="52e9a145-5c97-4da2-e937-c6c2347c1004" data-execution_count="18">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="E3CI_workshop_modificato3_param_regions_files/figure-html/cell-18-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
 <p>💬 Since 1991 Italy has set <strong>6 records</strong> of extreme heat, where a stable climate would give about 1.5, and 3 of them in the last ten years alone (April 2018, October 2022, October 2023), when about 0.2 would be expected. Every step of the staircase raises the bar, and yet the bar keeps being beaten.</p>
 </section>
 <section id="which-months-which-years" class="level3">
 <h3 class="anchored" data-anchor-id="which-months-which-years">3.4 Which months, which years?</h3>
 <p>The same data as a heatmap: rows are months, columns are years. Top: extreme months per year. Right: how often each calendar month was extreme, then (grey) and now (colour).</p>
+<div id="bfd10361" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:602}}" data-outputid="2e2b6b59-bb60-4c02-91ff-01fdd8dd1a22" data-execution_count="19">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="E3CI_workshop_modificato3_param_regions_files/figure-html/cell-19-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
 </section>
 <section id="a-real-event-the-emilia-romagna-floods-may-2023" class="level3">
 <h3 class="anchored" data-anchor-id="a-real-event-the-emilia-romagna-floods-may-2023">3.5 A real event: the Emilia-Romagna floods, May 2023</h3>
 <p>Many events hit only one region: here we use the <strong>regional data</strong> loaded in the setup. In May 2023 two waves of torrential rain flooded Romagna: was it the most intense month on record in Emilia-Romagna? How does it compare with the rest of Europe? The first cell lists other famous events: in the second part of the workshop you can choose one of them.</p>
+<div id="7aac633b" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:781}}" data-outputid="d222743b-8ce3-4bcb-bc13-4a025a273fc3" data-execution_count="21">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="E3CI_workshop_modificato3_param_regions_files/figure-html/cell-21-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
 </section>
 <section id="rain-in-october-region-by-region" class="level3">
 <h3 class="anchored" data-anchor-id="rain-in-october-region-by-region">3.6 Rain in October, region by region</h3>
 <p>One month, every year, in the regions of the country chosen at the top of Part 3 (here the 20 Italian regions): rain in <strong>October</strong>. <em>Why October?</em> In October 2024 Bologna, the city of this conference, was flooded: find Emilia-Romagna in 2024. The settings at the top of the cell can show any other component or month.</p>
+<div id="297b919a" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:555}}" data-outputid="5a1c4b26-f416-4c7c-af85-914515819da6" data-execution_count="22">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="E3CI_workshop_modificato3_param_regions_files/figure-html/cell-22-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
 <hr>
 </section>
 </section>

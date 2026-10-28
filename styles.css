@@ -1,7 +1,7 @@
-es · CSS
 /* Climate Gazette — monochrome theme, Plus Jakarta Sans throughout.
    No color accents; hierarchy is carried by weight, size, and spacing. */
  
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
 
 .plus-jakarta-sans {
   font-family: "Plus Jakarta Sans", sans-serif;
@@ -10,7 +10,6 @@ es · CSS
   font-style: normal;
 }
    
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
 
  
 :root {
@@ -117,7 +116,7 @@ h1, h2, h3, h4 {
 }
  
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 700;
   line-height: 1.15;
   padding-top:1vw;
