@@ -399,13 +399,6 @@
     "text": "The Netherlands, Min T recorded in August 2026"
   },
   {
-    "objectID": "E3CI_workshop_modificato2_CINZIA.html#setup-3-min",
-    "href": "E3CI_workshop_modificato2_CINZIA.html#setup-3-min",
-    "title": "Extreme weather events in the Netherlands",
-    "section": "0 · Setup ⏱ 3 min",
-    "text": "0 · Setup ⏱ 3 min\nRun these five cells once (click “Show code” if you are curious). Colab asks for two data files: in the second cell upload aci_comps_2026August.csv (the 51 countries, 2.4 MB), in the fifth one aci_comps_gaul_2026August.csv (the ≈750 regions used in Part 3, 35 MB). You can also drag both files onto the 📁 Files panel before you start, unless your organisers have already put a link in DATA_URL. The third cell checks the data and sets aside a few periods that look like processing gaps: real data always need checking before we draw them!"
-  },
-  {
     "objectID": "E3CI_workshop_modificato2_CINZIA.html#europe-is-it-getting-more-extreme-8-min",
     "href": "E3CI_workshop_modificato2_CINZIA.html#europe-is-it-getting-more-extreme-8-min",
     "title": "Extreme weather events in the Netherlands",
@@ -488,5 +481,61 @@
     "title": "Visualising extreme weather with the E3CI",
     "section": "💬 For the final discussion",
     "text": "💬 For the final discussion\n\nWhich chart would you show to a mayor? To a newspaper reader? To a scientist? Why different ones?\nWhich design choice changed your perception the most: the type of chart, the threshold, the period, the title?\nWhat does the E3CI not tell us? (people and assets exposed, damages, very local or very short events…)\nDid your titles state a finding, or ask a question? Which works better on social media?\n\n\nNotebooks prepared by IFAB for the Visualising Climate 2026 workshop. Data: E3CI – European Extreme Events Climate Index, https://www.climateindex.eu (IFAB; implemented by CMCC and Leithà – Unipol Group; distributed by Hypermeteo and Radarmeteo), based on Copernicus ERA5. Neither the European Commission nor ECMWF is responsible for any use of the Copernicus information. Colours: the E3CI Data Station palette (design by Cinzia Bongino). Country shapes: Natural Earth (public domain). Font: Lato (SIL Open Font License)."
+  },
+  {
+    "objectID": "E3CI_workshop_modificato2_CINZIA.html#title-1",
+    "href": "E3CI_workshop_modificato2_CINZIA.html#title-1",
+    "title": "Extreme weather events in the Netherlands",
+    "section": "Title 1",
+    "text": "Title 1\nWe count the country-months above 1: one country in extreme heat for one month = 1. With 45 countries and 12 months, a year has 540 country-months for each component.\nEach hazard has its own story One small chart per component (small multiples): every bar is the share of country-months above 1 in one year, the dashed line is the average of 1981–2010.\n\n\n\n\n\n\n\n\n\n💬 Since 2011, months of extreme heat have been more than 3 times as frequent as in 1981–2010, and fire-weather extremes almost 3 times, while cold extremes and hail have become rarer. Precipitation, wind and drought change less, and less regularly: trends in these hazards are harder to detect than in temperature.\nNow let’s look at the same hazards from another angle: when in the year do they strike?\nRecord of extremes events A rose for each hazard and period, inspired by Florence Nightingale’s diagrams (1858). How to read it: * every petal is a calendar month: January at the top, then clockwise (April on the right, July at the bottom, October on the left); * the area of a petal, not its length, is proportional to the share of country-months that were extreme in that month, as in Nightingale’s roses; * inside each petal the classes go from the centre outwards: 1–2 (the lightest shade), 2–3, above 3 (the darkest); * top row: 1981–2010; bottom row: since 2011.\nRemember: an E3CI “heat extreme” in January is an unusually warm January, not a 40 °C day."
+  },
+  {
+    "objectID": "E3CI_workshop_modificato2_CINZIA.html#title-3",
+    "href": "E3CI_workshop_modificato2_CINZIA.html#title-3",
+    "title": "Extreme weather events in the Netherlands",
+    "section": "Title 3",
+    "text": "Title 3\nFrom here on, every chart looks at one component (or two) or at one place: in this guided tour we chose extreme heat, July and Italy, and the settings at the top of each cell can show any other.\n2.1 One month, all countries Extreme heat in July: every row is a country, every cell a year. On the right, how many extreme Julys each country had since 1981: the countries with the most are at the top.\nWhy July? It is the heart of summer, when heat extremes hit people the hardest. But the E3CI compares every July only with the Julys of 1981–2010, so any other month can be read in the same way: in the second part of the workshop you can choose it (MONTH = 0 shows the strongest month of each year)."
+  },
+  {
+    "objectID": "E3CI_workshop_modificato2_CINZIA.html#title-4",
+    "href": "E3CI_workshop_modificato2_CINZIA.html#title-4",
+    "title": "Extreme weather events in the Netherlands",
+    "section": "Title 4",
+    "text": "Title 4\nFirst we load the country shapes (Natural Earth, ~3 MB), then we draw one small map per year: small multiples let the eye compare 46 Julys at once."
+  },
+  {
+    "objectID": "E3CI_workshop_modificato2_CINZIA.html#title-5",
+    "href": "E3CI_workshop_modificato2_CINZIA.html#title-5",
+    "title": "Extreme weather events in the Netherlands",
+    "section": "Title 5",
+    "text": "Title 5\nInspired by Ed Hawkins’ warming stripes: one row per component, one cell per year."
+  },
+  {
+    "objectID": "E3CI_workshop_modificato2_CINZIA.html#title-6",
+    "href": "E3CI_workshop_modificato2_CINZIA.html#title-6",
+    "title": "Extreme weather events in the Netherlands",
+    "section": "Title 6",
+    "text": "Title 6\nNow one component only: extreme heat. Every bar is one month, coloured by E3CI class; the dots mark the three most intense months on record, with their value."
+  },
+  {
+    "objectID": "E3CI_workshop_modificato2_CINZIA.html#title-7",
+    "href": "E3CI_workshop_modificato2_CINZIA.html#title-7",
+    "title": "Extreme weather events in the Netherlands",
+    "section": "Title 7",
+    "text": "Title 7\nThe same months, seen through their records. A record is a month with a higher E3CI than every month before it in the same country, since January 1981. In a climate that does not change, records become rarer and rarer: after 10 years the chance that a month beats all the previous ones is about 1 in 120; after 40 years, about 1 in 480. That’s why we start counting in 1991: in the first years almost every month is a record, because there is hardly any history to beat.\n📐 How many records should we expect? In a stable climate each of the first n months has the same chance of being the highest, so month n sets a record with probability 1/n. Adding up 1/n over the months since 1991 gives the number of records we would expect if nothing were changing. It is a reference, not an exact forecast: anomalies persist from one month to the next, so records can come in clusters."
+  },
+  {
+    "objectID": "E3CI_workshop_modificato2_CINZIA.html#title-8",
+    "href": "E3CI_workshop_modificato2_CINZIA.html#title-8",
+    "title": "Extreme weather events in the Netherlands",
+    "section": "Title 8",
+    "text": "Title 8\nThe same data as a heatmap: rows are months, columns are years. Top: extreme months per year. Right: how often each calendar month was extreme, then (grey) and now (colour)."
+  },
+  {
+    "objectID": "E3CI_workshop_modificato2_CINZIA.html#a-real-event",
+    "href": "E3CI_workshop_modificato2_CINZIA.html#a-real-event",
+    "title": "Extreme weather events in the Netherlands",
+    "section": "A real event",
+    "text": "A real event\nMany events hit only one region: here we use the regional data loaded in the setup. In May 2023 two waves of torrential rain flooded Romagna: was it the most intense month on record in Emilia-Romagna? How does it compare with the rest of Europe? The first cell lists other famous events: in the second part of the workshop you can choose one of them."
   }
 ]

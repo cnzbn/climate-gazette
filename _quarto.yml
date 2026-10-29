@@ -4,7 +4,9 @@ project:
   resources:
        - images/
        - CNAME
-  pre-render: fix_hr.py
+  pre-render: 
+       - fix_hr.py
+       - clean_notebooks.py
 
 website:
   title: "Climate Gazette"
