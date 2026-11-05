@@ -7,6 +7,7 @@ listing:
   contents:
     - Workshop_DEMO1.ipynb
     - Workshop_DEMO2.ipynb
+    - Tutorial_workshop_GROUP1.ipynb
     
     
 ---

@@ -16,7 +16,7 @@
   --color-bg: #F7F7F7;
   --color-surface-alt: #FFFFFF;
   --color-text: #1e1e1e;
-  --color-muted: #6B6B6B;
+  --color-muted: #4a4a4a;
   --color-border: #E0E0E0;
   --color-surface: #FFFFFF;
  
@@ -66,7 +66,7 @@
 /* CONTAINER */
 /* Full-width custom page */
 .page-layout-custom {
-  width: 100%;
+  width: 100%!important;
   max-width: none;
   margin: 0;
   padding: 0;
@@ -384,7 +384,7 @@ td {
 }
  
 .site-intro {
-  max-width: 1400px;
+  max-width: 1600px;
   margin: 0 auto 2rem;
   text-align: center;
   color: var(--color-text);
@@ -404,7 +404,7 @@ td {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   line-height: 1.4;
   color: var(--color-muted);
 }
