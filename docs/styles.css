@@ -344,6 +344,11 @@ td {
     gap: 8px;
 }
 
+.story-author {
+  font-size: 0.85rem;
+  color: #4a4a4a;
+  margin: 0.1rem 0 0;
+}
 
 /* ---------------------------------------------------------
    Homepage masthead — logo + divider + tagline

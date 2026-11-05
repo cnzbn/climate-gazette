@@ -2,7 +2,7 @@
 listing:
   id: stories
   template: stories.ejs
-  fields: [title, image, path]
+  fields: [title, author, image, path]
   sort: false
   contents:
     - Workshop_DEMO1.ipynb

@@ -8,6 +8,7 @@ project:
        - fix_hr.py
        - clean_notebooks.py
 
+
 website:
   title: "Climate Gazette"
   navbar:
