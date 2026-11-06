@@ -231,55 +231,6 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<div id="LRKdrHImeB6o" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:978}}" data-outputid="8d419ab9-a561-4ada-dd99-9671391eab8d">
-<div class="cell-output cell-output-error">
-<div class="ansi-escaped-output">
-<pre><span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">ValueError</span>                                Traceback (most recent call last)
-<span class="ansi-green-fg">/tmp/ipykernel_4620/1615926675.py</span> in <span class="ansi-cyan-fg">&lt;cell line: 0&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-fg ansi-bold">     31</span> 
-<span class="ansi-green-fg ansi-bold">     32</span> 
-<span class="ansi-green-fg">---&gt; 33</span><span class="ansi-red-fg"> </span>plot_de_map_grid<span class="ansi-blue-fg">(</span>COMPONENT<span class="ansi-blue-fg">,</span> MONTH<span class="ansi-blue-fg">,</span> DE_AREAS<span class="ansi-blue-fg">)</span>
-
-<span class="ansi-green-fg">/tmp/ipykernel_4620/1615926675.py</span> in <span class="ansi-cyan-fg">plot_de_map_grid</span><span class="ansi-blue-fg">(component, month, areas, n_columns, data, title, subtitle)</span>
-<span class="ansi-green-fg ansi-bold">     15</span>     axes <span class="ansi-blue-fg">=</span> axes<span class="ansi-blue-fg">.</span>ravel<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg ansi-bold">     16</span>     <span class="ansi-green-fg">for</span> ax<span class="ansi-blue-fg">,</span> date <span class="ansi-green-fg">in</span> zip<span class="ansi-blue-fg">(</span>axes<span class="ansi-blue-fg">,</span> dates<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">---&gt; 17</span><span class="ansi-red-fg">         </span>draw_de_map<span class="ansi-blue-fg">(</span>ax<span class="ansi-blue-fg">,</span> de_map_colors<span class="ansi-blue-fg">(</span>component<span class="ansi-blue-fg">,</span> date<span class="ansi-blue-fg">,</span> areas<span class="ansi-blue-fg">,</span> data<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg ansi-bold">     18</span>         ax.text(0.03, 0.97, str(date.year), transform=ax.transAxes, ha="left", va="top",   # top-left = North Sea
-<span class="ansi-green-fg ansi-bold">     19</span>                 fontsize=12, fontweight="bold", color=INK)
-
-<span class="ansi-green-fg">/tmp/ipykernel_4620/3526939635.py</span> in <span class="ansi-cyan-fg">de_map_colors</span><span class="ansi-blue-fg">(component, date, areas, data)</span>
-<span class="ansi-green-fg ansi-bold">     84</span> <span class="ansi-green-fg">def</span> de_map_colors<span class="ansi-blue-fg">(</span>component<span class="ansi-blue-fg">,</span> date<span class="ansi-blue-fg">,</span> areas<span class="ansi-blue-fg">=</span>DE_AREAS<span class="ansi-blue-fg">,</span> data<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">None</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg ansi-bold">     85</span>     <span class="ansi-blue-fg">"""One colour per Land of DE for the given month (white = no data)."""</span>
-<span class="ansi-green-fg">---&gt; 86</span><span class="ansi-red-fg">     </span>values <span class="ansi-blue-fg">=</span> table<span class="ansi-blue-fg">(</span>component<span class="ansi-blue-fg">,</span> areas<span class="ansi-blue-fg">,</span> data<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">.</span>loc<span class="ansi-blue-fg">[</span>date<span class="ansi-blue-fg">]</span>
-<span class="ansi-green-fg ansi-bold">     87</span>     colors <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">]</span>
-<span class="ansi-green-fg ansi-bold">     88</span>     <span class="ansi-green-fg">for</span> area <span class="ansi-green-fg">in</span> DE<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">"area"</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">:</span>
-
-<span class="ansi-green-fg">/tmp/ipykernel_4620/1944124378.py</span> in <span class="ansi-cyan-fg">table</span><span class="ansi-blue-fg">(component, areas, data)</span>
-<span class="ansi-green-fg ansi-bold">     79</span>     <span class="ansi-green-fg">if</span> areas <span class="ansi-green-fg">is</span> <span class="ansi-green-fg">not</span> <span class="ansi-green-fg">None</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg ansi-bold">     80</span>         <span class="ansi-green-fg">for</span> area <span class="ansi-green-fg">in</span> areas<span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">---&gt; 81</span><span class="ansi-red-fg">             </span>check_name<span class="ansi-blue-fg">(</span>area<span class="ansi-blue-fg">,</span> result<span class="ansi-blue-fg">.</span>columns<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">"country or region name"</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg ansi-bold">     82</span>         result <span class="ansi-blue-fg">=</span> result<span class="ansi-blue-fg">[</span>areas<span class="ansi-blue-fg">]</span>
-<span class="ansi-green-fg ansi-bold">     83</span>     <span class="ansi-green-fg">return</span> result
-
-<span class="ansi-green-fg">/tmp/ipykernel_4620/1944124378.py</span> in <span class="ansi-cyan-fg">check_name</span><span class="ansi-blue-fg">(name, valid, what)</span>
-<span class="ansi-green-fg ansi-bold">     67</span>         close <span class="ansi-blue-fg">=</span> difflib<span class="ansi-blue-fg">.</span>get_close_matches<span class="ansi-blue-fg">(</span>str<span class="ansi-blue-fg">(</span>name<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">[</span>str<span class="ansi-blue-fg">(</span>v<span class="ansi-blue-fg">)</span> <span class="ansi-green-fg">for</span> v <span class="ansi-green-fg">in</span> valid<span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">,</span> n<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">3</span><span class="ansi-blue-fg">,</span> cutoff<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">0.5</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg ansi-bold">     68</span>         hint <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">f" Did you mean {' or '.join(repr(c) for c in close)}?"</span> <span class="ansi-green-fg">if</span> close <span class="ansi-green-fg">else</span> <span class="ansi-blue-fg">""</span>
-<span class="ansi-green-fg">---&gt; 69</span><span class="ansi-red-fg">         </span><span class="ansi-green-fg">raise</span> ValueError<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">f"{name!r} is not a valid {what}.{hint}"</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg ansi-bold">     70</span> 
-<span class="ansi-green-fg ansi-bold">     71</span> 
-
-<span class="ansi-red-fg">ValueError</span>: 'Baden-Württemberg' is not a valid country or region name.</pre>
-</div>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="GROUP_10_files/figure-html/cell-13-output-2.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-</div>
-</div>
 <p>COMMENT HERE: What information this chart tells you?</p>
 <hr>
 </section>
@@ -292,7 +243,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="GROUP_10_files/figure-html/cell-15-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="GROUP_10_files/figure-html/cell-13-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
@@ -305,7 +256,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="GROUP_10_files/figure-html/cell-16-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="GROUP_10_files/figure-html/cell-14-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
@@ -318,7 +269,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="GROUP_10_files/figure-html/cell-17-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="GROUP_10_files/figure-html/cell-15-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
