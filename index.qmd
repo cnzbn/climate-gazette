@@ -7,8 +7,22 @@ listing:
   contents:
     - Workshop_DEMO1.ipynb
     - Workshop_DEMO2.ipynb
-    - Tutorial_workshop_GROUP1.ipynb
-    
+    - GROUP_01.ipynb
+    - GROUP_02.ipynb
+    - GROUP_03.ipynb
+    - GROUP_04.ipynb
+    - GROUP_05.ipynb
+    - GROUP_06.ipynb
+    - GROUP_07.ipynb
+    - GROUP_08.ipynb
+    - GROUP_09.ipynb
+    - GROUP_10.ipynb
+    - GROUP_11.ipynb
+    - GROUP_12.ipynb
+    - GROUP_13.ipynb
+    - GROUP_14.ipynb
+    - GROUP_15.ipynb
+    - GROUP_16.ipynb
     
 ---
 
