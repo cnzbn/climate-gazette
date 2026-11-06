@@ -1,59 +1,115 @@
 [
   {
-    "objectID": "GROUP_08.html",
-    "href": "GROUP_08.html",
-    "title": "Climate Gazette",
-    "section": "",
-    "text": "title: “Hotter an higher!” subtitle: “Extreme weather is not just about Southern countries anymore” author: “Adrián Maqueda, Cristina Pita da Veiga”\nA story created @ Visualising Climate 2026, Bologna\nDouble click here: write in one or two sentences what is your story about."
-  },
-  {
-    "objectID": "GROUP_08.html#an-overview-of-extreme-weather-events-in-europe-from-1981-to-the-present-day",
-    "href": "GROUP_08.html#an-overview-of-extreme-weather-events-in-europe-from-1981-to-the-present-day",
-    "title": "Climate Gazette",
-    "section": "An overview of extreme weather events in Europe from 1981 to the present day",
-    "text": "An overview of extreme weather events in Europe from 1981 to the present day\n\nIs Europe getting more extreme?\nA look at every extreme weather event of E3CI.\n\n\n\n\n\n\n\n\n\nExtreme weather is becoming the new normal. As we can see here in Belgium. A country known by they green landscape, fires are now a concern.\n\n\nWhen in the year?\nComparison of two periods: 1981-2010 vs 2011-2026, divided by seasons.\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?"
-  },
-  {
-    "objectID": "GROUP_08.html#compare-countries-in-europe-who-is-hit-the-hardest-over-the-years",
-    "href": "GROUP_08.html#compare-countries-in-europe-who-is-hit-the-hardest-over-the-years",
-    "title": "Climate Gazette",
-    "section": "Compare countries in Europe: who is hit the hardest over the years?",
-    "text": "Compare countries in Europe: who is hit the hardest over the years?\n\n\n\n\n\n\n\n\n\nBut we are starting to see that is not a trend in the south and northern countries also reach extreme whether conditions\n\nOne map per year: Europe trends at a glance\n\n\n\n\n\n\n\n\n\nEvery year temperatures reach new records in Europe"
-  },
-  {
-    "objectID": "GROUP_08.html#zoom-in",
-    "href": "GROUP_08.html#zoom-in",
-    "title": "Climate Gazette",
-    "section": "Zoom in",
-    "text": "Zoom in\n\nThe barcode of extremes\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?\n\n\nComparison between two extreme weather components\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?\n\n\nMonth by month, and the records\n\n\n\n\n\n\n\n\n\nEvery year we reach a new record. We didn’t flat the curve. This is not about the southern countries anymore.\n\n\nLet’s explore a specific extreme weather event closer\n\n\n\n\n\n\n\n\n\nAnother example are the floods in Belgium and Germany in 2021"
-  },
-  {
-    "objectID": "GROUP_10.html",
-    "href": "GROUP_10.html",
-    "title": "Group 10",
+    "objectID": "GROUP_04.html",
+    "href": "GROUP_04.html",
+    "title": "Group 4",
     "section": "",
     "text": "A story created @ Visualising Climate 2026, Bologna\nDouble click here: add your Climate Gazette Cover.\nDouble click here: write in one or two sentences what is your story about."
   },
   {
-    "objectID": "GROUP_10.html#an-overview-of-extreme-weather-events-in-europe-from-1981-to-the-present-day",
-    "href": "GROUP_10.html#an-overview-of-extreme-weather-events-in-europe-from-1981-to-the-present-day",
-    "title": "Group 10",
+    "objectID": "GROUP_04.html#an-overview-of-extreme-weather-events-in-europe-from-1981-to-the-present-day",
+    "href": "GROUP_04.html#an-overview-of-extreme-weather-events-in-europe-from-1981-to-the-present-day",
+    "title": "Group 4",
     "section": "An overview of extreme weather events in Europe from 1981 to the present day",
-    "text": "An overview of extreme weather events in Europe from 1981 to the present day\n\nIs Europe getting more extreme?\nA look at every extreme weather event of E3CI.\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?\n\n\nWhen in the year?\nComparison of two periods: 1981-2010 vs 2011-2026, divided by seasons.\n\n\n\n\n\n\n\n\n\nCOMMENTS : Extreme temperature are less perceived when they occur in colder months"
+    "text": "An overview of extreme weather events in Europe from 1981 to the present day\n\nIs Europe getting more extreme?\nA look at every extreme weather event of E3CI.\nCOMMENT HERE: What information this chart tells you?\n\n\nWhen in the year?\nComparison of two periods: 1981-2010 vs 2011-2026, divided by seasons.\nCOMMENT HERE: What information this chart tells you?"
   },
   {
-    "objectID": "GROUP_10.html#compare-countries-in-europe-who-is-hit-the-hardest-over-the-years",
-    "href": "GROUP_10.html#compare-countries-in-europe-who-is-hit-the-hardest-over-the-years",
-    "title": "Group 10",
+    "objectID": "GROUP_04.html#compare-countries-in-europe-who-is-hit-the-hardest-over-the-years",
+    "href": "GROUP_04.html#compare-countries-in-europe-who-is-hit-the-hardest-over-the-years",
+    "title": "Group 4",
     "section": "Compare countries in Europe: who is hit the hardest over the years?",
-    "text": "Compare countries in Europe: who is hit the hardest over the years?\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: Increases in warm autumn is generally obvious in each region, while it’s slightly lower in north regions.\n\nOne map per year: Europe trends at a glance\n\n\n\n\n\n\n\n\n\n\n\n\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n/tmp/ipykernel_4620/1615926675.py in &lt;cell line: 0&gt;()\n     31 \n     32 \n---&gt; 33 plot_de_map_grid(COMPONENT, MONTH, DE_AREAS)\n\n/tmp/ipykernel_4620/1615926675.py in plot_de_map_grid(component, month, areas, n_columns, data, title, subtitle)\n     15     axes = axes.ravel()\n     16     for ax, date in zip(axes, dates):\n---&gt; 17         draw_de_map(ax, de_map_colors(component, date, areas, data))\n     18         ax.text(0.03, 0.97, str(date.year), transform=ax.transAxes, ha=\"left\", va=\"top\",   # top-left = North Sea\n     19                 fontsize=12, fontweight=\"bold\", color=INK)\n\n/tmp/ipykernel_4620/3526939635.py in de_map_colors(component, date, areas, data)\n     84 def de_map_colors(component, date, areas=DE_AREAS, data=None):\n     85     \"\"\"One colour per Land of DE for the given month (white = no data).\"\"\"\n---&gt; 86     values = table(component, areas, data).loc[date]\n     87     colors = []\n     88     for area in DE[\"area\"]:\n\n/tmp/ipykernel_4620/1944124378.py in table(component, areas, data)\n     79     if areas is not None:\n     80         for area in areas:\n---&gt; 81             check_name(area, result.columns, \"country or region name\")\n     82         result = result[areas]\n     83     return result\n\n/tmp/ipykernel_4620/1944124378.py in check_name(name, valid, what)\n     67         close = difflib.get_close_matches(str(name), [str(v) for v in valid], n=3, cutoff=0.5)\n     68         hint = f\" Did you mean {' or '.join(repr(c) for c in close)}?\" if close else \"\"\n---&gt; 69         raise ValueError(f\"{name!r} is not a valid {what}.{hint}\")\n     70 \n     71 \n\nValueError: 'Baden-Württemberg' is not a valid country or region name.\n\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?"
+    "text": "Compare countries in Europe: who is hit the hardest over the years?\nCOMMENT HERE: What information this chart tells you?\n\nOne map per year: Europe trends at a glance\nCOMMENT HERE: What information this chart tells you?"
   },
   {
-    "objectID": "GROUP_10.html#zoom-in",
-    "href": "GROUP_10.html#zoom-in",
-    "title": "Group 10",
+    "objectID": "GROUP_04.html#zoom-in",
+    "href": "GROUP_04.html#zoom-in",
+    "title": "Group 4",
     "section": "Zoom in",
-    "text": "Zoom in\n\nThe barcode of extremes\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?\n\n\nComparison between two extreme weather components\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?\n\n\nMonth by month, and the records\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?\n\n\nLet’s explore a specific extreme weather event closer\nCOMMENT HERE: What information this chart tells you?"
+    "text": "Zoom in\n\nThe barcode of extremes\nCOMMENT HERE: What information this chart tells you?\n\n\nComparison between two extreme weather components\nCOMMENT HERE: What information this chart tells you?\n\n\nMonth by month, and the records\nCOMMENT HERE: What information this chart tells you?\n\n\nLet’s explore a specific extreme weather event closer\nCOMMENT HERE: What information this chart tells you?"
+  },
+  {
+    "objectID": "GROUP_03.html",
+    "href": "GROUP_03.html",
+    "title": "Group 3",
+    "section": "",
+    "text": "A story created @ Visualising Climate 2026, Bologna\nDouble click here: add your Climate Gazette Cover.\nDouble click here: write in one or two sentences what is your story about."
+  },
+  {
+    "objectID": "GROUP_03.html#an-overview-of-extreme-weather-events-in-europe-from-1981-to-the-present-day",
+    "href": "GROUP_03.html#an-overview-of-extreme-weather-events-in-europe-from-1981-to-the-present-day",
+    "title": "Group 3",
+    "section": "An overview of extreme weather events in Europe from 1981 to the present day",
+    "text": "An overview of extreme weather events in Europe from 1981 to the present day\n\nIs Europe getting more extreme?\nA look at every extreme weather event of E3CI.\n\n\n\n\n\n\n\n\n\nThe chart suggests that drought conditions have become less frequent while extreme precipitation has increased. It also shows an increase in fire activity, which may be associated with rising temperatures and stronger winds.\n\n\nWhen in the year?\nComparison of two periods: 1981-2010 vs 2011-2026, divided by seasons.\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?"
+  },
+  {
+    "objectID": "GROUP_03.html#compare-countries-in-europe-who-is-hit-the-hardest-over-the-years",
+    "href": "GROUP_03.html#compare-countries-in-europe-who-is-hit-the-hardest-over-the-years",
+    "title": "Group 3",
+    "section": "Compare countries in Europe: who is hit the hardest over the years?",
+    "text": "Compare countries in Europe: who is hit the hardest over the years?\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?\n\nOne map per year: Europe trends at a glance\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?"
+  },
+  {
+    "objectID": "GROUP_03.html#zoom-in",
+    "href": "GROUP_03.html#zoom-in",
+    "title": "Group 3",
+    "section": "Zoom in",
+    "text": "Zoom in\n\nThe barcode of extremes\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?\n\n\nComparison between two extreme weather components\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?\n\n\nMonth by month, and the records\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?\n\n\nLet’s explore a specific extreme weather event closer\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?"
+  },
+  {
+    "objectID": "Workshop_DEMO2.html",
+    "href": "Workshop_DEMO2.html",
+    "title": "Too little, too much water",
+    "section": "",
+    "text": "A story created @ Visualising Climate 2026, Bologna\nHeat is the clearest signal in the E3CI, but water tells a more complicated story: months of drought and months of extreme rain, sometimes in the same country and in the same years. We follow both, from Europe down to Germany."
+  },
+  {
+    "objectID": "Workshop_DEMO2.html#europe",
+    "href": "Workshop_DEMO2.html#europe",
+    "title": "Too little, too much water",
+    "section": "Europe",
+    "text": "Europe\n\nEach hazard has its own story\n\n\n\n\n\n\n\n\n\nWater extremes change less than heat. Since 2011 extreme precipitation has become about 1.5 times as frequent as in 1981–2010 (from 8% to 13% of the country-months), drought only slightly (from 13% to 15%), and the bars go up and down from year to year: wet and dry years alternate.\n\n\nWhen in the year?\n\n\n\n\n\n\n\n\n\nLook at the drought and precipitation roses. Drought grows above all from April to August (in April, from 13% to 20% of the country-months), while extreme rain grows in winter and autumn: in January, February and October, from about one country-month in ten to one in six."
+  },
+  {
+    "objectID": "Workshop_DEMO2.html#who-is-hit-the-hardest",
+    "href": "Workshop_DEMO2.html#who-is-hit-the-hardest",
+    "title": "Too little, too much water",
+    "section": "Who is hit the hardest?",
+    "text": "Who is hit the hardest?\n\nOne month, all countries\n\n\n\n\n\n\n\n\n\nSpring droughts matter for crops and rivers. May 2011 and May 2026 were extreme in 25 of the 45 countries, more than any other May. The countries with the most extreme Mays since 1981 are in the west of central Europe: Belgium, Luxembourg, the Netherlands and Germany.\n\n\nToo dry and too wet, region by region\n\n\n\n\n\n\n\n\n\nEach dot is a month above 2 in one of the 15 German regions. Severe drought months went from 20 in 1981–1990 to 137 in 2017–2026; severe rain months increased too, from 81 to 110. The same regions now swing between the two extremes.\n\n\nOne map per year\n\n\n\n\n\n\n\n\n\nDrought maps are patchier than heat maps: the large extreme Junes (1988, 2000, 2003, 2018, 2025 and 2026) are separated by years with almost no drought. In 2026, 21 of the 45 countries had an extreme June drought, the most in the series."
+  },
+  {
+    "objectID": "Workshop_DEMO2.html#zoom-in-germany",
+    "href": "Workshop_DEMO2.html#zoom-in-germany",
+    "title": "Too little, too much water",
+    "section": "Zoom in: Germany",
+    "text": "Zoom in: Germany\n\n46 years at a glance\n\n\n\n\n\n\n\n\n\nOne row per component, one cell per year. In Germany the drought row darkens in the same years as the heat row, such as 2003, 2018 and 2026: hot and dry summers come together. Since 2011, 21% of the months were in extreme drought, against 12% in 1981–2010.\n\n\nMonth by month\n\n\n\n\n\n\n\n\n\nDrought values stay lower than heat values: in Germany the E3CI for drought has never reached 3. The three most extreme months on record are May 2011, August 2018 and May 2025, two of them in late spring.\nRecords tell a different story from frequency. The last drought record in Germany dates back to May 2011: since then droughts have been more frequent, but none has been more intense. A changing climate does not always mean a new record every year.\n\n\nWhich months, which years?\n\n\n\n\n\n\n\n\n\nBefore 2011 every calendar month was in extreme drought in at most one or two years out of ten. Since then May has been extreme in a third of the years and June in 40%: drought arrives when crops need water the most.\n\n\nA real event: the floods of July 2021\n\n\n\n\n\n\n\n\n\nToo much water, in the middle of a dry decade. In July 2021 North Rhine-Westphalia reached 11.5, its most extreme month for rain since 1981. The ranking on the right shows a shared event: Luxembourg, Belgium, the Netherlands and Rhineland-Palatinate were hit in the same month.\n\n\nRegion by region\n\n\n\n\n\n\n\n\n\nExtreme July rain is a regional affair: in most Julys it hits only a few regions. July 2014 (11 regions) and July 2021 (10 regions) are the exceptions, with two thirds of Germany at once. Berlin and Brandenburg are the regions with the most extreme Julys since 1981.\n\nData: E3CI – European Extreme Events Climate Index, https://www.climateindex.eu (IFAB; implemented by CMCC and Leithà – Unipol Group; distributed by Hypermeteo and Radarmeteo), based on Copernicus ERA5. Neither the European Commission nor ECMWF is responsible for any use of the Copernicus information. Colours: the E3CI Data Station palette (design by Cinzia Bongino). Country shapes: Natural Earth (public domain)."
+  },
+  {
+    "objectID": "GROUP_05.html",
+    "href": "GROUP_05.html",
+    "title": "Group 5",
+    "section": "",
+    "text": "A story created @ Visualising Climate 2026, Bologna\nDouble click here: add your Climate Gazette Cover.\nDouble click here: write in one or two sentences what is your story about."
+  },
+  {
+    "objectID": "GROUP_05.html#an-overview-of-extreme-weather-events-in-europe-from-1981-to-the-present-day",
+    "href": "GROUP_05.html#an-overview-of-extreme-weather-events-in-europe-from-1981-to-the-present-day",
+    "title": "Group 5",
+    "section": "An overview of extreme weather events in Europe from 1981 to the present day",
+    "text": "An overview of extreme weather events in Europe from 1981 to the present day\n\nIs Europe getting more extreme?\nA look at every extreme weather event of E3CI.\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?\n\n\nWhen in the year?\nComparison of two periods: 1981-2010 vs 2011-2026, divided by seasons.\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?"
+  },
+  {
+    "objectID": "GROUP_05.html#compare-countries-in-europe-who-is-hit-the-hardest-over-the-years",
+    "href": "GROUP_05.html#compare-countries-in-europe-who-is-hit-the-hardest-over-the-years",
+    "title": "Group 5",
+    "section": "Compare countries in Europe: who is hit the hardest over the years?",
+    "text": "Compare countries in Europe: who is hit the hardest over the years?\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?\n\nOne map per year: Europe trends at a glance\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?"
+  },
+  {
+    "objectID": "GROUP_05.html#zoom-in",
+    "href": "GROUP_05.html#zoom-in",
+    "title": "Group 5",
+    "section": "Zoom in",
+    "text": "Zoom in\n\nThe barcode of extremes\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?\n\n\nComparison between two extreme weather components\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?\n\n\nMonth by month, and the records\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?\n\n\nLet’s explore a specific extreme weather event closer\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?"
   },
   {
     "objectID": "GROUP_07.html",
@@ -84,86 +140,37 @@
     "text": "Zoom in\n\nThe barcode of extremes\n\n\nHow to read this chart\nRows are the seven components and columns are years. A cell’s shade counts the months in that year above THRESHOLD: 0, 1–2, 3–5, or 6 or more. Each row uses its own component colour. The last year is incomplete, so its cell is not directly comparable with the others.\nCOMMENT HERE: What information this chart tells you?\n\n\nComparison between two extreme weather components\n\n\nHow to read this chart\nRows are the TOP_N areas with the most months above THRESHOLD, counting both components together. Each dot is one month above the threshold. Its colour shows the component and its size is proportional to the E3CI value.\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?\n\n\nMonth by month, and the records\n\n\nHow to read this chart\nEach bar is one month. Bars above the dashed line at 1 are extreme and coloured by class. Bars below 1 are grey, and negative values mean the month was below its usual level. The dots mark the TOP_N most intense months, which are also listed on the right.\nCOMMENT HERE: What information this chart tells you?\n\n\nLet’s explore a specific extreme weather event closer\n\n\nHow to read this chart\nThe chart has three panels:\n\nTop: time series with every month since 1981, with the event highlighted and its value and rank among all months.\nBottom left: the same calendar month in every year, with the event’s rank among those months.\nBottom right: the 12 regions in Europe with the highest values in that month. If the selected area is not among them, it is added as the last row.\n\nTogether they show how unusual the month was locally and how widespread the event was.\nCOMMENT HERE: What information this chart tells you?"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Climate Gazette",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "Climate Gazette features stories of extreme weather events that occurred in Europe over the past 40 years. Reports are based on data from the European Extreme Events Climate Index, analysed with Jupyter and presented via charts and maps.\n\n\n\n \n\n\n\n\n\nIssue 1 - November 2026\n\n\nDeveloped during the “E3CI Data Station: Visualising Extreme Weather for Decision-Makers and Communities” workshop held at the Visualising Climate Conference 2026, Bologna. Curated by Noemi Ambrosi, Simona Contaldi, and Cinzia Bongino.\n\n\n  Heatwave in Sicily, July 2023 Noemi Ambrosi \n  Too little, too much water Noemi Ambrosi \n  Group 01 your names \n  Group 2 Melanie Lauer, Sara Maurizio \n  Group 3 your names \n  Group 4 your names \n  Group 5 your names \n  Group 6 your names \n  Finland your names \n  How to read the E3CI  \n  Group 9 your names \n  Group 10 Patrick and Zhi-Ran \nNo matching items\n\n\n\n\n\nE3CI European Extreme Events Climate Index is a project by IFAB, CMCC, and Leithà Gruppo Unipol. Distributed by Hypermeteo, and Radarmeteo.  datastation.climateindex.eu ↗       climateindex.eu ↗"
+    "text": "About this site"
   },
   {
-    "objectID": "GROUP_01.html",
-    "href": "GROUP_01.html",
-    "title": "Group 01",
-    "section": "",
-    "text": "A story created @ Visualising Climate 2026, Bologna\nDouble click here: add your Climate Gazette Cover.\nDouble click here: write in one or two sentences what is your story about."
-  },
-  {
-    "objectID": "GROUP_01.html#an-overview-of-extreme-weather-events-in-europe-from-1981-to-the-present-day",
-    "href": "GROUP_01.html#an-overview-of-extreme-weather-events-in-europe-from-1981-to-the-present-day",
-    "title": "Group 01",
-    "section": "An overview of extreme weather events in Europe from 1981 to the present day",
-    "text": "An overview of extreme weather events in Europe from 1981 to the present day\n\nIs Europe getting more extreme?\nA look at every extreme weather event of E3CI.\nCOMMENT HERE: What information this chart tells you?\n\n\nWhen in the year?\nComparison of two periods: 1981-2010 vs 2011-2026, divided by seasons.\n\n\nHow to read this chart\nA rose for each weather event and period: * every petal is a calendar month: January at the top, then clockwise (April on the right, July at the bottom, October on the left); * the area of a petal, not its length, is proportional to the share of country-months that were extreme in that month, as in Nightingale’s roses; * inside each petal the classes go from the centre outwards: 1–2 (the lightest shade), 2–3, above 3 (the darkest); * top row: the first period, bottom row: the second one (chosen in PERIODS).\nRemember: every month is compared with the same month of 1981–2010, so an extreme in winter is unusual for winter.\nCOMMENT HERE: What information this chart tells you?"
-  },
-  {
-    "objectID": "GROUP_01.html#compare-countries-in-europe-who-is-hit-the-hardest-over-the-years",
-    "href": "GROUP_01.html#compare-countries-in-europe-who-is-hit-the-hardest-over-the-years",
-    "title": "Group 01",
-    "section": "Compare countries in Europe: who is hit the hardest over the years?",
-    "text": "Compare countries in Europe: who is hit the hardest over the years?\n\nHow to read this chart\nRows are countries (or regions) and columns are years. Each cell shows the E3CI class of the selected month. With MONTH = 0 it shows the class of the year’s highest monthly value. The bar on the right counts the years in which that value was above 1. With SORT_BY = “count”, the countries with the most extreme years are at the top.\nCOMMENT HERE: What information this chart tells you?\n\n\nOne map per year: Europe trends at a glance\n\n\nHow to read this chart\nThere is one map for each year, all for the same component and the same calendar month. Each country is coloured by its E3CI class, and countries outside the selection are light grey. Read the maps left to right and top to bottom, like a comic strip.\nCOMMENT HERE: What information this chart tells you?"
-  },
-  {
-    "objectID": "GROUP_01.html#zoom-in",
-    "href": "GROUP_01.html#zoom-in",
-    "title": "Group 01",
-    "section": "Zoom in",
-    "text": "Zoom in\n\nThe barcode of extremes\n\n\nHow to read this chart\nRows are the seven components and columns are years. A cell’s shade counts the months in that year above THRESHOLD: 0, 1–2, 3–5, or 6 or more. Each row uses its own component colour. The last year is incomplete, so its cell is not directly comparable with the others.\nCOMMENT HERE: What information this chart tells you?\n\n\nComparison between two extreme weather components\n\n\nHow to read this chart\nRows are the TOP_N areas with the most months above THRESHOLD, counting both components together. Each dot is one month above the threshold. Its colour shows the component and its size is proportional to the E3CI value.\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?\n\n\nMonth by month, and the records\n\n\nHow to read this chart\nEach bar is one month. Bars above the dashed line at 1 are extreme and coloured by class. Bars below 1 are grey, and negative values mean the month was below its usual level. The dots mark the TOP_N most intense months, which are also listed on the right.\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?\n\n\nLet’s explore a specific extreme weather event closer\n\n\nHow to read this chart\nThe chart has three panels:\n\nTop: time series with every month since 1981, with the event highlighted and its value and rank among all months.\nBottom left: the same calendar month in every year, with the event’s rank among those months.\nBottom right: the 12 regions in Europe with the highest values in that month. If the selected area is not among them, it is added as the last row.\n\nTogether they show how unusual the month was locally and how widespread the event was.\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?"
-  },
-  {
-    "objectID": "Workshop_DEMO1.html",
-    "href": "Workshop_DEMO1.html",
-    "title": "Heatwave in Sicily, July 2023",
-    "section": "",
-    "text": "A story created @ Visualising Climate 2026, Bologna\nIn the second half of July 2023 a long heatwave hit southern Italy: Palermo reached about 47 °C on 24 July, its highest temperature on record, and wildfires closed its airport. How extreme was it, and how does it fit into the last 46 years?"
-  },
-  {
-    "objectID": "Workshop_DEMO1.html#an-overview-of-extreme-weather-events-in-europe-from-1981-to-the-present-day",
-    "href": "Workshop_DEMO1.html#an-overview-of-extreme-weather-events-in-europe-from-1981-to-the-present-day",
-    "title": "Heatwave in Sicily, July 2023",
-    "section": "An overview of extreme weather events in Europe from 1981 to the present day",
-    "text": "An overview of extreme weather events in Europe from 1981 to the present day\n\nEach hazard has its own story\n\n\n\n\n\n\n\n\n\nE3CI tracks seven climate hazards, and they do not all move in the same direction. One clearly stands out: extreme maximum temperatures. Until the early 2000s the orange bars stay mostly below the 1981–2010 average; in the last fifteen years almost every bar towers above it, and the most recent years are the highest of the whole series. Wildfires, closely linked to heat, follow a similar path, with sharp peaks in recent years. Extreme cold and hail go the other way, becoming rarer. Drought, heavy rain and wind change much less. In short, heat has grown more than any other hazard, by a factor of about 3.5. This is why our story follows the heat. But when in the year does it strike? (2026 data up to September.)\n\n\nWhen in the year?\n\n\n\n\n\n\n\n\n\nIn this plot is important to note that the area of a petal, not its length, shows the share: a petal twice as long means about four times as many extreme months. In 1981–2010 the rose for extreme maximum temperatures is small and regular, just above the 10% circle in every month. In 2011–2026 almost every petal reaches or exceeds the 40% circle, with no clear summer peak: February, April, October and November are as affected as July. On average, the share of extreme-heat country-months rises from 11% to 37%, and the dark outer band shows that many of them exceed E3CI 3. The opposite happens for extreme cold, which shrinks mostly below 10% (from 11% to 6.8% on average), and for hail (from 14% to 9.5%). Wildfires almost triple, from 5.5% to 16%, growing especially in spring and summer. Extreme heat is no longer a summer event: it is now spread across the whole year. But where in Europe does it hit?\n\n\nCompare countries in Europe: who is hit the hardest in July over the years?\n\n\n\n\n\n\n\n\n\nUntil 2010, extreme Julys are isolated episodes, appearing only here and there. After 2010 the grid changes colour: extreme cells become increasingly frequent and, since 2022, almost the rule. Not all countries are affected equally: the Balkans and Central Europe top the ranking, and Italy, with 12 extreme Julys since 1981, is among the most affected countries. July 2023 was extreme in 18 of the 45 countries, fewer than in July 2025 (39), but it was one of the most intense in the south: above 3 in Italy, Malta, Greece, Albania and Croatia.\n\n\nOne map per year\n\n\n\n\n\n\n\n\n\nEach map is a July, from 1981 to today: read it like a comic strip, left to right and top to bottom. In the first rows Europe is almost entirely grey, and extreme heat appears only occasionally. From the 2000s onwards the orange patches become more frequent, wider and darker, hitting different areas each time, from Scandinavia to the Balkans. Extreme heat is no longer a local exception but a phenomenon that moves and spreads across the continent."
-  },
-  {
-    "objectID": "Workshop_DEMO1.html#zoom-in-italy",
-    "href": "Workshop_DEMO1.html#zoom-in-italy",
-    "title": "Heatwave in Sicily, July 2023",
-    "section": "Zoom in: Italy",
-    "text": "Zoom in: Italy\n\nThe barcode of extremes\n\n\n\n\n\n\n\n\n\nOne row per component, one cell per year. In Italy the heat row changes the most: 27 extremely hot months in the three decades 1981–2010, 84 in the sixteen years since 2011.\n\n\nHeat and cold weather, region by region\n\n\n\n\n\n\n\n\n\nThe two indicators move in opposite directions: extreme events linked to high temperatures are increasing, while those linked to extreme low temperatures are becoming rarer and less widespread. The numbers make it clear: comparing the first and the last decade, extreme heat months rise from 95 to 703, while extreme cold months fall from 151 to 17. In the 1980s blue and orange dots alternate; today the chart is almost entirely orange, in all 20 regions.\n\n\nMonth by month, and the records\n\n\n\n\n\n\n\n\n\nTop: only 4 months above 3 in 1981–2010, 31 since 2011. Bottom: Italy has set six heat records since 1991, where a stable climate would give about 1.5. July 2023 reached 6.2 for Italy as a whole, the second most extreme July, but not a record: October 2022 and October 2023 were even further from normal for their season.\n\n\nThe event: Sicily, July 2023\n\n\n\n\n\n\n\n\n\nSicily reached 13.5 in July 2023, its second most extreme July after July 2026 and its third most extreme month since 1981. On the right, the most affected regions of Europe that month: only Campania was higher (18.6)."
-  },
-  {
-    "objectID": "GROUP_06.html",
-    "href": "GROUP_06.html",
-    "title": "Group 6",
+    "objectID": "GROUP_09.html",
+    "href": "GROUP_09.html",
+    "title": "Group 9",
     "section": "",
     "text": "A story created @ Visualising Climate 2026, Bologna\nDouble click here: add your Climate Gazette Cover.\nDouble click here: write in one or two sentences what is your story about."
   },
   {
-    "objectID": "GROUP_06.html#an-overview-of-extreme-weather-events-in-europe-from-1981-to-the-present-day",
-    "href": "GROUP_06.html#an-overview-of-extreme-weather-events-in-europe-from-1981-to-the-present-day",
-    "title": "Group 6",
+    "objectID": "GROUP_09.html#an-overview-of-extreme-weather-events-in-europe-from-1981-to-the-present-day",
+    "href": "GROUP_09.html#an-overview-of-extreme-weather-events-in-europe-from-1981-to-the-present-day",
+    "title": "Group 9",
     "section": "An overview of extreme weather events in Europe from 1981 to the present day",
     "text": "An overview of extreme weather events in Europe from 1981 to the present day\n\nIs Europe getting more extreme?\nA look at every extreme weather event of E3CI.\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?\n\n\nWhen in the year?\nComparison of two periods: 1981-2010 vs 2011-2026, divided by seasons.\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?"
   },
   {
-    "objectID": "GROUP_06.html#compare-countries-in-europe-who-is-hit-the-hardest-over-the-years",
-    "href": "GROUP_06.html#compare-countries-in-europe-who-is-hit-the-hardest-over-the-years",
-    "title": "Group 6",
+    "objectID": "GROUP_09.html#compare-countries-in-europe-who-is-hit-the-hardest-over-the-years",
+    "href": "GROUP_09.html#compare-countries-in-europe-who-is-hit-the-hardest-over-the-years",
+    "title": "Group 9",
     "section": "Compare countries in Europe: who is hit the hardest over the years?",
     "text": "Compare countries in Europe: who is hit the hardest over the years?\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?\n\nOne map per year: Europe trends at a glance\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?"
   },
   {
-    "objectID": "GROUP_06.html#zoom-in",
-    "href": "GROUP_06.html#zoom-in",
-    "title": "Group 6",
+    "objectID": "GROUP_09.html#zoom-in",
+    "href": "GROUP_09.html#zoom-in",
+    "title": "Group 9",
     "section": "Zoom in",
     "text": "Zoom in\n\nThe barcode of extremes\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?\n\n\nComparison between two extreme weather components\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?\n\n\nMonth by month, and the records\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?\n\n\nLet’s explore a specific extreme weather event closer\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?"
   },
@@ -194,6 +201,34 @@
     "title": "Group 2",
     "section": "Zoom in",
     "text": "Zoom in\n\nThe barcode of extremes\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?\n\n\nComparison between two extreme weather components\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?\n\n\nMonth by month, and the records\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?\n\n\nLet’s explore a specific extreme weather event closer\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?"
+  },
+  {
+    "objectID": "GROUP_10.html",
+    "href": "GROUP_10.html",
+    "title": "Group 10",
+    "section": "",
+    "text": "A story created @ Visualising Climate 2026, Bologna\nDouble click here: add your Climate Gazette Cover.\nDouble click here: write in one or two sentences what is your story about."
+  },
+  {
+    "objectID": "GROUP_10.html#an-overview-of-extreme-weather-events-in-europe-from-1981-to-the-present-day",
+    "href": "GROUP_10.html#an-overview-of-extreme-weather-events-in-europe-from-1981-to-the-present-day",
+    "title": "Group 10",
+    "section": "An overview of extreme weather events in Europe from 1981 to the present day",
+    "text": "An overview of extreme weather events in Europe from 1981 to the present day\n\nIs Europe getting more extreme?\nA look at every extreme weather event of E3CI.\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?\n\n\nWhen in the year?\nComparison of two periods: 1981-2010 vs 2011-2026, divided by seasons.\n\n\n\n\n\n\n\n\n\nCOMMENTS : Extreme temperature are less perceived when they occur in colder months"
+  },
+  {
+    "objectID": "GROUP_10.html#compare-countries-in-europe-who-is-hit-the-hardest-over-the-years",
+    "href": "GROUP_10.html#compare-countries-in-europe-who-is-hit-the-hardest-over-the-years",
+    "title": "Group 10",
+    "section": "Compare countries in Europe: who is hit the hardest over the years?",
+    "text": "Compare countries in Europe: who is hit the hardest over the years?\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: Increases in warm autumn is generally obvious in each region, while it’s slightly lower in north regions.\n\nOne map per year: Europe trends at a glance\n\n\n\n\n\n\n\n\n\n\n\n\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n/tmp/ipykernel_4620/1615926675.py in &lt;cell line: 0&gt;()\n     31 \n     32 \n---&gt; 33 plot_de_map_grid(COMPONENT, MONTH, DE_AREAS)\n\n/tmp/ipykernel_4620/1615926675.py in plot_de_map_grid(component, month, areas, n_columns, data, title, subtitle)\n     15     axes = axes.ravel()\n     16     for ax, date in zip(axes, dates):\n---&gt; 17         draw_de_map(ax, de_map_colors(component, date, areas, data))\n     18         ax.text(0.03, 0.97, str(date.year), transform=ax.transAxes, ha=\"left\", va=\"top\",   # top-left = North Sea\n     19                 fontsize=12, fontweight=\"bold\", color=INK)\n\n/tmp/ipykernel_4620/3526939635.py in de_map_colors(component, date, areas, data)\n     84 def de_map_colors(component, date, areas=DE_AREAS, data=None):\n     85     \"\"\"One colour per Land of DE for the given month (white = no data).\"\"\"\n---&gt; 86     values = table(component, areas, data).loc[date]\n     87     colors = []\n     88     for area in DE[\"area\"]:\n\n/tmp/ipykernel_4620/1944124378.py in table(component, areas, data)\n     79     if areas is not None:\n     80         for area in areas:\n---&gt; 81             check_name(area, result.columns, \"country or region name\")\n     82         result = result[areas]\n     83     return result\n\n/tmp/ipykernel_4620/1944124378.py in check_name(name, valid, what)\n     67         close = difflib.get_close_matches(str(name), [str(v) for v in valid], n=3, cutoff=0.5)\n     68         hint = f\" Did you mean {' or '.join(repr(c) for c in close)}?\" if close else \"\"\n---&gt; 69         raise ValueError(f\"{name!r} is not a valid {what}.{hint}\")\n     70 \n     71 \n\nValueError: 'Baden-Württemberg' is not a valid country or region name.\n\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?"
+  },
+  {
+    "objectID": "GROUP_10.html#zoom-in",
+    "href": "GROUP_10.html#zoom-in",
+    "title": "Group 10",
+    "section": "Zoom in",
+    "text": "Zoom in\n\nThe barcode of extremes\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?\n\n\nComparison between two extreme weather components\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?\n\n\nMonth by month, and the records\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?\n\n\nLet’s explore a specific extreme weather event closer\nCOMMENT HERE: What information this chart tells you?"
   },
   {
     "objectID": "test_CINZIA_titoli.html",
@@ -252,150 +287,115 @@
     "text": "💬 For the final discussion\n\nWhich chart would you show to a mayor? To a newspaper reader? To a scientist? Why different ones?\nWhich design choice changed your perception the most: the type of chart, the threshold, the period, the title?\nWhat does the E3CI not tell us? (people and assets exposed, damages, very local or very short events…)\nDid your titles state a finding, or ask a question? Which works better on social media?\n\nNotebooks prepared by IFAB for the Visualising Climate 2026 workshop. Data: E3CI – European Extreme Events Climate Index, https://www.climateindex.eu (IFAB; implemented by CMCC and Leithà – Unipol Group; distributed by Hypermeteo and Radarmeteo), based on Copernicus ERA5. Neither the European Commission nor ECMWF is responsible for any use of the Copernicus information. Colours: the E3CI Data Station palette (design by Cinzia Bongino). Country shapes: Natural Earth (public domain). Font: Lato (SIL Open Font License)."
   },
   {
-    "objectID": "GROUP_04.html",
-    "href": "GROUP_04.html",
-    "title": "Group 4",
+    "objectID": "GROUP_08.html",
+    "href": "GROUP_08.html",
+    "title": "Climate Gazette",
     "section": "",
-    "text": "A story created @ Visualising Climate 2026, Bologna\nDouble click here: add your Climate Gazette Cover.\nDouble click here: write in one or two sentences what is your story about."
+    "text": "title: “Hotter an higher!” subtitle: “Extreme weather is not just about Southern countries anymore” author: “Adrián Maqueda, Cristina Pita da Veiga”\nA story created @ Visualising Climate 2026, Bologna\nDouble click here: write in one or two sentences what is your story about."
   },
   {
-    "objectID": "GROUP_04.html#an-overview-of-extreme-weather-events-in-europe-from-1981-to-the-present-day",
-    "href": "GROUP_04.html#an-overview-of-extreme-weather-events-in-europe-from-1981-to-the-present-day",
-    "title": "Group 4",
+    "objectID": "GROUP_08.html#an-overview-of-extreme-weather-events-in-europe-from-1981-to-the-present-day",
+    "href": "GROUP_08.html#an-overview-of-extreme-weather-events-in-europe-from-1981-to-the-present-day",
+    "title": "Climate Gazette",
     "section": "An overview of extreme weather events in Europe from 1981 to the present day",
-    "text": "An overview of extreme weather events in Europe from 1981 to the present day\n\nIs Europe getting more extreme?\nA look at every extreme weather event of E3CI.\nCOMMENT HERE: What information this chart tells you?\n\n\nWhen in the year?\nComparison of two periods: 1981-2010 vs 2011-2026, divided by seasons.\nCOMMENT HERE: What information this chart tells you?"
+    "text": "An overview of extreme weather events in Europe from 1981 to the present day\n\nIs Europe getting more extreme?\nA look at every extreme weather event of E3CI.\n\n\n\n\n\n\n\n\n\nExtreme weather is becoming the new normal. As we can see here in Belgium. A country known by they green landscape, fires are now a concern.\n\n\nWhen in the year?\nComparison of two periods: 1981-2010 vs 2011-2026, divided by seasons.\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?"
   },
   {
-    "objectID": "GROUP_04.html#compare-countries-in-europe-who-is-hit-the-hardest-over-the-years",
-    "href": "GROUP_04.html#compare-countries-in-europe-who-is-hit-the-hardest-over-the-years",
-    "title": "Group 4",
+    "objectID": "GROUP_08.html#compare-countries-in-europe-who-is-hit-the-hardest-over-the-years",
+    "href": "GROUP_08.html#compare-countries-in-europe-who-is-hit-the-hardest-over-the-years",
+    "title": "Climate Gazette",
     "section": "Compare countries in Europe: who is hit the hardest over the years?",
-    "text": "Compare countries in Europe: who is hit the hardest over the years?\nCOMMENT HERE: What information this chart tells you?\n\nOne map per year: Europe trends at a glance\nCOMMENT HERE: What information this chart tells you?"
+    "text": "Compare countries in Europe: who is hit the hardest over the years?\n\n\n\n\n\n\n\n\n\nBut we are starting to see that is not a trend in the south and northern countries also reach extreme whether conditions\n\nOne map per year: Europe trends at a glance\n\n\n\n\n\n\n\n\n\nEvery year temperatures reach new records in Europe"
   },
   {
-    "objectID": "GROUP_04.html#zoom-in",
-    "href": "GROUP_04.html#zoom-in",
-    "title": "Group 4",
+    "objectID": "GROUP_08.html#zoom-in",
+    "href": "GROUP_08.html#zoom-in",
+    "title": "Climate Gazette",
     "section": "Zoom in",
-    "text": "Zoom in\n\nThe barcode of extremes\nCOMMENT HERE: What information this chart tells you?\n\n\nComparison between two extreme weather components\nCOMMENT HERE: What information this chart tells you?\n\n\nMonth by month, and the records\nCOMMENT HERE: What information this chart tells you?\n\n\nLet’s explore a specific extreme weather event closer\nCOMMENT HERE: What information this chart tells you?"
+    "text": "Zoom in\n\nThe barcode of extremes\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?\n\n\nComparison between two extreme weather components\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?\n\n\nMonth by month, and the records\n\n\n\n\n\n\n\n\n\nEvery year we reach a new record. We didn’t flat the curve. This is not about the southern countries anymore.\n\n\nLet’s explore a specific extreme weather event closer\n\n\n\n\n\n\n\n\n\nAnother example are the floods in Belgium and Germany in 2021"
   },
   {
-    "objectID": "GROUP_03.html",
-    "href": "GROUP_03.html",
-    "title": "Group 3",
+    "objectID": "GROUP_06.html",
+    "href": "GROUP_06.html",
+    "title": "Group 6",
     "section": "",
     "text": "A story created @ Visualising Climate 2026, Bologna\nDouble click here: add your Climate Gazette Cover.\nDouble click here: write in one or two sentences what is your story about."
   },
   {
-    "objectID": "GROUP_03.html#an-overview-of-extreme-weather-events-in-europe-from-1981-to-the-present-day",
-    "href": "GROUP_03.html#an-overview-of-extreme-weather-events-in-europe-from-1981-to-the-present-day",
-    "title": "Group 3",
-    "section": "An overview of extreme weather events in Europe from 1981 to the present day",
-    "text": "An overview of extreme weather events in Europe from 1981 to the present day\n\nIs Europe getting more extreme?\nA look at every extreme weather event of E3CI.\n\n\n\n\n\n\n\n\n\nThe chart suggests that drought conditions have become less frequent while extreme precipitation has increased. It also shows an increase in fire activity, which may be associated with rising temperatures and stronger winds.\n\n\nWhen in the year?\nComparison of two periods: 1981-2010 vs 2011-2026, divided by seasons.\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?"
-  },
-  {
-    "objectID": "GROUP_03.html#compare-countries-in-europe-who-is-hit-the-hardest-over-the-years",
-    "href": "GROUP_03.html#compare-countries-in-europe-who-is-hit-the-hardest-over-the-years",
-    "title": "Group 3",
-    "section": "Compare countries in Europe: who is hit the hardest over the years?",
-    "text": "Compare countries in Europe: who is hit the hardest over the years?\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?\n\nOne map per year: Europe trends at a glance\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?"
-  },
-  {
-    "objectID": "GROUP_03.html#zoom-in",
-    "href": "GROUP_03.html#zoom-in",
-    "title": "Group 3",
-    "section": "Zoom in",
-    "text": "Zoom in\n\nThe barcode of extremes\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?\n\n\nComparison between two extreme weather components\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?\n\n\nMonth by month, and the records\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?\n\n\nLet’s explore a specific extreme weather event closer\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?"
-  },
-  {
-    "objectID": "GROUP_05.html",
-    "href": "GROUP_05.html",
-    "title": "Group 5",
-    "section": "",
-    "text": "A story created @ Visualising Climate 2026, Bologna\nDouble click here: add your Climate Gazette Cover.\nDouble click here: write in one or two sentences what is your story about."
-  },
-  {
-    "objectID": "GROUP_05.html#an-overview-of-extreme-weather-events-in-europe-from-1981-to-the-present-day",
-    "href": "GROUP_05.html#an-overview-of-extreme-weather-events-in-europe-from-1981-to-the-present-day",
-    "title": "Group 5",
+    "objectID": "GROUP_06.html#an-overview-of-extreme-weather-events-in-europe-from-1981-to-the-present-day",
+    "href": "GROUP_06.html#an-overview-of-extreme-weather-events-in-europe-from-1981-to-the-present-day",
+    "title": "Group 6",
     "section": "An overview of extreme weather events in Europe from 1981 to the present day",
     "text": "An overview of extreme weather events in Europe from 1981 to the present day\n\nIs Europe getting more extreme?\nA look at every extreme weather event of E3CI.\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?\n\n\nWhen in the year?\nComparison of two periods: 1981-2010 vs 2011-2026, divided by seasons.\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?"
   },
   {
-    "objectID": "GROUP_05.html#compare-countries-in-europe-who-is-hit-the-hardest-over-the-years",
-    "href": "GROUP_05.html#compare-countries-in-europe-who-is-hit-the-hardest-over-the-years",
-    "title": "Group 5",
+    "objectID": "GROUP_06.html#compare-countries-in-europe-who-is-hit-the-hardest-over-the-years",
+    "href": "GROUP_06.html#compare-countries-in-europe-who-is-hit-the-hardest-over-the-years",
+    "title": "Group 6",
     "section": "Compare countries in Europe: who is hit the hardest over the years?",
     "text": "Compare countries in Europe: who is hit the hardest over the years?\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?\n\nOne map per year: Europe trends at a glance\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?"
   },
   {
-    "objectID": "GROUP_05.html#zoom-in",
-    "href": "GROUP_05.html#zoom-in",
-    "title": "Group 5",
+    "objectID": "GROUP_06.html#zoom-in",
+    "href": "GROUP_06.html#zoom-in",
+    "title": "Group 6",
     "section": "Zoom in",
     "text": "Zoom in\n\nThe barcode of extremes\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?\n\n\nComparison between two extreme weather components\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?\n\n\nMonth by month, and the records\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?\n\n\nLet’s explore a specific extreme weather event closer\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?"
   },
   {
-    "objectID": "Workshop_DEMO2.html",
-    "href": "Workshop_DEMO2.html",
-    "title": "Too little, too much water",
+    "objectID": "Workshop_DEMO1.html",
+    "href": "Workshop_DEMO1.html",
+    "title": "Heatwave in Sicily, July 2023",
     "section": "",
-    "text": "A story created @ Visualising Climate 2026, Bologna\nHeat is the clearest signal in the E3CI, but water tells a more complicated story: months of drought and months of extreme rain, sometimes in the same country and in the same years. We follow both, from Europe down to Germany."
+    "text": "A story created @ Visualising Climate 2026, Bologna\nIn the second half of July 2023 a long heatwave hit southern Italy: Palermo reached about 47 °C on 24 July, its highest temperature on record, and wildfires closed its airport. How extreme was it, and how does it fit into the last 46 years?"
   },
   {
-    "objectID": "Workshop_DEMO2.html#europe",
-    "href": "Workshop_DEMO2.html#europe",
-    "title": "Too little, too much water",
-    "section": "Europe",
-    "text": "Europe\n\nEach hazard has its own story\n\n\n\n\n\n\n\n\n\nWater extremes change less than heat. Since 2011 extreme precipitation has become about 1.5 times as frequent as in 1981–2010 (from 8% to 13% of the country-months), drought only slightly (from 13% to 15%), and the bars go up and down from year to year: wet and dry years alternate.\n\n\nWhen in the year?\n\n\n\n\n\n\n\n\n\nLook at the drought and precipitation roses. Drought grows above all from April to August (in April, from 13% to 20% of the country-months), while extreme rain grows in winter and autumn: in January, February and October, from about one country-month in ten to one in six."
+    "objectID": "Workshop_DEMO1.html#an-overview-of-extreme-weather-events-in-europe-from-1981-to-the-present-day",
+    "href": "Workshop_DEMO1.html#an-overview-of-extreme-weather-events-in-europe-from-1981-to-the-present-day",
+    "title": "Heatwave in Sicily, July 2023",
+    "section": "An overview of extreme weather events in Europe from 1981 to the present day",
+    "text": "An overview of extreme weather events in Europe from 1981 to the present day\n\nEach hazard has its own story\n\n\n\n\n\n\n\n\n\nE3CI tracks seven climate hazards, and they do not all move in the same direction. One clearly stands out: extreme maximum temperatures. Until the early 2000s the orange bars stay mostly below the 1981–2010 average; in the last fifteen years almost every bar towers above it, and the most recent years are the highest of the whole series. Wildfires, closely linked to heat, follow a similar path, with sharp peaks in recent years. Extreme cold and hail go the other way, becoming rarer. Drought, heavy rain and wind change much less. In short, heat has grown more than any other hazard, by a factor of about 3.5. This is why our story follows the heat. But when in the year does it strike? (2026 data up to September.)\n\n\nWhen in the year?\n\n\n\n\n\n\n\n\n\nIn this plot is important to note that the area of a petal, not its length, shows the share: a petal twice as long means about four times as many extreme months. In 1981–2010 the rose for extreme maximum temperatures is small and regular, just above the 10% circle in every month. In 2011–2026 almost every petal reaches or exceeds the 40% circle, with no clear summer peak: February, April, October and November are as affected as July. On average, the share of extreme-heat country-months rises from 11% to 37%, and the dark outer band shows that many of them exceed E3CI 3. The opposite happens for extreme cold, which shrinks mostly below 10% (from 11% to 6.8% on average), and for hail (from 14% to 9.5%). Wildfires almost triple, from 5.5% to 16%, growing especially in spring and summer. Extreme heat is no longer a summer event: it is now spread across the whole year. But where in Europe does it hit?\n\n\nCompare countries in Europe: who is hit the hardest in July over the years?\n\n\n\n\n\n\n\n\n\nUntil 2010, extreme Julys are isolated episodes, appearing only here and there. After 2010 the grid changes colour: extreme cells become increasingly frequent and, since 2022, almost the rule. Not all countries are affected equally: the Balkans and Central Europe top the ranking, and Italy, with 12 extreme Julys since 1981, is among the most affected countries. July 2023 was extreme in 18 of the 45 countries, fewer than in July 2025 (39), but it was one of the most intense in the south: above 3 in Italy, Malta, Greece, Albania and Croatia.\n\n\nOne map per year\n\n\n\n\n\n\n\n\n\nEach map is a July, from 1981 to today: read it like a comic strip, left to right and top to bottom. In the first rows Europe is almost entirely grey, and extreme heat appears only occasionally. From the 2000s onwards the orange patches become more frequent, wider and darker, hitting different areas each time, from Scandinavia to the Balkans. Extreme heat is no longer a local exception but a phenomenon that moves and spreads across the continent."
   },
   {
-    "objectID": "Workshop_DEMO2.html#who-is-hit-the-hardest",
-    "href": "Workshop_DEMO2.html#who-is-hit-the-hardest",
-    "title": "Too little, too much water",
-    "section": "Who is hit the hardest?",
-    "text": "Who is hit the hardest?\n\nOne month, all countries\n\n\n\n\n\n\n\n\n\nSpring droughts matter for crops and rivers. May 2011 and May 2026 were extreme in 25 of the 45 countries, more than any other May. The countries with the most extreme Mays since 1981 are in the west of central Europe: Belgium, Luxembourg, the Netherlands and Germany.\n\n\nToo dry and too wet, region by region\n\n\n\n\n\n\n\n\n\nEach dot is a month above 2 in one of the 15 German regions. Severe drought months went from 20 in 1981–1990 to 137 in 2017–2026; severe rain months increased too, from 81 to 110. The same regions now swing between the two extremes.\n\n\nOne map per year\n\n\n\n\n\n\n\n\n\nDrought maps are patchier than heat maps: the large extreme Junes (1988, 2000, 2003, 2018, 2025 and 2026) are separated by years with almost no drought. In 2026, 21 of the 45 countries had an extreme June drought, the most in the series."
+    "objectID": "Workshop_DEMO1.html#zoom-in-italy",
+    "href": "Workshop_DEMO1.html#zoom-in-italy",
+    "title": "Heatwave in Sicily, July 2023",
+    "section": "Zoom in: Italy",
+    "text": "Zoom in: Italy\n\nThe barcode of extremes\n\n\n\n\n\n\n\n\n\nOne row per component, one cell per year. In Italy the heat row changes the most: 27 extremely hot months in the three decades 1981–2010, 84 in the sixteen years since 2011.\n\n\nHeat and cold weather, region by region\n\n\n\n\n\n\n\n\n\nThe two indicators move in opposite directions: extreme events linked to high temperatures are increasing, while those linked to extreme low temperatures are becoming rarer and less widespread. The numbers make it clear: comparing the first and the last decade, extreme heat months rise from 95 to 703, while extreme cold months fall from 151 to 17. In the 1980s blue and orange dots alternate; today the chart is almost entirely orange, in all 20 regions.\n\n\nMonth by month, and the records\n\n\n\n\n\n\n\n\n\nTop: only 4 months above 3 in 1981–2010, 31 since 2011. Bottom: Italy has set six heat records since 1991, where a stable climate would give about 1.5. July 2023 reached 6.2 for Italy as a whole, the second most extreme July, but not a record: October 2022 and October 2023 were even further from normal for their season.\n\n\nThe event: Sicily, July 2023\n\n\n\n\n\n\n\n\n\nSicily reached 13.5 in July 2023, its second most extreme July after July 2026 and its third most extreme month since 1981. On the right, the most affected regions of Europe that month: only Campania was higher (18.6)."
   },
   {
-    "objectID": "Workshop_DEMO2.html#zoom-in-germany",
-    "href": "Workshop_DEMO2.html#zoom-in-germany",
-    "title": "Too little, too much water",
-    "section": "Zoom in: Germany",
-    "text": "Zoom in: Germany\n\n46 years at a glance\n\n\n\n\n\n\n\n\n\nOne row per component, one cell per year. In Germany the drought row darkens in the same years as the heat row, such as 2003, 2018 and 2026: hot and dry summers come together. Since 2011, 21% of the months were in extreme drought, against 12% in 1981–2010.\n\n\nMonth by month\n\n\n\n\n\n\n\n\n\nDrought values stay lower than heat values: in Germany the E3CI for drought has never reached 3. The three most extreme months on record are May 2011, August 2018 and May 2025, two of them in late spring.\nRecords tell a different story from frequency. The last drought record in Germany dates back to May 2011: since then droughts have been more frequent, but none has been more intense. A changing climate does not always mean a new record every year.\n\n\nWhich months, which years?\n\n\n\n\n\n\n\n\n\nBefore 2011 every calendar month was in extreme drought in at most one or two years out of ten. Since then May has been extreme in a third of the years and June in 40%: drought arrives when crops need water the most.\n\n\nA real event: the floods of July 2021\n\n\n\n\n\n\n\n\n\nToo much water, in the middle of a dry decade. In July 2021 North Rhine-Westphalia reached 11.5, its most extreme month for rain since 1981. The ranking on the right shows a shared event: Luxembourg, Belgium, the Netherlands and Rhineland-Palatinate were hit in the same month.\n\n\nRegion by region\n\n\n\n\n\n\n\n\n\nExtreme July rain is a regional affair: in most Julys it hits only a few regions. July 2014 (11 regions) and July 2021 (10 regions) are the exceptions, with two thirds of Germany at once. Berlin and Brandenburg are the regions with the most extreme Julys since 1981.\n\nData: E3CI – European Extreme Events Climate Index, https://www.climateindex.eu (IFAB; implemented by CMCC and Leithà – Unipol Group; distributed by Hypermeteo and Radarmeteo), based on Copernicus ERA5. Neither the European Commission nor ECMWF is responsible for any use of the Copernicus information. Colours: the E3CI Data Station palette (design by Cinzia Bongino). Country shapes: Natural Earth (public domain)."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
-  },
-  {
-    "objectID": "GROUP_09.html",
-    "href": "GROUP_09.html",
-    "title": "Group 9",
+    "objectID": "GROUP_01.html",
+    "href": "GROUP_01.html",
+    "title": "Group 01",
     "section": "",
     "text": "A story created @ Visualising Climate 2026, Bologna\nDouble click here: add your Climate Gazette Cover.\nDouble click here: write in one or two sentences what is your story about."
   },
   {
-    "objectID": "GROUP_09.html#an-overview-of-extreme-weather-events-in-europe-from-1981-to-the-present-day",
-    "href": "GROUP_09.html#an-overview-of-extreme-weather-events-in-europe-from-1981-to-the-present-day",
-    "title": "Group 9",
+    "objectID": "GROUP_01.html#an-overview-of-extreme-weather-events-in-europe-from-1981-to-the-present-day",
+    "href": "GROUP_01.html#an-overview-of-extreme-weather-events-in-europe-from-1981-to-the-present-day",
+    "title": "Group 01",
     "section": "An overview of extreme weather events in Europe from 1981 to the present day",
-    "text": "An overview of extreme weather events in Europe from 1981 to the present day\n\nIs Europe getting more extreme?\nA look at every extreme weather event of E3CI.\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?\n\n\nWhen in the year?\nComparison of two periods: 1981-2010 vs 2011-2026, divided by seasons.\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?"
+    "text": "An overview of extreme weather events in Europe from 1981 to the present day\n\nIs Europe getting more extreme?\nA look at every extreme weather event of E3CI.\nCOMMENT HERE: What information this chart tells you?\n\n\nWhen in the year?\nComparison of two periods: 1981-2010 vs 2011-2026, divided by seasons.\n\n\nHow to read this chart\nA rose for each weather event and period: * every petal is a calendar month: January at the top, then clockwise (April on the right, July at the bottom, October on the left); * the area of a petal, not its length, is proportional to the share of country-months that were extreme in that month, as in Nightingale’s roses; * inside each petal the classes go from the centre outwards: 1–2 (the lightest shade), 2–3, above 3 (the darkest); * top row: the first period, bottom row: the second one (chosen in PERIODS).\nRemember: every month is compared with the same month of 1981–2010, so an extreme in winter is unusual for winter.\nCOMMENT HERE: What information this chart tells you?"
   },
   {
-    "objectID": "GROUP_09.html#compare-countries-in-europe-who-is-hit-the-hardest-over-the-years",
-    "href": "GROUP_09.html#compare-countries-in-europe-who-is-hit-the-hardest-over-the-years",
-    "title": "Group 9",
+    "objectID": "GROUP_01.html#compare-countries-in-europe-who-is-hit-the-hardest-over-the-years",
+    "href": "GROUP_01.html#compare-countries-in-europe-who-is-hit-the-hardest-over-the-years",
+    "title": "Group 01",
     "section": "Compare countries in Europe: who is hit the hardest over the years?",
-    "text": "Compare countries in Europe: who is hit the hardest over the years?\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?\n\nOne map per year: Europe trends at a glance\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?"
+    "text": "Compare countries in Europe: who is hit the hardest over the years?\n\nHow to read this chart\nRows are countries (or regions) and columns are years. Each cell shows the E3CI class of the selected month. With MONTH = 0 it shows the class of the year’s highest monthly value. The bar on the right counts the years in which that value was above 1. With SORT_BY = “count”, the countries with the most extreme years are at the top.\nCOMMENT HERE: What information this chart tells you?\n\n\nOne map per year: Europe trends at a glance\n\n\nHow to read this chart\nThere is one map for each year, all for the same component and the same calendar month. Each country is coloured by its E3CI class, and countries outside the selection are light grey. Read the maps left to right and top to bottom, like a comic strip.\nCOMMENT HERE: What information this chart tells you?"
   },
   {
-    "objectID": "GROUP_09.html#zoom-in",
-    "href": "GROUP_09.html#zoom-in",
-    "title": "Group 9",
+    "objectID": "GROUP_01.html#zoom-in",
+    "href": "GROUP_01.html#zoom-in",
+    "title": "Group 01",
     "section": "Zoom in",
-    "text": "Zoom in\n\nThe barcode of extremes\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?\n\n\nComparison between two extreme weather components\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?\n\n\nMonth by month, and the records\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?\n\n\nLet’s explore a specific extreme weather event closer\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?"
+    "text": "Zoom in\n\nThe barcode of extremes\n\n\nHow to read this chart\nRows are the seven components and columns are years. A cell’s shade counts the months in that year above THRESHOLD: 0, 1–2, 3–5, or 6 or more. Each row uses its own component colour. The last year is incomplete, so its cell is not directly comparable with the others.\nCOMMENT HERE: What information this chart tells you?\n\n\nComparison between two extreme weather components\n\n\nHow to read this chart\nRows are the TOP_N areas with the most months above THRESHOLD, counting both components together. Each dot is one month above the threshold. Its colour shows the component and its size is proportional to the E3CI value.\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?\n\n\nMonth by month, and the records\n\n\nHow to read this chart\nEach bar is one month. Bars above the dashed line at 1 are extreme and coloured by class. Bars below 1 are grey, and negative values mean the month was below its usual level. The dots mark the TOP_N most intense months, which are also listed on the right.\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?\n\n\nLet’s explore a specific extreme weather event closer\n\n\nHow to read this chart\nThe chart has three panels:\n\nTop: time series with every month since 1981, with the event highlighted and its value and rank among all months.\nBottom left: the same calendar month in every year, with the event’s rank among those months.\nBottom right: the 12 regions in Europe with the highest values in that month. If the selected area is not among them, it is added as the last row.\n\nTogether they show how unusual the month was locally and how widespread the event was.\n\n\n\n\n\n\n\n\n\nCOMMENT HERE: What information this chart tells you?"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Climate Gazette",
+    "section": "",
+    "text": "Climate Gazette features stories of extreme weather events that occurred in Europe over the past 40 years. Reports are based on data from the European Extreme Events Climate Index, analysed with Jupyter and presented via charts and maps.\n\n\n\n \n\n\n\n\n\nIssue 1 - November 2026\n\n\nDeveloped during the “E3CI Data Station: Visualising Extreme Weather for Decision-Makers and Communities” workshop held at the Visualising Climate Conference 2026, Bologna. Curated by Noemi Ambrosi, Simona Contaldi, and Cinzia Bongino.\n\n\n  Heatwave in Sicily, July 2023 Noemi Ambrosi \n  Too little, too much water Noemi Ambrosi \n  Group 01 your names \n  Group 2 Melanie Lauer, Sara Maurizio \n  Group 3 your names \n  Group 4 your names \n  Group 5 your names \n  Group 6 your names \n  Finland your names \n  How to read the E3CI  \n  Group 9 your names \n  Group 10 Patrick and Zhi-Ran \nNo matching items\n\n\n\n\n\nE3CI European Extreme Events Climate Index is a project by IFAB, CMCC, and Leithà Gruppo Unipol. Distributed by Hypermeteo, and Radarmeteo.  datastation.climateindex.eu ↗       climateindex.eu ↗"
   }
 ]
