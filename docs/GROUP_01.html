@@ -113,17 +113,24 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#is-europe-getting-more-extreme" id="toc-is-europe-getting-more-extreme" class="nav-link" data-scroll-target="#is-europe-getting-more-extreme">Is Europe getting more extreme?</a></li>
   <li><a href="#when-in-the-year" id="toc-when-in-the-year" class="nav-link" data-scroll-target="#when-in-the-year">When in the year?</a></li>
+  <li><a href="#how-to-read-this-chart" id="toc-how-to-read-this-chart" class="nav-link" data-scroll-target="#how-to-read-this-chart">How to read this chart</a></li>
   </ul></li>
   <li><a href="#compare-countries-in-europe-who-is-hit-the-hardest-over-the-years" id="toc-compare-countries-in-europe-who-is-hit-the-hardest-over-the-years" class="nav-link" data-scroll-target="#compare-countries-in-europe-who-is-hit-the-hardest-over-the-years">Compare countries in Europe: who is hit the hardest over the years?</a>
   <ul class="collapse">
+  <li><a href="#how-to-read-this-chart-1" id="toc-how-to-read-this-chart-1" class="nav-link" data-scroll-target="#how-to-read-this-chart-1">How to read this chart</a></li>
   <li><a href="#one-map-per-year-europe-trends-at-a-glance" id="toc-one-map-per-year-europe-trends-at-a-glance" class="nav-link" data-scroll-target="#one-map-per-year-europe-trends-at-a-glance">One map per year: Europe trends at a glance</a></li>
+  <li><a href="#how-to-read-this-chart-2" id="toc-how-to-read-this-chart-2" class="nav-link" data-scroll-target="#how-to-read-this-chart-2">How to read this chart</a></li>
   </ul></li>
   <li><a href="#zoom-in" id="toc-zoom-in" class="nav-link" data-scroll-target="#zoom-in">Zoom in</a>
   <ul class="collapse">
   <li><a href="#the-barcode-of-extremes" id="toc-the-barcode-of-extremes" class="nav-link" data-scroll-target="#the-barcode-of-extremes">The barcode of extremes</a></li>
+  <li><a href="#how-to-read-this-chart-3" id="toc-how-to-read-this-chart-3" class="nav-link" data-scroll-target="#how-to-read-this-chart-3">How to read this chart</a></li>
   <li><a href="#comparison-between-two-extreme-weather-components" id="toc-comparison-between-two-extreme-weather-components" class="nav-link" data-scroll-target="#comparison-between-two-extreme-weather-components">Comparison between two extreme weather components</a></li>
+  <li><a href="#how-to-read-this-chart-4" id="toc-how-to-read-this-chart-4" class="nav-link" data-scroll-target="#how-to-read-this-chart-4">How to read this chart</a></li>
   <li><a href="#month-by-month-and-the-records" id="toc-month-by-month-and-the-records" class="nav-link" data-scroll-target="#month-by-month-and-the-records">Month by month, and the records</a></li>
+  <li><a href="#how-to-read-this-chart-5" id="toc-how-to-read-this-chart-5" class="nav-link" data-scroll-target="#how-to-read-this-chart-5">How to read this chart</a></li>
   <li><a href="#lets-explore-a-specific-extreme-weather-event-closer" id="toc-lets-explore-a-specific-extreme-weather-event-closer" class="nav-link" data-scroll-target="#lets-explore-a-specific-extreme-weather-event-closer">Let’s explore a specific extreme weather event closer</a></li>
+  <li><a href="#how-to-read-this-chart-6" id="toc-how-to-read-this-chart-6" class="nav-link" data-scroll-target="#how-to-read-this-chart-6">How to read this chart</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -134,6 +141,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Group 01</h1>
+<p class="subtitle lead">heatwave in</p>
 </div>
 
 
@@ -179,14 +187,27 @@ ul.task-list li input[type="checkbox"] {
 <section id="when-in-the-year" class="level3">
 <h3 class="anchored" data-anchor-id="when-in-the-year">When in the year?</h3>
 <p>Comparison of two periods: 1981-2010 vs 2011-2026, divided by seasons.</p>
+</section>
+<section id="how-to-read-this-chart" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-read-this-chart">How to read this chart</h3>
+<p>A <em>rose</em> for each weather event and period: * every petal is a <strong>calendar month</strong>: January at the top, then clockwise (April on the right, July at the bottom, October on the left); * the <strong>area</strong> of a petal, not its length, is proportional to the share of country-months that were extreme in that month, as in Nightingale’s roses; * inside each petal the classes go <strong>from the centre outwards</strong>: 1–2 (the lightest shade), 2–3, above 3 (the darkest); * top row: the first period, bottom row: the second one (chosen in <code>PERIODS</code>).</p>
+<p>Remember: every month is compared with the same month of 1981–2010, so an extreme in winter is unusual <em>for winter</em>.</p>
 <p>COMMENT HERE: What information this chart tells you?</p>
 </section>
 </section>
 <section id="compare-countries-in-europe-who-is-hit-the-hardest-over-the-years" class="level2">
 <h2 class="anchored" data-anchor-id="compare-countries-in-europe-who-is-hit-the-hardest-over-the-years">Compare countries in Europe: who is hit the hardest over the years?</h2>
+<section id="how-to-read-this-chart-1" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-read-this-chart-1">How to read this chart</h3>
+<p>Rows are countries (or regions) and columns are years. Each cell shows the E3CI class of the selected month. With <code>MONTH = 0</code> it shows the class of the year’s highest monthly value. The bar on the right counts the years in which that value was above 1. With <code>SORT_BY</code> = “count”, the countries with the most extreme years are at the top.</p>
 <p>COMMENT HERE: What information this chart tells you?</p>
+</section>
 <section id="one-map-per-year-europe-trends-at-a-glance" class="level3">
 <h3 class="anchored" data-anchor-id="one-map-per-year-europe-trends-at-a-glance">One map per year: Europe trends at a glance</h3>
+</section>
+<section id="how-to-read-this-chart-2" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-read-this-chart-2">How to read this chart</h3>
+<p>There is one map for each year, all for the same component and the same calendar month. Each country is coloured by its E3CI class, and countries outside the selection are light grey. Read the maps left to right and top to bottom, like a comic strip.</p>
 <p>COMMENT HERE: What information this chart tells you?</p>
 <hr>
 </section>
@@ -195,18 +216,67 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="zoom-in">Zoom in</h2>
 <section id="the-barcode-of-extremes" class="level3">
 <h3 class="anchored" data-anchor-id="the-barcode-of-extremes">The barcode of extremes</h3>
+</section>
+<section id="how-to-read-this-chart-3" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-read-this-chart-3">How to read this chart</h3>
+<p>Rows are the seven components and columns are years. A cell’s shade counts the months in that year above THRESHOLD: 0, 1–2, 3–5, or 6 or more. Each row uses its own component colour. The last year is incomplete, so its cell is not directly comparable with the others.</p>
 <p>COMMENT HERE: What information this chart tells you?</p>
 </section>
 <section id="comparison-between-two-extreme-weather-components" class="level3">
 <h3 class="anchored" data-anchor-id="comparison-between-two-extreme-weather-components">Comparison between two extreme weather components</h3>
+</section>
+<section id="how-to-read-this-chart-4" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-read-this-chart-4">How to read this chart</h3>
+<p>Rows are the TOP_N areas with the most months above THRESHOLD, counting both components together. Each dot is one month above the threshold. Its colour shows the component and its size is proportional to the E3CI value.</p>
+<div id="AMV8Axtl4Vhq" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;background_save&quot;:true}}" data-outputid="1ffbdbc5-dec6-4b03-bfbd-da115ff9f778">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="GROUP_01_files/figure-html/cell-14-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
 <p>COMMENT HERE: What information this chart tells you?</p>
 </section>
 <section id="month-by-month-and-the-records" class="level3">
 <h3 class="anchored" data-anchor-id="month-by-month-and-the-records">Month by month, and the records</h3>
+</section>
+<section id="how-to-read-this-chart-5" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-read-this-chart-5">How to read this chart</h3>
+<p>Each bar is one month. Bars above the dashed line at 1 are extreme and coloured by class. Bars below 1 are grey, and negative values mean the month was below its usual level. The dots mark the TOP_N most intense months, which are also listed on the right.</p>
+<div id="rY093Yoi2Ny_" class="cell" data-cellview="form" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;background_save&quot;:true}}" data-outputid="a5152672-dabb-46af-8662-b4dd77cb94ae">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="GROUP_01_files/figure-html/cell-15-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
 <p>COMMENT HERE: What information this chart tells you?</p>
 </section>
 <section id="lets-explore-a-specific-extreme-weather-event-closer" class="level3">
 <h3 class="anchored" data-anchor-id="lets-explore-a-specific-extreme-weather-event-closer">Let’s explore a specific extreme weather event closer</h3>
+</section>
+<section id="how-to-read-this-chart-6" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-read-this-chart-6">How to read this chart</h3>
+<p>The chart has three panels:</p>
+<ul>
+<li>Top: time series with every month since 1981, with the event highlighted and its value and rank among all months.</li>
+<li>Bottom left: the same calendar month in every year, with the event’s rank among those months.</li>
+<li>Bottom right: the 12 regions in Europe with the highest values in that month. If the selected area is not among them, it is added as the last row.</li>
+</ul>
+<p>Together they show how unusual the month was locally and how widespread the event was.</p>
+<div id="7aac633b" class="cell" data-cellview="form" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;background_save&quot;:true}}" data-outputid="0c5953c6-602f-4710-8e06-ad8bf3b3c0e2">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="GROUP_01_files/figure-html/cell-17-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
 <p>COMMENT HERE: What information this chart tells you?</p>
 
 
